@@ -1,0 +1,113 @@
+.search-filter-wrapp{
+    padding: 0 20px;
+    background-color: #f9f9f9;
+    position: relative;
+    border-bottom: 1px solid #eaeff3;
+    display: flex;
+    align-items: center;
+}
+.search-filter-wrapp .input-wrap .MuiInputBase-root {
+    height: 40px;
+    border: none;
+    background-color: transparent;
+}
+.search-filter-wrapp .input-wrap .MuiInputBase-input {
+    font-size: 14px;
+    color: #133751;
+}
+.search-box{
+    flex: 1;
+}
+.search-filter-wrapp .input-wrap .MuiInputBase-input ::placeholder{
+    color: #133751;
+}
+/* .search-filter-wrapp .search-icon {
+    position: absolute;
+    top: 24px;
+    right: 38px;
+} */
+.search-filter-wrapp .MuiSvgIcon-root{
+    font-size: 18px;
+    color: #768a9e;
+}
+.close-icon{
+    cursor: pointer;
+}
+.exp-check-list-wrapp{
+    border: 1px solid #eaeff3
+}
+.exp-check-list-wrapp .MuiTypography-root{
+    font-size: 14px;
+    color: #484949;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.exp-check-list-wrapp .MuiList-padding, .exp-check-list-wrapp .MuiCheckbox-root, .role-permission-wrapp .MuiBox-root{
+    padding: 0;
+}
+.exp-check-list-wrapp .MuiListItem-gutters {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.exp-check-list-wrapp .MuiListItem-dense {
+    padding: 0 20px;
+    border-bottom: 1px solid #eaeff3;
+}
+.exp-check-list-wrapp .MuiListItem-dense,
+.exp-check-list-wrapp .MuiListItem-dense:hover{
+    background: #f9f9f9;
+}
+
+.exp-check-list-wrapp .MuiListItemIcon-root {
+    min-width: 40px;
+}
+/* .exp-check-list-wrapp .MuiCheckbox-root{
+    color: black;
+} */
+ /* .exp-check-list-wrapp .assign-permission{
+    background-color: #f9f9f9 !important;
+    font-size: 15px;
+    line-height: 1.2;
+    border-bottom: 1px solid #eaeff3;
+} */
+.exp-check-list-wrapp .assign-permission .MuiTypography-root{
+    color: #006cc9;
+}
+
+/* exp xhild list */
+/* .exp-check-list-wrapp .exp-child-list-wrap{
+    padding: 4px 25px;
+} */
+.exp-check-list-wrapp .exp-child-list-wrap .MuiTypography-root{
+    color: #133751;
+}
+.exp-check-list-wrapp .exp-child-list-wrap .MuiListItem-gutters{
+    padding: 8px 45px;
+}
+
+@media(max-width:767px){
+    .role-permission-wrapp .MuiBox-root{
+        padding: 0;
+        width: 100%;
+    }
+    .role-permission-wrapp .exp-check-list-wrapp .MuiList-padding{
+        width: 100%;
+    }
+    .exp-check-list-wrapp .MuiListItem-gutters, .search-filter-wrapp {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .exp-check-list-wrapp .MuiTypography-root{
+        font-size: 14px;
+    }
+    .exp-check-list-wrapp .MuiListItemIcon-root{
+        min-width: 34px;
+    }
+    /* .exp-check-list-wrapp .assign-permission .MuiSvgIcon-root{
+        color: #006cc9;
+        font-size: 20px;
+    } */
+    .custom-modal .exp-check-list-wrapp  .MuiSvgIcon-root{
+        color: rgba(0, 0, 0, 0.54);
+    }
+}

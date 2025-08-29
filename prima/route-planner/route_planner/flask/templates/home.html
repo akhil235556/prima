@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row mb-4">
+        <div class="col">
+            <h2>Route Planning Dashboard</h2>
+        </div>
+    </div>
+
+    <!-- Route Summary Cards -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Generated Routes</h5>
+                    <h2 class="card-text" id="routeCount">-</h2>
+                    <p class="text-muted">Total routes</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Total Cost</h5>
+                    <h2 class="card-text" id="totalCost">-</h2>
+                    <p class="text-muted">Estimated cost</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Total Distance</h5>
+                    <h2 class="card-text" id="totalDistance">-</h2>
+                    <p class="text-muted">Total km driven</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- File Upload Area -->
+    <div class="row">
+        <div class="col">
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Upload Data</h5>
+                    <a href="/download-template" class="btn btn-outline-primary">
+                        <i class="fas fa-download me-2"></i>Download Template
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="upload-area" id="dropZone">
+                        <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
+                        <h4>Drag and drop files to upload</h4>
+                        <p>or</p>
+                        <button class="btn btn-primary" id="browseBtn">Browse Files</button>
+                        <input type="file" id="fileInput" style="display: none" accept=".json,.xlsx,.csv">
+                        <p class="mt-2">Supported file types: JSON, XLSX, CSV</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Area -->
+    <div class="row mt-4" id="resultsArea" style="display: none;">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Planning Results</h5>
+                </div>
+                <div class="card-body">
+                    <div id="resultsContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(document).ready(function() {
+        const dropZone = $('#dropZone');
+        const fileInput = $('#fileInput');
+        const browseBtn = $('#browseBtn');
+        const resultsArea = $('#resultsArea');
+        const resultsContent = $('#resultsContent');
+
+        // Handle drag and drop
+        dropZone.on('dragover', function(e) {
+            e.preventDefault();
+            dropZone.addClass('bg-light');
+        });
+
+        dropZone.on('dragleave', function(e) {
+            e.preventDefault();
+            dropZone.removeClass('bg-light');
+        });
+
+        dropZone.on('drop', function(e) {
+            e.preventDefault();
+            dropZone.removeClass('bg-light');
+            const files = e.originalEvent.dataTransfer.files;
+            handleFiles(files);
+        });
+
+        // Handle browse button
+        browseBtn.click(function() {
+            fileInput.click();
+        });
+
+        fileInput.change(function() {
+            handleFiles(this.files);
+        });
+
+        function handleFiles(files) {
+            if (files.length === 0) return;
+
+            const file = files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            // Get the selected strategy from localStorage
+            const selectedStrategy = localStorage.getItem('selectedStrategy') || 'fixed';
+            formData.append('planner', selectedStrategy);
+
+            // Show loading state
+            dropZone.html('<i class="fas fa-spinner fa-spin fa-3x mb-3"></i><h4>Processing...</h4>');
+
+            $.ajax({
+                url: '/upload',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    // Update summary cards
+                    if (response.routes) {
+                        $('#routeCount').text(response.routes.length || '-');
+                        $('#totalCost').text(response.total_cost || '-');
+                        $('#totalDistance').text(response.total_distance + ' km' || '-');
+                    }
+
+                    // Show results
+                    resultsContent.html(`
+                        <div class="alert alert-success">
+                            ${response.message}
+                        </div>
+                    `);
+                    resultsArea.show();
+
+                    // Reset upload area
+                    resetUploadArea();
+                },
+                error: function(xhr) {
+                    const error = xhr.responseJSON ? xhr.responseJSON.error : 'An error occurred';
+                    resultsContent.html(`
+                        <div class="alert alert-danger">
+                            ${error}
+                        </div>
+                    `);
+                    resultsArea.show();
+                    resetUploadArea();
+                }
+            });
+        }
+
+        function resetUploadArea() {
+            dropZone.html(`
+                <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
+                <h4>Drag and drop files to upload</h4>
+                <p>or</p>
+                <button class="btn btn-primary" id="browseBtn">Browse Files</button>
+                <p class="mt-2">Supported file types: JSON, XLSX, CSV</p>
+            `);
+            fileInput.val('');
+        }
+    });
+</script>
+{% endblock %} 

@@ -1,0 +1,26 @@
+.makeStyles-wrapper-195{
+    display: inline-block;
+}
+.card-detail-wrap .billing-group.freight-icon .tooltip-table-wrap
+{
+    position: inherit;
+}
+.freight-text{
+    color: #133751;
+    text-transform: capitalize;
+}
+.pod-status{
+    align-items: center;
+}
+.pod-status p{
+    margin-bottom: 0;
+    margin-left: 4px;
+}
+.completed-icon svg {
+    fill: #22C900;
+    height: 17px;
+    width: 17px;
+}
+.freight-reconcil-wrapper .card-list .btn{
+    margin-left: 0;
+}

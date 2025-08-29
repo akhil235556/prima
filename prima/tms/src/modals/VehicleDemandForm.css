@@ -1,0 +1,9 @@
+.date-time-wrap .date-box span{
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    color: rgba(0,0,0,.5);
+}
+.modal-popup .form-panel .date-time-wrap .MuiInputBase-root{
+    padding-left: 40px;
+}

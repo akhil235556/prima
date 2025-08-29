@@ -1,0 +1,18 @@
+.order-listing-time-date.table-detail-listing .table-list-view .MuiTableRow-root .MuiTableCell-body {
+    max-width: initial;
+}
+.approval-decline-modal.custom-modal .MuiDialogContent-root {
+    padding: 0;
+}
+span.orderCode {
+    color: #f7931e;
+}
+.order-listing-time-date .checkbox-warp .MuiIconButton-root {
+    padding: 9px;
+}
+
+@media (min-width: 1024px){
+    .approval-decline-modal.custom-modal .MuiDialog-paper {
+        min-width: 1000px;
+    }
+}

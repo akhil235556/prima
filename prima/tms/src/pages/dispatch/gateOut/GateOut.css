@@ -1,0 +1,54 @@
+.input-lrn .input-wrap .MuiInputBase-root{
+margin-right: 0;
+}
+
+@media (min-width:768px) {
+    .pT-20{
+        padding-top: 22px;
+    }
+}
+.material-and-quantity--modal.custom-modal .MuiDialogContent-root{
+    padding: 0;
+}
+.billing-info-header .btn-container--end button{
+    height: 33px;
+    margin-right: 15px;
+}
+.material-and-quantity--modal .btn-blue{
+    width:85px;
+}
+.material-and-quantity--modal .shipment-modal-header{
+    margin-bottom: 0px;
+}
+.material-and-quantity--modal.custom-modal .MuiDialogActions-root{
+    padding: 12px ;
+}
+.material-and-quantity--modal.custom-modal .table-list-view .MuiTableCell-body{
+    font-size: 14px;
+    font-weight: 500;
+    color:#083654
+}
+
+.material-and-quantity--modal.custom-modal .table-list-view .input-wrap .MuiInputBase-root{
+ height: 36px;
+}
+.material-and-quantity--modal.custom-modal .table-list-view .input-wrap{
+   width: 150px;
+   margin-bottom: 5px;
+}
+.material-and-quantity--modal.custom-modal .input-wrap{
+    width: 150px;
+ }
+.material-and-quantity--modal.custom-modal .order-detail-wrapper .MuiCollapse-container{
+    margin-bottom: 3px;
+}
+.material-and-quantity--modal.custom-modal .shipment-modal-header .input-wrap .MuiInputBase-root{
+    max-height: 38px;
+    margin-top: -5px;
+}
+.row.shipment-waybillColumn {
+    background: #f3f3f3;
+    margin: 15px 0 0 0;
+    padding: 13px 0 20px 0;
+    border-radius: 4px;
+}

@@ -1,0 +1,41 @@
+
+/*Article Table CSS*/
+.article-list-wrapp {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+.article-list-content .table-list-view .MuiTableRow-root .MuiTableCell-root{
+    background: #fdfdfd;
+}
+.article-code .table-list-view .table-wrapper {
+    min-height: 400px;
+    max-height: 400px;
+}
+.article-list-content .table-list-view .MuiTable-root{
+    border-spacing: 0;
+}
+
+.article-list-content .table-list-view .MuiTableCell-body{
+    border-top: 0 none;
+    border-color: #E9E9E9;
+    border-right: 0 none;
+    border-left: 0 none;
+
+}
+.article-list-content .table-list-view .MuiTableRow-root .MuiTableCell-head{
+    background-color: #ffffff;
+    border-bottom: 1px solid #E9E9E9;
+}
+.article-list-content .table-list-view .MuiTableRow-root .MuiTableCell-head:first-child{
+    padding-left: 25px;
+}
+.article-list-content .table-list-view .MuiTableCell-body:first-child{
+    padding-left: 25px;
+    border-radius: 0;
+}
+
+@media(max-width:767px){
+    .article-list-content .table-list-view .MuiTableRow-root .MuiTableCell-root{
+        max-width: 100px;
+    }
+}

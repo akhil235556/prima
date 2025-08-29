@@ -1,0 +1,104 @@
+.card-detail-wrap .custom-form-row {
+  margin: 0;
+}
+.card-detail-wrap .billing-group {
+  margin-bottom: 0;
+  padding: 12px 20px 8px;
+  border-bottom: 1px solid #eaeff3;
+}
+.card-detail-wrap .creat-contract-content,
+.card-detail-wrap .MuiCardContent-root:last-child {
+  padding: 0;
+}
+
+.list-info-wrap .MuiCardContent-root:last-child {
+  padding: 0 20px;
+}
+
+.remark-row.billing-info-remark {
+  padding: 0;
+}
+.info-total .billing-info-footer .bill-btn-wrap {
+  width: 100%;
+}
+/* info-total */
+.info-total .billing-info-footer {
+  background: #fff;
+  min-width: 315px;
+}
+.info-total .billing-info-footer .d-flex {
+  width: 28%;
+  text-align: left;
+}
+.info-total .billing-info-footer .input-wrap {
+  padding: 8px 0;
+  min-height: auto;
+}
+
+.card-detail-wrap .billing-group .info-heading {
+  position: relative;
+}
+.card-detail-wrap .billing-group .tooltip-table-wrap, .deduction-icon-blue .tool-tip-icon {
+  position: absolute;
+  top: -2px;
+  right: -21px;
+  z-index: 1;
+}
+.card-detail-wrap .billing-group .tooltip-table-wrap svg, .deduction-icon-blue svg {
+  color: #006cc9;
+  font-size: 17px;
+}
+
+/* checkobox */
+.card-detail-wrap .custom-debit.billing-group {
+  padding-left: 40px;
+}
+.card-detail-wrap .custom-debit .custom-checkbox {
+  padding: 0;
+  margin-right: 5px;
+  position: absolute;
+  top: 7px;
+  left: 17px;
+  z-index: 1;
+}
+.edit-bill-wrapp .filter-panel {
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid #eaeff3;
+}
+.inv-file-action .icon-list {
+  padding: 0 8px;
+}
+
+@media (max-width: 767px) {
+  .card-detail-wrap .billing-group {
+    padding: 11px 15px;
+  }
+}
+@media (max-width: 320px) {
+  .info-total .billing-info-footer {
+    min-width: 100%;
+  }
+  .info-total .billing-info-footer .d-flex {
+    width: 34%;
+  }
+}
+
+.billing-info-footer.freights-payable .total-amount .tooltip-table-wrap svg {
+  color: #006cc8;
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  transform: inherit;
+  font-size: 17px;
+  margin-top: -4px;
+  margin-left: 4px;
+}
+
+.info-total .billing-info-footer.freights-payable .d-flex {
+  width: 36%;
+}
+
+.freights-payable svg.MuiSvgIcon-root {
+  font-size: 17px;
+}

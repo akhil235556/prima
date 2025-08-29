@@ -1,0 +1,120 @@
+.drop-container {
+    max-width: 646px;
+    margin: 0 auto;
+    padding-top: 32px;
+}
+
+.drop-container .drop-label {
+    display: flex;
+    padding: 23px;
+    background-color: #F2F2F2;
+    border-radius: 24px;
+}
+
+.drop-container .drop-label label .MuiTypography-root {
+    margin-bottom: 0;
+    color: #083654;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+.drop-container .drop-label label .MuiRadio-root {
+    padding: 0 17px 0 0;
+}
+
+.drop-container .drop-label .MuiFormControlLabel-root { margin: 0; }
+
+.drop-label .MuiRadio-colorSecondary.Mui-checked {
+    color: #f7931e;;
+}
+
+.drop-label li:first-child { margin-right: 5rem; }
+
+.drop-container .drop-file {
+    background-color: #FFFFFF;
+    border: 2px dashed #ccc;
+    border-radius: 24px;
+    padding: 44px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6px 0 40px;
+}
+
+.shipment-select {
+    width: 192px;
+    height: 56px;
+    margin: 22px 0;
+    text-align: center;
+}
+.shipment-select input {
+    text-indent: -9999px;
+    width: 192px;
+    height: 56px;
+    top:0;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.disable-wrap label{
+    opacity: 0.4;
+}
+.shipment-button-tooltip{
+    font-size: 13px;
+}
+.shipment-select label {
+    width: 192px;
+    height: 56px;
+    border-radius: 8px;
+    margin-bottom: 0;
+    background-color: rgba(39, 162, 219, .2);
+    color: #454545;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    padding: 16px;
+    /* position: absolute; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shipment-excel {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #454545;
+    margin: 16px 0 0;
+}
+
+.shipment-download {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FD7B2F;
+    display: inline-block;
+}
+
+.shipment-download:hover {
+    color: #FD7B2F;
+    text-decoration: none;
+}
+
+@media screen and (max-width:767px) {
+    .drop-container { padding-top: 5px; }
+
+    .drop-container .drop-file {
+        padding: 35px 0;
+    }
+
+    .drop-container .drop-label label .MuiTypography-root {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .drop-label li:first-child { margin-right: 1rem; }
+}

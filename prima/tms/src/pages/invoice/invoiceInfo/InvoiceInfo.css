@@ -1,0 +1,268 @@
+.billing-info-section {
+  padding: 20px 20px;
+  background: #f9f9f9;
+}
+.payment-form .input-wrap,
+.billing-info-footer .input-wrap {
+  display: flex;
+  align-items: center;
+}
+.payment-form .d-flex,
+.billing-info-footer .d-flex {
+  display: block !important;
+  width: 35%;
+  text-align: right;
+}
+.payment-form .MuiFormControl-root,
+.total-amount {
+  margin-left: 25px;
+  flex: 0 1;
+}
+.billing-info-content .MuiInputBase-root {
+  min-width: 272px;
+}
+.billing-info .MuiInputBase-root {
+  min-width: 215px;
+}
+.rupee-sign {
+  position: relative;
+}
+.rupee-sign .input-wrap .MuiInputBase-input {
+  padding-left: 18px;
+}
+.rupee-sign .rupee-icon {
+  position: absolute;
+  left: 42%;
+  top: 24px;
+  transform: translate(-44%, -6px);
+}
+.billing-info-footer .input-wrap .total-amount-content {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+  color: #083654;
+}
+.total-amount strong {
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.44px;
+  color: #083654;
+  vertical-align: middle;
+}
+.total-amount {
+  flex: 1;
+}
+.payment-form.custom-form-row .input-wrap label {
+  position: relative;
+  margin: 0;
+}
+.payment-form .tooltip-table-wrap {
+  position: absolute;
+  top: -2px;
+  left: 44%;
+}
+
+/* bill-generate-wrap */
+.payment-form.custom-form-row .form-group {
+  margin-bottom: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #eaeff3;
+  min-height: 48px;
+}
+.payment-form.custom-form-row .input-wrap .MuiInputBase-root {
+  height: 37px;
+  border: solid 1px #cad3dd;
+  border-radius: 0;
+}
+.bill-generate-wrap .billing-info-content {
+  padding: 0;
+}
+.bill-generate-wrap .billing-info-wrapp {
+  box-shadow: none;
+}
+
+/* freight information */
+.freight-info-content ul.list-info {
+  margin: 0;
+  min-height: 48px;
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid #eaeff3;
+}
+.freight-info-content ul.list-info li {
+  padding-right: 20px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.15;
+  letter-spacing: 0.26px;
+  color: #083654;
+}
+.freight-info-content ul.list-info li + li {
+  color: #083654;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+  padding: 0;
+}
+.freight-info-content ul.list-info li .lane-item {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.freight-info-content ul.list-info li .lane-item svg {
+  font-size: 15px;
+  margin: 0 5px;
+}
+
+/*  remark */
+.billing-info-remark {
+  padding: 16px 0px 0;
+}
+.billing-info-remark label {
+  color: #768a9e;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.24px;
+  margin-bottom: 10px;
+}
+.billing-info-remark textarea {
+  width: 100%;
+  height: 69px;
+  border-radius: 4px;
+  border: 1px solid #cad3dd;
+  padding: 14px;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: 0.26px;
+  color: #083654;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.billing-info-remark textarea::placeholder {
+  color: rgba(8, 54, 84, 0.5);
+}
+/* billing-info-footer */
+.billing-info-footer {
+  background: #eaeff3;
+}
+.billing-info-footer .input-wrap {
+  margin-bottom: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #f9f9f9;
+  min-height: 48px;
+  padding-bottom: 8px;
+}
+.billing-info-footer .bill-btn-wrap {
+  width: 60%;
+  margin-left: auto;
+}
+.billing-info-footer .total-amount {
+  padding-left: 16px;
+  position: relative;
+  display: flex;
+}
+.billing-info-footer .total-amount svg {
+  color: #ed1b00;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+.billing-info-footer .fuel-surcharge .total-amount svg{
+  position: static;
+  transform: none;
+  margin-left: 3px;
+  margin-top: -4px;
+  color: #006cc9;
+  font-size: 16px;
+}
+.billing-info-footer .total-payable .total-amount-content {
+  font-size: 16px;
+}
+.billing-info-footer .total-payable .total-amount strong {
+  font-size: 20px;
+}
+
+/* billing header */
+.bill-generate-wrap .billing-info-header {
+  min-height: 53px;
+}
+
+.remark-ignore {
+  padding-bottom: 1px;
+}
+
+@media (max-width: 992px) {
+  .mb-md-20 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .billing-info-section {
+    padding: 0px 15px 15px;
+  }
+  .billing-info-header {
+    padding: 5px 15px;
+    min-height: 40px;
+  }
+  .billing-info-wrapp .MuiIconButton-root {
+    padding: 0;
+  }
+  .billing-info-header h4 {
+    font-size: 15px;
+  }
+  .freight-info-content ul.list-info li {
+    font-size: 12px;
+  }
+  .payment-form .input-wrap {
+    padding: 0 12px;
+  }
+  .payment-form .MuiFormControl-root {
+    flex: 1;
+  }
+  .billing-info-content .MuiInputBase-root {
+    min-width: inherit;
+  }
+  .rupee-sign .rupee-icon {
+    left: 49%;
+  }
+  /* .bill-generate-wrap .filter-panel .btn{
+        padding: 0;
+        margin: 0;
+    }
+    .bill-generate-wrap .filter-panel .btn svg{
+        font-size: 24px;
+    } */
+  .bill-generate-wrap .custom-form-row .input-wrap label {
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .payment-form .tooltip-table-wrap {
+    left: 12px;
+  }
+
+  .billing-info-remark {
+    padding: 15px 0px 0;
+  }
+  .billing-info-footer .bill-btn-wrap {
+    width: auto;
+    margin: auto;
+  }
+}
+@media (max-width: 320px) {
+  .payment-form .tooltip-table-wrap {
+    left: -6px;
+  }
+}
+@media (min-width: 380px) and (max-width: 767px) {
+  .payment-form .tooltip-table-wrap {
+    left: 25px;
+  }
+}

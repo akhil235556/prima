@@ -1,0 +1,144 @@
+.notification {
+    margin-right: 15px;
+}
+.menu-icon > img{
+    width: 36px;
+}
+.notification .MuiBadge-badge{
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    background: #f7931e;
+    border-radius: 50%;
+    font-size: 10px;
+}
+.notification-header{
+    padding: 15px 16px;
+    font-size: 15px;
+    color: #2b2b2b;
+    font-weight: 500;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.notification-menu .MuiMenuItem-root {
+    padding: 10px 16px;
+    border-bottom: 1px solid #e0e0e0;
+    white-space: inherit;
+    align-items: normal;
+}
+.notification-menu .MuiListItem-button:hover{
+    background-color: #ffffff;
+}
+.notification-menu .MuiMenu-list {
+    padding: 0;
+}
+.notification-menu .MuiMenu-paper {
+    border-radius: 4px;
+    top: 64px !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+    width: 320px;
+    border: 0 none;
+    max-height: inherit;
+    overflow: inherit;
+    left: auto !important;
+    right: 60px;
+}
+.notification-list{
+    max-height: 420px;
+    overflow-y: scroll;
+}
+@media (max-width:767px){
+    .notification-menu .MuiMenu-paper {
+        right: 78px;
+    }
+}
+@media (max-width:640px){
+    .notification-menu .MuiMenu-paper{
+        width: 290px;
+        right:34px;
+        top: 44px !important;
+    }
+    /* .notification {
+        margin-right: 0;
+    } */
+}
+/* .notification-menu .MuiMenu-paper::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+    top: -10px;
+    z-index: 999999999999;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+.notification-menu .MuiMenuItem-root:last-child{
+    border-bottom: none;
+}
+.un-read{
+    background-color: #F6FBF7 !important;
+    position: relative;
+}
+.un-read:before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #007CE6;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 15px;
+}
+button:focus {
+    outline: 0px dotted;
+}
+.menu-icon {
+    margin-right: 15px;
+}
+.menu-heading {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #133751;
+}
+.menu-content p{
+    margin: 4px 0 8px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #133751;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;    
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.menu-content span {
+    font-size: 12px;
+    color: #768A9E;
+}
+.view-btn{
+    padding: 16px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FF6F61;
+    letter-spacing: 0.5px;
+    display: block;
+    cursor: pointer;
+    border-top: 1px solid #e0e0e0;
+}
+.view-btn:hover{
+    color: #FF6F61;
+    text-decoration: none;
+}
+
+@media(max-width:767px){
+    .notification-menu .MuiMenu-paper::before{
+        left: 60%;
+        transform: translateX(-60%);
+
+    }
+}

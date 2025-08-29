@@ -1,0 +1,25 @@
+.auction-tooltip.tooltip-table-info .table thead th{
+    border: none;
+ }
+ .auction-tooltip.tooltip-table-info .table th:first-child{
+    border-top-left-radius: 10px;
+ }
+ .auction-tooltip.tooltip-table-info .table th:last-child{
+    border-top-right-radius: 10px;
+ }
+ .auction-tooltip.tooltip-table-info .table td:not(:last-child){
+    border-right: 1px solid #EAEFF3;
+}
+.auction-tooltip.tooltip-table-info .table td{
+   background: #fff;
+   border: none;
+}
+.auction-tooltip.tooltip-table-info .table tbody tr:not(:last-child) td{
+   border-bottom: 1px solid #EAEFF3;
+}
+.auction-tooltip.tooltip-table-info .table tbody tr:last-child td:first-child{
+   border-bottom-left-radius: 10px;
+}
+.auction-tooltip.tooltip-table-info .table tbody tr:last-child td:last-child{
+   border-bottom-right-radius: 10px;
+}

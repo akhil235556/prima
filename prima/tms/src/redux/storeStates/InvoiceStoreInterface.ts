@@ -1,0 +1,21 @@
+export interface InvoiceState {
+    openFilter: boolean,
+    selectedItem: any | undefined,
+    pagination: any,
+    listData: Array<any> | undefined,
+    openModal: boolean,
+    currentPage: number,
+    selectedTabIndex: number,
+    selectedTabName: any
+    refresh_list: boolean,
+    openPointModal: boolean,
+    loading: boolean,
+    searchQuery: string,
+    pageSize: number,
+    filterParams: any,
+    filterChips: any,
+    initialValue: any,
+    refreshPeriodicList: boolean,
+    defaultExpandRowIndex: any,
+    showSubmitButton: boolean,
+}

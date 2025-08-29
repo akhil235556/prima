@@ -1,0 +1,127 @@
+/* freight info */
+.claim-container .billing-info-wrapp{
+    margin-bottom: 20px;
+}
+.claim-container .billing-info-content {
+    padding: 0px;
+}
+.claim-container .info-row{
+    margin: 0;
+}
+.claim-container .info-row > div[class^="col-"] {
+    padding: 12px 25px 8px;
+    border-bottom: 1px solid #eaeff3;
+}
+.claim-container .payment-form.custom-form-row .form-group{
+    border-bottom: 1px solid #eaeff3;
+}
+.claim-container .freight-info-content ul.list-info{
+        min-height: initial;
+        border: none;
+}
+.claim-container .freight-info-content ul.list-info li {
+    color: #768a9e;
+    margin-bottom: 4px;
+}
+.claim-container .freight-info-content ul.list-info li + li{
+    color: #083654;
+}
+
+/* damage */
+.short-damage-row .payment-form.custom-form-row .form-group{padding: 9px 0;}
+.short-damage-row .rupee-sign .rupee-icon{top: 28px;}
+.short-damage-row .custom-form-row .input-wrap label{margin: 0;}
+
+/* epod */
+.claim-container .pod-up-row .billing-info-content{padding: 20px;}
+.upload-box{
+    border-radius: 10px;
+    border: solid 1px #eaeff3;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 12px 0;
+    color: #768a9e;
+    margin-bottom: 18px;
+}
+.upload-box p{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.upload-box p + span {
+    font-size: 10px;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.1;
+}
+
+/* uploded-pdf-row */
+.uploded-pdf-row .MuiListItem-container{
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px #eaeff3;
+    background-color: #fff;
+}
+.uploded-pdf-row .MuiListItemAvatar-root {
+    padding-right: 24px;
+}
+.uploded-pdf-row .MuiAvatar-root {
+    width: 57px;
+    height: 57px;
+    color: #f7931e;
+    background-color: rgba(247, 147, 30, 0.2);
+}
+.uploded-pdf-row .MuiListItemText-primary{
+    line-height: 1.38;
+    color: #083654;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.uploded-pdf-row .MuiListItemText-secondary{
+    color: #1fc900;
+    line-height: 1.38;
+    font-size: 13px;
+    font-weight: 500;
+}
+.uploded-pdf-row .MuiListItemText-secondary .MuiSvgIcon-root{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.MuiListItemSecondaryAction-root .MuiSvgIcon-root{
+    font-size: 25px;
+    color: rgba(118, 138, 158, 0.5);
+}
+
+@media (max-width:767px) {
+    .claim-container .info-row > div[class^="col-"] {
+        padding: 11px 15px;
+        border-bottom: 1px solid #eaeff3;
+    }
+    .claim-container .freight-info-content ul.list-info li{
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+    .claim-container .freight-info-content ul.list-info li + li{
+        font-size: 12px;
+        margin: 0;
+    }
+    .claim-container .payment-form .d-flex{ width: 37%;}
+    .claim-container .payment-form .MuiFormControl-root{
+        margin-left: 20px;
+    }
+    /* pod */
+    .claim-container .pod-up-row .billing-info-content {
+        padding: 12px 15px 4px;
+    }
+    .upload-box{margin-bottom: 10px;}
+    .uploded-pdf-row .MuiListItemAvatar-root {
+        padding-right: 15px;
+    }
+    .uploded-pdf-row .MuiAvatar-root {
+        width: 41px;
+        height: 41px;
+    }
+    .uploded-pdf-row .MuiListItem-root{padding: 2px 15px;}
+    .uploded-pdf-row .MuiListItemSecondaryAction-root{right: 25px;}
+    .uploded-pdf-row .MuiListItemText-primary{font-size: 14px;}
+}

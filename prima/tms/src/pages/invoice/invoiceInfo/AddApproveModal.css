@@ -1,0 +1,47 @@
+.contains-users{
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.15;
+    letter-spacing: 1.3px;
+    color: #768a9e;
+    display: block;
+}
+
+/* Edit Modal CSS Here */
+.approve-modal .MuiDialogActions-root{
+    padding-bottom: 24px;
+}
+.user-status{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.34px;
+    color: #083654;
+    
+}
+.edit-user-wrap{
+    margin-bottom: 16px;
+    border-bottom: 1px solid #eaeff3;
+}
+.user-status{
+    padding: 0 15px 10px;
+   
+}
+@media(min-width:767px){
+    .edit-user-wrap{
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+    .user-status{
+        padding: 0 24px 12px;
+       
+    }
+}
+@media(max-width:767px){
+    .user-status{
+        font-size: 14px;
+        font-weight: 400;
+        
+    }
+}
+

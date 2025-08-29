@@ -1,0 +1,18 @@
+/* .custom-form-row .css-yk16xz-control, .custom-form-row .css-yk16xz-control{
+        color: #073251;
+        min-height: 47px !important;
+        font-size: 16px;
+        border-radius: 4px !important;
+        border: 2px solid rgba(173,184,191,.38);
+} */
+
+
+.multi-select-chip .MuiChip-root {
+        height: auto;
+        border-radius: 50px;
+        min-height: 32px;
+}
+.multi-select-chip .MuiChip-label{
+    white-space: initial;
+    word-break: break-all;
+}

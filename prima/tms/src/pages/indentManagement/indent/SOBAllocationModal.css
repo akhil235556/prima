@@ -1,0 +1,42 @@
+.expire-contract-sob {
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+    background-color: #FEF7ED;
+    padding: 2px;
+    border: 1px solid #FFE9C2;
+    border-radius: 26px;
+}
+
+.sob-modal .table-detail-listing .table-list-view .MuiTableRow-root .MuiTableCell-body {
+    max-width: initial;
+}
+
+.sob-modal .sob-share-modify .input-wrap .MuiFormControl-root {
+    padding-bottom: 5px;
+}
+
+.sob-modal .sob-share-modify .input-wrap .MuiFormControl-root input::-webkit-input-placeholder {
+    color: #083654;
+}
+
+.sob-modal .sob-share-modify .input-wrap .MuiFormControl-root input {
+    color: #f7931e;
+}
+
+.sob-modal .MuiFormHelperText-root {
+     position: static !important;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .expire-contract-sob {
+        width: 95%;
+        padding: 5px 9px;
+    }
+
+    .sob-modal .table-detail-listing .sob-share-modify .table-list-view .MuiTableRow-root .MuiTableCell-body {
+        max-width: initial;
+    }
+}

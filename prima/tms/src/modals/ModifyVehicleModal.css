@@ -1,0 +1,12 @@
+.modify-vehicle-modal .MuiDialog-paper {
+    min-width: 480px;
+}
+.warning-modal .MuiDialog-paper .MuiDialogActions-root button.btn {
+  width: 100px;
+}
+
+@media screen and (max-width:767px) {
+    .modify-vehicle-modal .MuiDialog-paper {
+        min-width: 100%;
+    }
+}

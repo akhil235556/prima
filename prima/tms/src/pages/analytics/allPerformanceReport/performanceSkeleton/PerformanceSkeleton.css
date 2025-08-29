@@ -1,0 +1,25 @@
+.perform-skeleton .MuiSkeleton-root {
+    background-color: #eaeff3;
+    transform: none;
+    border-radius: 15px;
+}
+.perform-skeleton .perform-data h4 .MuiSkeleton-root{
+    width: 62px;
+    height: 29px;
+    margin: 0 auto 5px;
+}
+.perform-skeleton .perform-data span .MuiSkeleton-root{
+    width: 54px;
+    height: 11px;
+    margin-right: 3px;
+}
+.perform-skeleton.perform-report-content .perform-data span{
+    display: inline-block;
+    padding: 0;
+}
+
+@media (max-width:767px) {
+    .perform-skeleton .perform-data h4 .MuiSkeleton-root{
+        margin: 0;
+    }
+}

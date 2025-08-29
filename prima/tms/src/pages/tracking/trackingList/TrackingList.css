@@ -1,0 +1,476 @@
+.trip-wrapper {
+    display: flex;
+    height: 100%;
+    /* overflow: auto; */
+}
+.vehNum .vehicle_text{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 140px;
+    position: relative;
+    top: 9px;
+}
+.trip-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.trip-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.trip-wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    outline: none;
+}
+
+.trip-card,
+.trip-detail {
+    width: 350px;
+}
+
+.trip-card {
+    margin-right: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.trackingList .list-tracking {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.list-tracking .listCard {
+    display: block;
+    margin: 2px 0 10px;
+    position: relative;
+    padding: 10px 15px 8px;
+    transition: opacity 0.3s ease-in-out;
+    min-height: 150px;
+    border-radius: 14px;
+    border: solid 2px #ebeff3;
+    background-color: #f9f9f9;
+}
+
+/* status btn */
+.list-tracking .listCard .status-btn-wrap {
+    margin: 0 10px 0 0;
+    z-index: 1;
+    cursor: default;
+}
+.list-tracking .listCard .total-stat-time {
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    margin-left: 8px;
+    align-items: center;
+    padding: 3px;
+}
+
+.list-tracking .listCard .total-stat-time .MuiSvgIcon-root {
+    font-size: 16px;
+    margin-right: 4px;
+    color: #777;
+}
+
+.trackingList .clickList {
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+.trackingList .listCard.active,
+.list-tracking .listCard:hover {
+    opacity: 1;
+    background-image: linear-gradient(to bottom, #ffefdd, #ffe1db);
+    border: 2px solid transparent;
+}
+
+.trackingList .active .infoSpan span,
+.trackingList .active .detailBtn,
+.trackingList .active .tripBtn,
+.trackingList .active .toolTip,
+.trackingList .active .driverName {
+    /* z-index: 2; */
+    position: relative;
+}
+
+.trackingList .active .infoSpan span,
+.trackingList .list-tracking .active .toolTip,
+.trackingList .list-tracking .active .driverName,
+.trackingList .list-tracking .active .trip_point,
+.trackingList .listCard:hover .infoSpan span,
+.trackingList .listCard:hover .toolTip,
+.trackingList .listCard:hover .driverName,
+.trackingList .listCard:hover .trip_point {
+    color: black;
+}
+
+.list-tracking .listCard:hover .trip_ic,
+.list-tracking .listCard.active .trip_ic{
+    opacity: 0.3;
+    background-color: #a52a2a;
+    color:#fff;
+}
+
+.list-tracking .tripTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    color: #133751;
+    margin-bottom: 5px;
+}
+
+.list-tracking .tripTitle .col,
+.list-tracking .tripTitle .col-auto {
+    padding: 0;
+}
+
+.list-tracking .tripTitle .driverName {
+    font-size: 13px;
+    float: right;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.9;
+    color: rgb(58, 58, 58);
+    font-weight: 400;
+}
+
+.list-tracking .trip-li {
+    padding: 5px 0;
+    display: block;
+    margin: 0;
+    align-items: center;
+    line-height: normal;
+}
+.list-tracking .trip-li .trip-label, 
+.list-tracking .tripTitle .trip-label{
+    font-size: 9px;
+    font-weight: normal;
+    color: rgba(69, 69, 69, 0.7);
+    display: block;
+    margin-bottom: 3px;
+}
+.list-tracking .trip-li.trip-lane .trip-label{
+    line-height: 0.2;
+    margin: 0;
+}
+
+/* .list-tracking .trip-li .truncate-city-wrap .trip_point span {
+    max-width: 120px;
+    display: inline-block;
+} */
+
+.list-tracking .tripTitle .trip_time {
+    color: #083654;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    display: inherit;
+}
+.list-tracking .trip-li .col,
+.list-tracking .trip-li .col-auto {
+    padding: 0;
+    line-height: 14px;
+}
+
+.list-tracking .toolTip {
+    margin-right: 9px;
+}
+
+.list-tracking .leftT {
+    padding-left: 14px;
+}
+.list-tracking .trip-li .trip_point{
+    margin: 0;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.15;
+    color: #323232;
+}
+.list-tracking .trip-li .trip_ic{
+    font-size: 24px;
+    margin-right: 10px;
+    background: #ccc;
+    padding: 4px;
+    border-radius: 50px;
+    opacity: 0.55;
+}
+.list-tracking .trip-li .icon-span .MuiSvgIcon-root.arrow-icon {
+    font-size: 24px;
+    color: #1fc900;
+    /* margin: 0 5px; */
+    background: transparent;
+    opacity: 1;
+    padding: 4px;
+}
+.list-tracking .trip-li .MuiListItemText-root {
+    align-items: center;
+}
+
+.list-tracking .trip-li .tripL .MuiListItemText-primary {
+    font-size: 16px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.list-tracking .trip-li .tripL .MuiSvgIcon-root {
+    font-size: 14px;
+    margin-right: 5px;
+    color: #e57937;
+}
+
+.list-tracking .detailBtn {
+    margin-right: 10px;
+}
+
+.list-tracking .righT {
+    padding: 5px 15px 0px 5px;
+    text-align: right;
+}
+
+.list-tracking .righT.trip-start-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+}
+.list-tracking .trip-start-wrap .MuiFab-root{box-shadow: none;}
+.list-tracking .trip-start-wrap .MuiSvgIcon-root {
+    color: #fff;
+    opacity: 0.6;
+}
+.list-tracking  .trip-start-wrap .btn-orange .MuiSvgIcon-root {
+    opacity: 1;
+}
+.list-tracking .detailBtn .MuiSvgIcon-root {
+    font-size: 16px;
+}
+
+.detail-panel {
+    background: #ffffff;
+    height: 100%;
+}
+
+.tracking-wrapper .Tracking-View .desktop_trip_detail {
+    /* min-height: 75vh !important; */
+    position: -webkit-sticky !important;
+    position: sticky;
+    top: 0;
+    height: 100% !important;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 14px;
+    border: solid 2px #ebeff3;
+    background-color: #f9f9f9;
+    padding: 3px 0;
+}
+
+.Tracking-View .desktop_trip_detail {
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    transition: all 1.5s ease-in;
+}
+
+.trip-wrapper .search-for-vehicle {
+    width: 100%;
+    background: #ffffff;
+    margin: 0 0 7px;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 3;
+    border-radius: 3px;
+    box-shadow: rgba(51, 51, 51, 0.15) 0px 2px 4px 0px;
+}
+
+.trip-wrapper .search-for-vehicle .MuiInput-formControl::before,
+.trip-wrapper .search-for-vehicle .MuiInput-formControl::after,
+.trip-wrapper .search-for-vehicle .MuiInput-formControl:hover,
+.trip-wrapper .search-for-vehicle .Mui-focused::before,
+.trip-wrapper .search-for-vehicle .Mui-focused::after,
+.trip-wrapper .search-for-vehicle .MuiInput-underline:hover:not(.Mui-disabled):before,
+.trip-wrapper .search-for-vehicle .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border: none;
+}
+
+.trip-wrapper .search-for-vehicle .MuiInputLabel-formControl {
+    left: 15px;
+    transform: translate(0, 16px) scale(1);
+}
+
+.trip-wrapper .search-for-vehicle .MuiInputLabel-shrink {
+    transform: translate(0, 1.5px) scale(0.7);
+}
+
+.trip-wrapper .search-for-vehicle .MuiInput-formControl {
+    margin: 0;
+}
+
+.trip-wrapper .search-for-vehicle .MuiInputBase-input {
+    padding: 0 15px;
+    height: 47px;
+}
+
+.trip-wrapper .search-for-vehicle .MuiInput-underline:after {
+    border-color: #e57937;
+    box-shadow: none;
+}
+
+.search-for-vehicle .search_icon {
+    opacity: 0.2;
+}
+.li-status{
+    border-radius: 40px;
+    /* float: right; */
+}
+.li-status .status-btn{
+    padding: 0 4px;
+    background-color: rgba(0, 128, 0, 0.4) !important;
+}
+.list-tracking .listCard .li-status .status-btn .icon-cl{
+    color:  rgba(0, 128, 0, 1);
+}
+.li-status .delay-status{
+    padding: 0 4px;
+    background-color: rgba(255, 0, 0, 0.4) !important;
+}
+.list-tracking .listCard .li-status .delay-status .icon-cl{
+    color:  red;
+}
+.list-tracking .listCard .li-status .total-stat-time{
+    font-size: 11px;
+}
+.list-tracking .listCard .li-status .img-status{
+    height: auto;
+    width: 30px;
+}
+.trip-info .tooltip-table-wrap .icon-info{
+    margin-right: 5px;
+    font-size: 22px !important;
+    color:#006cc9
+}
+.list-tracking .trip-li.trip-lane .trip-info .trip-label{
+    line-height: 10px;
+}
+.tracking-tool-tip{
+    width: 100px;
+}
+
+.trip-lane-wrap{max-width: 100px;}
+
+@media (min-width:993px) and (max-width: 1024px) {
+    .trip-card,
+    .tracking-wrapper .Tracking-View .desktop_trip_detail{
+        /* flex-grow: 1; */
+        width: 50%;
+    }
+    .trip-detail{width: 100%;}
+}
+@media (max-width: 767px) {
+    .main-container .Tracking-View {
+        padding: 0;
+    }
+    .list-tracking .detailBtn {
+        margin-right: 4px;
+    }
+
+    .mobile_trip_detail {
+        display: none;
+    }
+
+    .trip-card {
+        margin: 0;
+    }
+
+    #wrapper .main-page {
+        width: 100%;
+        display: block !important;
+    }
+    .trip-wrapper {
+        width: 100%;
+        display: block;
+    }
+
+    .tracking-wrapper .Tracking-View .desktop_trip_detail {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1026;
+        height: 100%;
+        overflow-y: scroll;
+        padding-bottom: 50px;
+        display: table;
+        width: 100%;
+    }
+
+    .modal_trip_route_detail {
+        background: #ffffff;
+    }
+
+    .trip-detail {
+        position: relative;
+        padding-bottom: 50px;
+        height: 100%;
+        overflow-y: scroll;
+        background-color: #f9f9f9;
+        padding: 0 15px;
+    }
+
+    .trip-detail .MuiTypography-root {
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .Tracking-View .trackingView {
+        position: relative;
+    }
+
+    .trip-card,
+    .trip-detail {
+        width: 100%;
+    }
+
+    .modal_trip_route_detail .view-map-button {
+        padding: 10px;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #ffffff;
+        background: linear-gradient(to right, #f7931e, #de5811);
+        z-index: 9;
+    }
+
+    .list-tracking .trip-li .truncate-city-wrap .trip_point span {
+        max-width: 135px;
+    }
+
+}

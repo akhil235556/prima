@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package com.gobolt.tms.planning.health;
+
+message HealthResponse {
+    string message = 2;
+}

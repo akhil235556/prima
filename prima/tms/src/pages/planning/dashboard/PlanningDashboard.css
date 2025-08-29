@@ -1,0 +1,106 @@
+.planning-head {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.17;
+    text-align: center;
+    color: #768a9e;
+}
+.dispatch-card-wrap {
+    padding: 0px 0px 15px;
+}
+.customize-day{
+    margin-right: 19px;
+    flex: 1;
+}
+.customize-day .autocomplete-wrap label{
+    display: none;
+}
+
+.planning-select-days {
+    padding: 35px 80px 60px;
+    background: #fff;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.planning-select-days .select-head {
+    margin-bottom: 35px;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1.17;
+    color: #797979;
+}
+
+.cross-icon svg {
+    font-size: 30px;
+    color: rgba(237, 27, 0, 0.9);
+    cursor: pointer;
+}
+
+.plan-form-row .customize-btn {
+    min-width: 248px;
+    background: transparent;
+    background-color: #eaeff3;
+    height: 47px;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #083654;
+    font-weight: normal;
+}
+.plan-form-row .customize-btn svg{
+    color: rgba(0, 108, 201, 0.8);
+}
+.calendar-icon {
+    position: absolute;
+    top: 13px;
+    right: 30px;
+}
+.calendar-icon .MuiSvgIcon-root {
+    color: rgba(0, 108, 201, 0.8);
+    font-size: 20px;
+}
+/* .plan-form-row .select-container .select__control{
+    border: solid 2px #2172c3;
+    background-color: #f9f9f9;
+} */
+.show-filter-collapse .custom-date-picker .MuiInput-root{
+    background-color: #ffffff;
+}
+
+@media(max-width:992px){
+    .card-space{
+        margin-bottom: 15px;
+    }
+}
+@media(min-width:768px){
+    .dispatch-planning-wrapper .dispatch-card-wrapper {
+        padding: 15px 15px 0;
+    }
+}
+@media(max-width:767.98px){
+    .dispatch-card-wrap{
+        padding: 0px 0px 7px;
+    }
+    .planning-select-days{
+        padding: 20px 15px;
+    }
+    .planning-select-days .select-head {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .customize-day {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .plan-form-row .customize-btn{
+        margin-bottom: 15px;
+        min-width: 100%;
+        font-size: 16px;
+    }
+    .show-filter-collapse .custom-date-picker .MuiInput-root{
+        margin-bottom: 15px;
+    }
+    .show-filter-collapse .pr-1{
+        padding-right: 15px !important;
+    }
+}

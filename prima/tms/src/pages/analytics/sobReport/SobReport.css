@@ -1,0 +1,130 @@
+.sob-report-wrapper.analytics-report .dispatch-card-wrapper {
+    padding: 15px 0;
+}
+/* sob graph */
+.sob-report-graph {
+    min-height: 380px;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+.sob-list ul li{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.15;
+    color: #454545;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.sob-list ul li:last-child{margin: 0;}
+.sob-list ul li span{
+    width: 12px;
+    height: 12px;
+    border: solid 1px #707070;
+    background-color: #004586;
+    margin-right: 7px;
+}
+.sob-tabs-wrap{
+    padding: 0px 15px 15px;
+}
+/* sob tabs */
+.sob-tabs-wrap .MuiTabs-root{
+    margin: 0 -15px;
+    background: #fff;
+    padding: 0 15px;
+}
+.sob-tabs-wrap .MuiTab-root{
+    max-width: initial;
+    color: #083654;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.18;
+    text-transform: capitalize;
+    opacity: 1;
+}
+.sob-tabs-wrap .MuiTab-root.Mui-selected{
+    color: #f7931e;
+}
+.sob-tabs-wrap .MuiTabs-indicator{background: #f7931e;}
+
+/* graph-not-found */
+.graph-not-found p{
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #768a9e;
+    margin: 20px 0 0;
+}
+
+.analytics-report .sob-report-list .table-list-view .table-wrapper {
+    max-height: 600px;
+    min-height: 600px;
+}
+
+@media screen and (max-width:767px){
+    .sob-report-wrapper .filter-panel{margin-bottom: 0px;}
+    .sob-tabs-wrap .MuiTabs-root {
+        background: transparent;
+        padding: 0;
+        border-bottom: solid 1px #eaeff3;
+    }
+    .sob-tabs-wrap .MuiTab-root {
+        max-width: 124px;
+        font-size: 11px;
+        font-weight: 500;
+        padding: 6px 10px;
+    }
+    .sob-report-graph {
+        min-height: initial;
+        padding: 10px 0;
+    }
+    .sob-report-graph img{width: 100%;}
+    .sob-tabs-wrap .MuiTabs-flexContainer {
+        overflow-y: scroll;
+    }
+    .sob-report-wrapper .transporter-list-row{
+        min-height: 42px;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        padding: 4px 4px 4px 15px;
+        position: relative;
+        margin-bottom:10px;
+    }
+    .transporter-list-row .col span{
+        font-size: 13px;
+        font-weight: 500;
+        color: #083654;
+    }
+    .transporter-list-row .btn{height: 37px;}
+    .sob-modal .MuiDialogContent-root{ 
+        padding: 0px;
+    }
+    .sob-modal .MuiDialog-paperScrollPaper{
+        box-shadow: none;
+    }
+    .sob-list ul li{
+        padding: 10px 15px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #eaeff3;
+        display: block;
+    }
+    .sob-list ul li span{
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -1px;
+    }
+    .sob-list ul li strong{
+        font-weight: normal;
+    }
+}
+@media screen and (min-width:380px) and (max-width:767px){
+    .sob-tabs-wrap .MuiTab-root {
+        max-width: 135px;
+        font-size: 12px;
+        font-weight: normal;
+        padding: 6px 10px;
+    }
+}

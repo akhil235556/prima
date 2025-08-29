@@ -1,0 +1,50 @@
+.contract-detail-modal.custom-modal .MuiDialogContent-root,
+.contract-detail-modal.custom-modal .contract-card-wrap .creat-contract-content{padding: 0;}
+.contract-detail-modal.custom-modal .MuiCard-root{
+    box-shadow: none;
+}
+.contract-detail-modal.custom-modal .MuiCard-root:not(:first-child){
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.contract-detail-modal.custom-modal .MuiDialogActions-root{
+    padding: 0;
+}
+.contract-card-wrap .billing-info-header {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eaeff3;
+}
+.contract-card-wrap .billing-info-header h4{
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    color: #768a9e;
+}
+.contract-card-wrap .billing-info-header h4 span{
+    font-weight: 500;
+    color: #083654;
+    margin-left: 3px;
+}
+.contract-card-wrap .billing-info-header .MuiCardHeader-avatar{
+    order: 1;
+}
+.contract-card-wrap .billing-info-header .MuiCardHeader-avatar .MuiSvgIcon-root{
+    cursor: pointer;
+    color: #083654;
+}
+.contract-detail-modal .table-detail-listing .MuiTableRow-root .MuiTableCell-head{
+    border-top: 1px solid #ebeff3;
+}
+.contract-detail-info-wrap .table-detail-listing .MuiTableRow-root .MuiTableCell-root{
+    height: 35px;
+    min-width: 200px;
+}
+.contract-detail-modal .table-detail-listing{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+@media (max-width:767px) {
+    .contract-detail-info-wrap .table-detail-listing .MuiTableRow-root .MuiTableCell-root{
+        min-width: 90px;
+    }
+}

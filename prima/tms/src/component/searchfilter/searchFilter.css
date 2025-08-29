@@ -1,0 +1,121 @@
+/* .search-filter-wrapp{
+    padding: 0 20px;
+    background-color: #f9f9f9;
+    position: relative;
+    border-bottom: 1px solid #eaeff3;
+    display: flex;
+    align-items: center;
+}
+.search-filter-wrapp .input-wrap .MuiInputBase-root {
+    height: 40px;
+    border: none;
+    background-color: transparent;
+}
+.search-filter-wrapp .input-wrap .MuiInputBase-input {
+    font-size: 14px;
+    color: #133751;
+}
+.search-box{
+    flex: 1;
+}
+.search-filter-wrapp .input-wrap .MuiInputBase-input ::placeholder{
+    color: #133751;
+}
+.search-filter-wrapp .MuiSvgIcon-root{
+    font-size: 18px;
+    color: #768a9e;
+}
+.close-icon{
+    cursor: pointer;
+}
+.check-list-wrapp{
+    border: 1px solid #eaeff3
+}
+.check-list-wrapp .MuiTypography-root{
+    font-size: 15px;
+    color: #133751;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.check-list-wrapp .MuiList-padding, .check-list-wrapp .MuiCheckbox-root, .role-permission-wrapp .MuiBox-root{
+    padding: 0;
+}
+.check-list-wrapp .MuiListItem-gutters {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.check-list-wrapp .MuiListItem-dense {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeff3;
+}
+
+.check-list-wrapp .MuiListItemIcon-root {
+    min-width: 40px;
+}
+.check-list-wrapp .MuiCheckbox-root{
+    color: transparent;
+}
+ .check-list-wrapp .assign-permission{
+    background-color: #f9f9f9 !important;
+    font-size: 15px;
+    line-height: 1.2;
+    border-bottom: 1px solid #eaeff3;
+}
+.check-list-wrapp .assign-permission .MuiTypography-root{
+    color: #006cc9;
+} 
+
+@media(max-width:767px){
+    .role-permission-wrapp .MuiBox-root{
+        padding: 0;
+        width: 100%;
+    }
+    .role-permission-wrapp .check-list-wrapp .MuiList-padding{
+        width: 100%;
+    }
+    .check-list-wrapp .MuiListItem-gutters, .search-filter-wrapp {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .check-list-wrapp .MuiTypography-root{
+        font-size: 14px;
+    }
+    .check-list-wrapp .MuiListItemIcon-root{
+        min-width: 34px;
+    }
+    .check-list-wrapp .assign-permission .MuiSvgIcon-root{
+        color: #006cc9;
+        font-size: 20px;
+    }
+} */
+
+.search-filter-wrap {
+  background-color: #ffffff;
+  padding: 8px 5px 16px;
+  box-shadow: 0px 1px 3px #0000000d;
+  position: relative;
+}
+.filter-label {
+  font-size: 14px;
+  line-height: 1.14;
+  color: #768a9e;
+}
+.search-filter-wrap .input-wrap .MuiInputBase-root {
+  height: 40px;
+  padding: 0 13px;
+  border: 2px solid #dfe6eb;
+  width: 100%;
+  color: #083654;
+  font-size: 14px;
+}
+.search-filter-wrap .select-container .select__control {
+  min-height: 37px;
+  width: 100%;
+  color: #083654;
+  font-size: 14px;
+  border: 2px solid #dfe6eb;
+}
+.search-filter-wrap .select-container .select__dropdown-indicator {
+  color: #acb6c0;
+}

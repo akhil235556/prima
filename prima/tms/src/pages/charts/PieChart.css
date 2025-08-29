@@ -1,0 +1,13 @@
+.graph-wrap{
+    margin-top: 7px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+.graph-info{
+    margin-top: 15px;
+    background: #0d3654;
+}
+.graph-info .col{
+    color: #fff;
+    padding: 10px;
+}

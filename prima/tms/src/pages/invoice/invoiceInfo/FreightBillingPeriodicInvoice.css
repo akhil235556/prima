@@ -1,0 +1,12 @@
+.remark-total {
+  background-color: #fff;
+  margin: 30px 0;
+}
+.remark-total textarea {
+  background-color: #fff;
+}
+
+.total-bill-wrapp .btn {
+  height: 45px;
+}
+.total-bill-wrapp .custom-form-row .form-group { margin-bottom: 5px; }

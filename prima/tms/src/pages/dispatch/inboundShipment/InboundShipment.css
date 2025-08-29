@@ -1,0 +1,28 @@
+.shipment-checkbox{
+    justify-content: inherit;
+}
+.shipment-checkbox .custom-checkbox.MuiCheckbox-root{
+    padding: 0;
+    margin-right: 10px;
+}
+.shipment-checkbox .custom-checkbox.MuiCheckbox-colorSecondary.Mui-checked{
+    color: #f7931e;
+}
+.shipment-checkbox{
+    padding: 8px 20px;
+}
+.material-tool-tip .info-heading{
+    display: flex;
+    align-items: center;
+}
+.material-tool-tip .tooltip-table-wrap .icon-info{
+    font-size: 18px;
+    color: #f7931e;
+    margin-left: 4px;
+}
+
+@media(max-width:767px){
+    .shipment-checkbox{
+        padding: 8px 15px;
+    }
+}

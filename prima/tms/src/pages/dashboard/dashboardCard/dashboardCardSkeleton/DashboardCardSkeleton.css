@@ -1,0 +1,41 @@
+.dashbaord-skeleton-wrapper .MuiSkeleton-root {
+    background-color: #f9f9f9;
+    transform: none;
+}
+.dashbaord-skeleton-wrapper .progress-card-row .progress-card{
+    background: #eaeff3;
+    box-shadow: none;
+    border-radius: 10px;
+    min-height: 165px;
+    display: flex;
+    align-items: center;
+}
+.dashbaord-skeleton-wrapper .MuiListItemIcon-root{padding-right: 30px;}
+.dashbaord-skeleton-wrapper .MuiListItemIcon-root .MuiSkeleton-circle {
+    width: 123px;
+    height: 123px;
+}
+.dashbaord-skeleton-wrapper .card-head .MuiSkeleton-root{
+    height: 22px;
+    border-radius: 15px;
+    margin-bottom: 23px;
+}
+.dashbaord-skeleton-wrapper .card-content h3 .MuiSkeleton-root{
+    height: 17px;
+    border-radius: 15px;
+    width: 58px;
+}
+.dashbaord-skeleton-wrapper .card-content .MuiSkeleton-root{
+    height: 10px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .dashbaord-skeleton-wrapper .progress-card-row .progress-card{
+        margin-bottom: 10px;
+    }
+    .dashbaord-skeleton-wrapper .MuiListItemIcon-root .MuiSkeleton-circle {
+        width: 112px;
+        height: 112px;
+    }
+}

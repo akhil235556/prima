@@ -1,0 +1,10 @@
+.freight-order-modal .MuiDialogContent-root, .freight-order-modal .MuiDialogActions-root {
+    padding: 0;
+}
+.freight-order-modal .order-detail-wrapper .billing-group .info-heading{
+    display: flex;
+    align-items: center;
+}
+.freight-order-modal .order-detail-wrapper .billing-group .info-heading span{
+    margin-left: 2px;
+}

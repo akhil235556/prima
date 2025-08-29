@@ -1,0 +1,38 @@
+/* .search-filter-wrap{
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    padding: 7px 5px 18px;
+}
+.filter-label{
+    font-size: 14px;
+    line-height: 1.14;
+    color: #768a9e;
+}
+.search-filter-wrap .input-wrap .MuiInputBase-root {
+    height: 40px;
+    padding: 0 13px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.16);
+    border: 2px solid #fff;
+    width: 100%;
+    color: #083654;
+    font-size: 14px;
+}
+.search-filter-wrap .select-container .select__control{
+    min-height: 37px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.16);
+    border: 2px solid #fff;
+    width: 100%;
+    color: #083654;
+    font-size: 14px;
+}
+.search-filter-wrap .select-container .select__dropdown-indicator {
+    color: #acb6c0;
+} */
+.freight-listing-wrapper .table-list-view .table-wrapper {
+    min-height: 545px;
+    max-height: 545px;
+}
+
+.search-btn .btn-orange, .search-btn .btn-blue {
+    margin-top: 5px;
+}

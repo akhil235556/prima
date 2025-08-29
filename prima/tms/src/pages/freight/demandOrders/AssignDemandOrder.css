@@ -1,0 +1,58 @@
+.slisting-soNum {
+    max-width: 140px;
+    display: block;
+}
+.assign-fright .assign-order{
+    padding: 0;
+}
+.assign-fright .creat-contract-wrapp .creat-contract-content{
+    padding: 30px 40px 15px;
+    border: 1px solid #CFD6DC;
+}
+.dispatch-card-wrapper .assign-fright .creat-contract-wrapp{
+    box-shadow: none;
+}
+
+.assign-fright .search-filter-wrap{
+    background-color: transparent;
+    box-shadow: none;
+}
+.assign-fright .search-filter-wrap .col-auto{
+    padding: 0;
+}
+.assign-fright .tab-nav .MuiTab-root{
+    color: #083654;
+    font-size:16px;
+}
+.assign-fright .tab-nav .MuiTab-textColorInherit.Mui-selected{
+    color: #f7931e;
+}
+.assign-fright .freigh-tab{
+    border: 1px solid #CFD6DC;
+    padding:10px 20px;
+}
+.tab-table .MuiBox-root{
+    padding:0;
+}
+@media(max-width:767px){
+    .assign-fright .freigh-tab{
+        border:none;
+        padding:0;
+    }
+    .assign-fright .assign-order{
+        margin-bottom: 0;
+    }
+    .assign-fright .creat-contract-wrapp .creat-contract-content{
+        border:none;
+        padding:13px 10px 0;
+    }
+    .assign-demand-order .filter-panel {
+        margin-bottom: 0;
+    }
+    .assign-fright .tab-table{
+        padding:15px;
+    }
+    .assign-demand-order .dispatch-card-wrapper{
+        padding: 0;
+    }
+}

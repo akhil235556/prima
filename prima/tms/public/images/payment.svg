@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123" height="123" viewBox="0 0 123 123">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#006cc9"/>
+      <stop offset="1" stop-color="#145288"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_3923" data-name="Group 3923" transform="translate(-1017 -122)">
+    <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(1017 122)" stroke="#ebeff3" stroke-width="1" opacity="0.1" fill="url(#linear-gradient)">
+      <circle cx="61.5" cy="61.5" r="61.5" stroke="none"/>
+      <circle cx="61.5" cy="61.5" r="61" fill="none"/>
+    </g>
+    <g id="rupee_1_" data-name="rupee (1)" transform="translate(1017.099 119.643)">
+      <path id="Path_6345" data-name="Path 6345" d="M222.9,168.239h-6.888a12.371,12.371,0,0,0-2.448-4.12H222.9a2.06,2.06,0,1,0,0-4.12H194.059a2.06,2.06,0,1,0,0,4.12h10.3a8.243,8.243,0,0,1,7.132,4.12H194.059a2.06,2.06,0,1,0,0,4.12H212.6a8.249,8.249,0,0,1-8.239,8.239h-10.3a2.06,2.06,0,0,0-1.582,3.379l20.6,24.718a2.06,2.06,0,0,0,3.165-2.638l-17.783-21.339h5.9a12.373,12.373,0,0,0,12.359-12.359h6.18a2.06,2.06,0,1,0,0-4.12Z" transform="translate(-147.399 -120.594)" fill="#006cc9"/>
+    </g>
+  </g>
+</svg>

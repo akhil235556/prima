@@ -1,0 +1,57 @@
+.order-detail-wrapper .custom-form-row{margin: 0;}
+.order-detail-wrapper .billing-group {
+    margin-bottom: 0;
+    padding: 12px 20px 8px;
+    border-bottom: 1px solid #eaeff3;
+}
+.order-detail-wrapper .creat-contract-wrapp .creat-contract-content{
+    padding: 0;
+}
+.shipment-order-wrapper .custom-form-row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.shipment-modal-line{
+    margin: 0 -25px 15px;
+    height: 1px;
+    background-color: #eaeff3;
+}
+.pr-15 .material-detail .pr-0{
+    padding-right: 15px !important;
+}
+.labelWidth .vehicle-info div p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    width: 200px;
+    margin-bottom: 0;
+}
+
+
+@media (max-width:767px) {
+    .order-detail-wrapper .billing-group {
+        padding: 11px 15px;
+    }
+    .labelWidth .vehicle-info div { max-width: 100px;}
+    .order-detail-wrapper .info-heading{font-size: 10px;}
+    .order-detail-wrapper .vehicle-info .media-body,
+    .lane-wrap .lane-content-mobile{
+        max-width: 138px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .shipment-modal-line {
+        margin: 15px -15px 15px;
+    }
+    .pr-15 .material-detail .pr-0{
+        padding-right: 0 !important;
+    }
+}
+
+.vehicle-info .view-text svg.MuiSvgIcon-root {
+    min-width: 16px;
+    margin-right: 6px;
+    color: #006cc9;
+}
+

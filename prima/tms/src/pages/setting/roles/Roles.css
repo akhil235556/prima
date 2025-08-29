@@ -1,0 +1,10 @@
+.permission-form label{
+    display: none !important;
+}
+.form-space{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.roles-table .table-list-view th:first-child, .roles-table .table-list-view td:first-child {
+    width: 90%;
+}

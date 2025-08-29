@@ -1,0 +1,16 @@
+import { createTypes } from 'reduxsauce'
+
+
+export default createTypes<any>(`
+    SHOW_LOADING
+    HIDE_LOADING
+    BILLING_CYCLE_LIST
+    CHARGES_LIST
+    VARIABLE_LIST
+    USER_PARAMS
+    CONTRACT_DETAILS
+    SHOW_CONTRACT_DETAILS
+    SHOW_FREIGHT_DETAILS
+    CLEAR_USER_PARAMS
+    CHARGE_TYPE
+`);

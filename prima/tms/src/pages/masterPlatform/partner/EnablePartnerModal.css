@@ -1,0 +1,14 @@
+.bg-darkgrey{
+    background-color: #EBF0F4;
+}
+.add-contact-details{
+    width:100%;
+    height:40px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.add-contact-details--heading{
+    color:#083654;
+    font-size: 16px;
+    margin: 0;
+}

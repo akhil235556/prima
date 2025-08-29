@@ -1,0 +1,30 @@
+.receive-form-wrap .input-wrap .MuiInputBase-root{
+    height: 38px;
+}
+.receive-form-wrap .input-wrap .Mui-disabled{
+    background-color: #f9f9f9;
+}
+.product-info .MuiSvgIcon-root {
+    margin-left: 4px;
+    margin-bottom: 4px;
+    color: #f7931e;
+    font-size: 18px;
+}
+.agn-table-list .table-wrapper{
+    min-height: auto;
+}
+
+/* Forecast Table List */
+.inventory-table-list .table-list-view .MuiTable-root{
+    table-layout: fixed;
+}
+.inventory-table-list .table-list-view .MuiTable-root th:last-child,
+.inventory-table-list .table-list-view .MuiTable-root td:last-child{
+    width: 110px;
+}
+@media (max-width:767.98px){
+    .receive-form-wrap .input-wrap .MuiInputBase-root{
+        height: 36px;
+        margin-right: 0;
+    }
+}

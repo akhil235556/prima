@@ -1,0 +1,61 @@
+.date-list{
+    display: flex;
+    justify-content: space-between;
+}
+.custom-label{
+    padding-right: 0;
+    text-align: right;
+    padding-top: 16px;
+    margin-right: 8px;
+    margin-left: 10px;
+}
+.date-list .custom-date-picker{
+    position: relative;
+}
+.date-list .custom-date-picker .MuiInputBase-input{text-align: center;}
+.date-icon{
+    position: absolute;
+    left: 15px;
+    top: 9px;
+    color: gray;
+    height: 20px;
+    width: 20px;
+}
+.date-list .custom-date-picker .MuiInput-root {
+    height: 40px;
+    width: 130px;
+
+}
+
+.date-list .MuiSvgIcon-root{font-size: 15px !important;}
+.date-list .custom-date-picker .MuiInputBase-input{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.pl-3{position: relative;padding-left: 0 !important;}
+@media (max-width:767.98px) {
+    .date-list{margin-bottom: 12px;}
+    .date-list .custom-date-picker .MuiInput-root {
+        height: 33px;
+        width: 115px;
+    
+}
+.pl-3{padding-left: 3px !important;}
+.date-icon {
+    top: 6px;
+    height: 10px;
+    width: 10px;
+    left: 10px;
+}
+.custom-label {
+    padding-top: 9px;
+    margin: 0 !important;
+}
+
+.date-list .custom-date-picker .MuiInputBase-input{font-size: 12px;}
+.date-list button {
+    margin-top: 0;
+    height: 33px;
+}
+}

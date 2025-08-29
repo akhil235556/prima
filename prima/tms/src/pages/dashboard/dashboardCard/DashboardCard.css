@@ -1,0 +1,96 @@
+.progress-card-row .progress-card {
+    min-height: 150px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    display: flex;
+    padding: 0;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.progress-card-row .gray-card {
+    background-image: linear-gradient(to bottom, rgba(124, 124, 124, 0.05), rgba(50, 50, 50, 0.05)) !important;
+}
+
+.progress-card-row .orange-card {
+    background-image: linear-gradient(to bottom, rgba(247, 147, 30, 0.05), rgba(247, 63, 30, 0.05)) !important
+}
+
+.progress-card-row .blue-card {
+    background-image: linear-gradient(to bottom, rgba(0, 108, 201, 0.05), rgba(20, 82, 136, 0.05)) !important;
+}
+
+.progress-card .MuiListItemIcon-root {
+    padding-right: 25px;
+}
+.progress-card .MuiListItemIcon-root img{
+    width: 105px;
+}
+
+.progress-card .card-head {
+    font-size: 18px;
+    font-weight: 500;
+    color: #083654;
+}
+
+.progress-card .card-content {
+    margin-top: 35px;
+}
+
+.progress-card .card-content h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #083654;
+    margin: 0;
+}
+
+.progress-card .card-content span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #133751;
+    display: block;
+    line-height: 1.17;
+    margin-top: 5px;
+}
+/* .progress-card-row .blue-card .card-content h3.green-text{
+    font-size: 17px;
+}
+.progress-card-row .blue-card .card-content h3.orange-text{
+    font-size: 15px;
+} */
+
+@media screen and (max-width:767px) {
+    .progress-card-row .progress-card{
+        min-height: 140px;
+        margin-bottom: 10px;
+    }
+    .progress-card .card-head{font-size: 16px;}
+    .progress-card .MuiListItemIcon-root img{
+        width: 82px;
+    }
+    .progress-card .card-content {
+        margin-top: 15px;
+    }
+    .progress-card .card-content h3{font-size: 22px;}
+    .progress-card-row .blue-card .card-content h3.green-text {
+        font-size: 15px;
+    }
+    .progress-card-row .blue-card .card-content h3.orange-text {
+        font-size: 13px;
+    }
+}
+@media (min-width:768px) and (max-width:1023px) {
+    .progress-card-row .progress-card { min-height: 120px;}
+    .progress-card .MuiListItemIcon-root {padding-right: 15px;}
+    .progress-card .MuiListItemIcon-root img {width: 80px;}
+    .progress-card .card-head{font-size: 16px;}
+    .progress-card .card-content{margin-top: 15px;}
+}
+@media (min-width:1024px) and (max-width:1100px) {
+    .progress-card-row .progress-card { min-height: 130px;}
+    .progress-card .MuiListItemIcon-root {padding-right: 15px;}
+    .progress-card .MuiListItemIcon-root img {width: 80px;}
+    .progress-card .card-head{font-size: 15px;}
+    .progress-card .card-content{margin-top: 15px;}
+    .progress-card .card-content span{font-size: 11px;}
+}

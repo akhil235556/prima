@@ -1,0 +1,100 @@
+.push-notification-header {
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #ebeff3;
+}
+.push-notification-heading h3{
+    margin-bottom: 0px;
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.17;
+    color: #083654;
+    font-weight: normal;
+}
+.content-text{
+    margin-top: 13px;
+    margin-bottom: 0;
+    line-height: 1.14;
+    color: #768a9e;
+}
+.push-notification-wrapp {
+    padding: 16px 20px;
+}
+.turn-on{
+    padding-bottom: 30px;
+}
+.turn-on h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #083654;
+}
+.on-notification-heading{
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.17;
+    color: #133751;
+}
+.pr-35{
+    padding-right: 35px;
+}
+.pl-35{
+    padding-left: 35px;
+}
+/* Swittch Button CSS */
+.custom-switch .MuiSwitch-root {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 26px;
+    border-radius: 30px;
+}
+.custom-switch .MuiSwitch-track{
+    background: #768a9e;
+    opacity: 1;
+}
+.custom-switch .MuiSwitch-switchBase{
+    padding: 3px;
+}
+.custom-switch .MuiSwitch-switchBase.Mui-checked {
+    transform: translateX(14px);
+}
+.custom-switch .MuiSwitch-colorSecondary.Mui-checked {
+    color: #ffffff;
+}
+.custom-switch .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+    background-color: #f3933d;
+    opacity: 1;
+}
+/* Swittch Button CSS End */
+
+
+@media (max-width:767.98px){
+    .push-notification-header {
+        padding: 0 15px 16px;
+        margin-bottom: 0;
+    }
+    .push-notification-wrapp {
+        padding: 0;
+        margin: 0 -15px 0;
+    }
+    .on-notification-heading{
+        font-size: 15px;
+    }
+    .turn-on{
+        margin-top: 16px;
+        padding: 0 15px;
+    }
+    .content-text{
+        margin-top: 10px;
+        font-size: 11px;
+    }
+    .pr-35{
+        padding-right: 15px;
+    }
+    .pl-35{
+        padding-left: 15px;
+    }
+}

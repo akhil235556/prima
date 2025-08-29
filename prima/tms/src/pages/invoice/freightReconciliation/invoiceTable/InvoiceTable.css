@@ -1,0 +1,268 @@
+
+/* Generate Invoice New Layout */
+.invoice-table-wrap {
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .invoice-table-wrap .table-scroll-container {
+    position: relative;
+    overflow: hidden;
+    border: none;
+  }
+  .invoice-table-wrap .table-scroll-area{
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: auto;
+    margin-bottom: 0;
+    width: 100%;
+    border: none;
+    border-collapse: separate;
+  }
+  .table-list-invoice {
+    border: none;
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0 30px;
+  }
+  .table-list-invoice .table-info{
+    display: table-caption;
+    vertical-align: middle;
+    border-color: inherit;
+    margin: -6px 0 0;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    /* height: 54px; */
+  }
+  .table-list-invoice .table-info .list-inline-item.li-checkBox{
+      min-width: 30px;
+      display: inline-flex;
+      align-items: center;
+      margin-right: 4px;
+  }
+  .table-list-invoice .table-info .list-inline-item.li-checkBox .MuiButtonBase-root{
+      padding: 4px;
+  }
+  .table-list-invoice .table-info .list-inline-item.li-checkBox .MuiSvgIcon-root{
+      font-size: 22px;
+  }
+  .table-list-invoice .table-info .list-inline-item{
+      padding: 0px 5px;
+      margin-right: 10px;
+      line-height: normal;
+      /* min-width: 100px; */
+  }
+  .table-list-invoice .table-body {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+  .table-list-invoice .table-li-body {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  .table-list-invoice .table-li-body.rowError{
+      border-bottom: solid 2px red;
+  }
+  .table-list-invoice .table-li-body .li-item {
+    padding: 8px 5px 8px;
+    height: 70px;
+    font-size: 17px;
+    font-weight: 500;
+    display: table-cell;
+    vertical-align: inherit;
+    white-space: nowrap;
+    color: #083654;
+    background: #ffffff;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    line-height: normal;
+    /* min-width: 146px; */
+  }
+  .table-li-body .input-wrap .MuiInputBase-root {
+    height: 36px;
+    border-radius: 0;
+    border: solid 1px #eaeff3;
+    background-color: #ffffff;
+    padding: 0 8px;
+    margin-right: 0;
+}
+.table-li-body .input-wrap label{
+    font-size: 12px;
+    font-weight: normal;
+}
+  .table-info .list-inline-item .key{
+      display: block;
+      color: #acb6c0;
+      font-size: 10px;
+      padding: 0px 0 4px;
+      line-height: 1.1;
+  }
+  .table-info .list-inline-item .value{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.24px;
+    color: #083654;
+  }
+  .table-list-invoice .table-li-body .li-item:nth-child(1){
+    border-radius: 0px;
+  }
+  .table-list-invoice .table-li-body .li-item:nth-child(even){
+    background: #f9f9f9;
+  }
+  .table-list-invoice .table-info .MuiSvgIcon-root{
+      font-size: 14px;
+      color: #006cc9;
+      margin-right: 2px;
+  }
+
+  .gray-text{
+    color: #BABABA !important;
+}
+.table-list-invoice .table-info .gray-text .MuiSvgIcon-root{
+    color: #BABABA;
+}
+.table-info .blue-text{
+    cursor: pointer;
+}
+.table-info .gray-text{
+    cursor: default;
+}
+
+  .table-list-invoice .table-info .text{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 120px;
+      display: inline-block;
+  }
+
+  /* .table-list-invoice .table-info .col,
+  .table-list-invoice .table-info .col-auto{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 150px;
+      margin-right: 5px;
+  } */
+  .table-list-invoice .tbody-input .MuiInputBase-root{
+      border: solid 1px #aebbc5;
+      background-color: #ffffff;
+      padding: 3px 5px;
+  }
+  .invoice-table-wrap .table-li-body .tbody-input .Mui-disabled {
+    background: transparent;
+    border: none;
+  }
+
+  .table-list-invoice .tbody-input .MuiInput-input{
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8)
+  }
+  .table-list-invoice .tbody-input img{
+      height: 12px;
+  }
+  .table-list-invoice .tbody-input svg{
+      height: 16px;
+  }
+  .table-list-invoice .MuiInput-underline:before{
+      display: none;
+  }
+  .table-list-invoice .MuiInput-underline:after{
+      border-bottom: 2px solid #f7931e;
+  }
+  .table-list-invoice .li-right{
+      float: right;
+  }
+  .total-value .li-item{
+      border-top: solid 2px #f7931e;
+  }
+  .check-all-list {
+      padding: 0;
+      margin: 10px 0 0;
+      display: inline-block;
+      align-items: center;
+  }
+  .check-all-list .MuiCheckbox-root{
+      padding: 0;
+      padding-left: 5px;
+      padding-right: 9px;
+  }
+  .invoice-table-wrap .tooltip-wrap{
+      display: inline-block;
+  }
+  
+  @media (max-width: 767px){
+      .invoice-table-wrap {
+          padding-left: 10px;
+      }
+      .invoice-table-wrap .table-scroll-container {
+          margin-right: -15px;
+          margin-left: -15px;
+          width: initial !important;
+      }
+      .table-list-invoice .table-info{
+          width: initial;
+      }
+      .table-list-invoice .li-right{
+          float: none;
+      }
+      .invoice-table-wrap .table-scroll-area{
+          overflow: initial;
+      }
+      .invoice-table-wrap .table-scroll-container {
+          position: relative;
+          border: none;
+          overflow: hidden;
+          overflow-x: scroll;
+          white-space: nowrap;
+          width: calc(100%);
+      }
+      .check-all-list {
+          padding: 0;
+          margin: 20px 0 0 -15px;
+    }
+    .list-line-2{
+        margin-left: 38px;
+    }
+  }
+
+  @media (min-width:768px){
+    .table-list-invoice .table-info .list-line-1{
+        overflow: auto;
+        white-space: nowrap;
+        /* padding-bottom: 8px; */
+        margin-right: 15px;
+    }
+    .list-line-1::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+
+    .list-line-1::-webkit-scrollbar
+    {
+        width: 12px;
+        background-color: #F5F5F5;
+        height: 3px;
+    }
+
+    .list-line-1::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #d3d3d3;
+    }
+  }

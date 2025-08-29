@@ -1,0 +1,20 @@
+import { createTypes } from 'reduxsauce';
+
+
+export default createTypes<any>(`
+    TOGGLE_FILTER
+    TOGGLE_MODAL
+    SELECTED_ELEMENT
+    SET_RESPONSE
+    SET_CURRENT_PAGE
+    SET_ROW_PER_PAGE
+    REFRESH_LIST
+    TOGGLE_POINTS_MODAL
+    SHOW_LOADING
+    HIDE_LOADING
+    USER_FILTER
+    REMOVE_FILTER
+    CLEAR_LIST_DATA
+    TOGGLE_BULK_UPLOAD_SOB
+    TOGGLE_BULK_UPLOAD_LANE
+`);

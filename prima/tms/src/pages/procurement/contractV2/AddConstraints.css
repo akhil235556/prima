@@ -1,0 +1,32 @@
+.bg-grey--light{
+    background-color: #F9F9F9;
+    border-radius: 4px;
+    width: -webkit-fill-available;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin: 15px;
+    padding-top: 4px;
+
+}
+.bg-grey--light .btn{
+    margin-top: 28px;
+    width: 28px;
+    height: 28px;
+}
+.FreightResponseView .bill-tab.tab-nav{
+    margin-bottom: 15px;
+}
+.FreightResponseView .custom-form-row .billing-group{
+    padding-bottom: 20px;
+}
+
+.contract-detail-modal .constraint-modal .constraint-border {
+    border-bottom: 1px solid #EAEFF3;
+}
+
+.contract-detail-modal .constraint-modal .contract-ftl-table-detail {
+    padding-left: 0;
+    padding-right: 0;
+}

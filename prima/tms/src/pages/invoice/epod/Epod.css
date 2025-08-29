@@ -1,0 +1,28 @@
+.epod-container{
+    padding: 20px 20px 12px;
+    position: relative;
+}
+.epod-content{
+    padding: 17px 25px;
+    border-radius: 14px;
+    border: 1px solid #ebeff3;
+    background-color: #ffffff;
+}
+
+@media(max-width:767.98px){
+    .filter-panel .print-btn, .filter-panel .back-btn{
+        height: 34px !important;
+        padding: 5px 12px;
+    }
+    .print-btn .MuiSvgIcon-root{
+        margin-right: 0;
+    }
+    .epod-container{
+        margin-top: -15px;
+        padding: 15px 15px 12px;
+    }
+    .epod-content {
+        padding: 0;
+        border: none;
+    }
+}

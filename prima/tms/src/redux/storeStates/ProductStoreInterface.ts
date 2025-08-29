@@ -1,0 +1,15 @@
+export interface ProductState {
+    openFilter: boolean,
+    selectedItem: any | undefined,
+    pagination: any,
+    listData: Array<any> | undefined,
+    openModal: boolean,
+    currentPage: number,
+    refresh_list: boolean,
+    openBulkUpload: boolean,
+    loading: boolean,
+    searchQuery: string,
+    pageSize: number,
+    filterParams: any,
+    filterChips: any,
+}

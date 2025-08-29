@@ -1,0 +1,50 @@
+.certificate-wrap .dispatch-card-wrapper {
+    padding: 30px 40px;
+    min-height: calc(100vh - 120px);
+}
+.certificate-wrap .dispatch-location-form{ margin-top: 27px;}
+.dispatch-location-form .autosuggest-wrap label,
+.dispatch-location-form .autocomplete-wrap label{
+    color: rgba(8, 54, 84, 0.7);
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.certificate-wrap .autosuggest-wrap .MuiInputBase-input,
+.certificate-wrap .select-container .select__control{
+    border: 2px solid #76ADDC;
+    background: #fff;
+}
+
+.certificate-wrap .dispatch-head {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.17;
+    color: #768a9e;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px){
+    .certificate-wrap .btn-blue{height: 47px;}
+}
+@media screen and (max-width: 767px){
+    .certificate-wrap .dispatch-card-wrapper{padding: 15px;}
+    .certificate-wrap .dispatch-head {
+        font-size: 20px;
+        color: #768a9e;
+        margin-bottom: 6px;
+    }
+    .certificate-wrap .dispatch-content p{
+        font-size: 12px;
+    }
+    .certificate-wrap .dispatch-content p br{display: none;}
+    .certificate-wrap .autosuggest-wrap label {
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+    .certificate-wrap .dispatch-location-form{ margin-top: 20px;}
+    .certificate-wrap .select-container .select__control{
+        margin-bottom: 22px;
+    }
+
+}

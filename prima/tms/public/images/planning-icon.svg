@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix___003-warehouse" width="24" height="24" data-name="003-warehouse" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#fff}
+        </style>
+    </defs>
+    <path id="prefix__Path_6299" d="M23.676 7.882L12.426.132a.752.752 0 0 0-.851 0L.325 7.882A.749.749 0 0 0 0 8.5V23a1 1 0 0 0 1 1h2V12a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v12h2a1 1 0 0 0 1-1V8.5a.75.75 0 0 0-.324-.618z" class="prefix__cls-1" data-name="Path 6299"/>
+    <path id="prefix__Path_6300" d="M9.25 19v.75a.75.75 0 0 1-1.5 0V19H6a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5z" class="prefix__cls-1" data-name="Path 6300"/>
+    <path id="prefix__Path_6301" d="M16.25 19v.75a.75.75 0 0 1-1.5 0V19H13a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5z" class="prefix__cls-1" data-name="Path 6301"/>
+    <path id="prefix__Path_6302" d="M12.75 13v.75a.75.75 0 0 1-1.5 0V13H9.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5z" class="prefix__cls-1" data-name="Path 6302"/>
+</svg>

@@ -1,0 +1,108 @@
+
+.notification-section{
+  background-color: #ffffff;
+
+}
+.notification-left-nav {
+  padding: 30px 15px;
+  width: 240px;
+  background-color: #eaeff3;
+  height: 100%;
+}
+/* Tab Navigation */
+.notification-tab .MuiTab-root {
+  margin-bottom: 2px;
+  color: #083654;
+  opacity: 1;
+  font-size: 13px;
+  font-weight: 500;
+  background: #eaeff3;
+  border: solid 1px #e2e7eb;
+  text-transform: capitalize;
+  min-height: 42px;
+}
+.mobile-tab-nav .MuiTab-root{
+  text-transform: capitalize;
+}
+.notification-tab .MuiTab-wrapper{
+    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.notification-tab .MuiTab-textColorInherit.Mui-selected {
+  color: #006cc9;
+  border-radius: 4px;
+  border: solid 1px #e2e7eb;
+  background-color: #f9f9f9;
+}
+.notification-tab .MuiTab-textColorInherit.Mui-selected:focus{
+  outline: none;
+}
+.notification-tab .MuiTabs-indicator{
+  display: none;
+}
+.pt-15{
+    padding-top: 15px;
+}
+.notification-main {
+  height: calc(100vh - 172px);
+  overflow-y: scroll;
+}
+.notification-content{
+    padding: 0;
+}
+
+.notify-right-content .tab-table .MuiBox-root{padding: 0;}
+
+/* mark-all-row */
+.mark-all-row{
+  padding-top: 14px;
+  border-bottom: 1px solid rgb(204 204 204 / 0.5);
+  padding-bottom: 11px;
+}
+
+@media (min-width: 768px) {
+  .notify-right-content{
+    min-height: calc(100vh - 120px);
+    max-height: calc(100vh - 120px);
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .notify-right-content .MuiTablePagination-root{
+    background-color: #fbfbfb;
+    border-top: 1px solid #f1f1f1;
+  }
+}
+@media(max-width:992px){
+  .notification-left-nav {
+    width: 100%;
+    padding: 0 15px;
+
+  }
+}
+@media (max-width: 767px) {
+  /* .notification-section {
+      margin: -15px -15px 0;
+  } */
+  .pt-15{
+      padding-top: 0;
+  }
+  .notification-left-nav {
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 1;
+
+  }
+  .notify-right-content .card-wrap{
+    padding: 0;
+  }
+  .mark-all-row{
+    padding: 11px 15px 8px;
+    margin-bottom: 8px;
+  }
+  .notify-right-content .tab-table .MuiBox-root{padding: 8px 15px 8px;}
+}

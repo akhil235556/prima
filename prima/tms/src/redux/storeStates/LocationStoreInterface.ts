@@ -1,0 +1,37 @@
+export interface LocationState {
+    openFilter: boolean,
+    openBulkUpload: boolean,
+    selectedItem: LocationDetails | undefined,
+    pagination: any,
+    listData: Array<LocationDetails> | undefined,
+    openModal: boolean,
+    refreshList: boolean,
+    loading: boolean,
+    currentPage: number,
+    pageSize: number,
+    searchQuery: string,
+    filterParams: any,
+    filterChips: any,
+}
+
+export interface LocationDetails {
+    latitude: number,
+    longitude: number,
+    cityName: string,
+    cityCode?: string,
+    stateName: string,
+    stateCode?: string,
+    address: string,
+    pincode: number,
+    locationName: string,
+    locationCode?: string,
+    id?: number,
+    gpsRadius?: number,
+    simRadius?: number
+    createdAt?: string,
+    updatedAt?: string,
+    country?: string,
+    consigneeName?: string,
+    consigneeCode?: string,
+    locationType: string,
+}

@@ -1,0 +1,14 @@
+psycopg2-binary==2.8.3
+pytz==2019.3
+python-dateutil==2.8.1
+googleapis-common-protos==1.51.0
+
+https://storage.googleapis.com/gobolt-toolbox/python-grpc-utils/python-grpc-utils1.2.5.12.tar.gz
+https://storage.googleapis.com/gobolt-toolbox/client-credential-auth/client-credential-auth2.0.5.tar.gz
+https://storage.googleapis.com/gobolt-toolbox/service-accounts/dist/service-accounts-4cd8d47.tar.gz
+
+grpcio==1.46.3
+grpcio-tools==1.46.3
+google-cloud-pubsub==1.5.0
+google-cloud-tasks==1.5.0
+protobuf==3.14.0

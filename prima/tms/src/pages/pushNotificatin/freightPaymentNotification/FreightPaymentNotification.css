@@ -1,0 +1,31 @@
+
+.custom-option .input-wrap>label{
+	display: none !important;
+}
+.custom-option .input-wrap .MuiInputBase-root{
+	width: 110px;
+	height: 40px;
+	margin-right: 0;
+}
+@media (max-width:767.98px) {
+
+	.custom-option .MuiInputBase-input {
+		font-size: 11px !important;
+	}
+	.custom-option .input-wrap .MuiInputBase-root{
+		width: 100px;
+		height: 36px;
+	}
+	.mr-12 {
+		margin-right: 10px;
+	}
+}
+
+.push-notification-card .col-md-6:nth-child(8) {
+    order: 10;
+}
+
+.push-notification-card .col-md-6:nth-child(9) {
+    order: 9;
+}
+

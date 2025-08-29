@@ -1,0 +1,29 @@
+.map-tool-tip{
+    width: 188px;
+  
+}
+.map-tool-tip-heading{
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #083654;
+    display: block;
+}
+.map-tool-tip-address, .map-tool-tip-location, .map-tool-tip-status{
+    margin-bottom: 5px;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 1.11;
+    letter-spacing: 0.1px;
+    color: #768a9e;
+    display: block;
+}
+.map-tool-tip-location{
+    color: #083654;
+}
+.map-tool-tip-status{
+    margin-bottom: 0;
+    color: #f7931e;
+}
+ 

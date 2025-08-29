@@ -1,0 +1,16 @@
+.freightDetail {
+    background: #fff;
+    padding: 0 15px;
+}
+.freightDetail .billing-info-remark label {
+    display: block;
+}
+.freightDetail .table-list-view .MuiTableCell-body .btn {
+    padding: 8px 25px;
+}
+
+.freight-contract-table .table-list-invoice .table-info {
+    margin: -15px 0 0;
+}
+
+.freight-contract-table .invoice-table-wrap { margin-bottom: 30px; }

@@ -1,0 +1,82 @@
+.shortage-damage-report .analytics-card .analytics-data{
+    justify-content: flex-start;
+    min-height: auto;
+}
+.shortage-damage-report .analytics-graph img{
+    max-width: 250px;
+}
+.analytics-data .analytics-head{
+    width: 100%;
+    background: #eaeff3;
+    padding: 10px 0;
+    color: #133751;
+    font-size: 15px;
+    font-weight: 500;
+}
+.analytics-data .analytics-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.analytics-data .analytics-list li{
+    padding: 17px 30px;
+}
+.analytics-data .analytics-list li:not(:last-child){
+    border-bottom: 1px solid #eaeff3;
+}
+.analytics-data .analytics-list li img{
+    width: 13px;
+    vertical-align: initial;
+    margin-right: 6px;
+}
+.analytics-data .analytics-list li h4{
+    border: none;
+    padding: 0;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+}
+.analytics-data .analytics-list li span{
+    color: #083654;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.18;
+    display: inline-block;
+}
+
+@media (max-width:767px) {
+    .shortage-damage-report .analytics-card .analytics-data{
+        padding: 0;
+        margin-bottom: 10px;
+        overflow: hidden;
+        border: none;
+    }
+    .shortage-damage-report .analytics-data .analytics-head {
+        padding: 4px 0;
+        font-size: 14px;
+    }
+    .shortage-damage-report .analytics-row{
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        overflow: initial;
+    }
+    .shortage-damage-report .analytics-graph,
+    .shortage-damage-report .analytics-card .analytics-data {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .analytics-data .analytics-list li img{width: 10px;}
+    .analytics-data .analytics-list{display: flex;}
+    .analytics-data .analytics-list li {
+        padding: 9px 15px;
+        flex-grow: 1;
+    }
+    .analytics-data .analytics-list li span{font-size: 12px;font-weight: normal;}
+    .analytics-data .analytics-list li:not(:last-child) {
+        border: none;
+        border-right: 1px solid #eaeff3;
+    }
+}

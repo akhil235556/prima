@@ -1,0 +1,52 @@
+.ship-order-detail-wrap{
+    height: calc(100vh - 65px);
+    overflow: auto;
+}
+.ship-order-detail-wrap .shipment-img{
+    position: absolute;
+    width: 97%;
+    z-index: 1;
+    bottom: 0;
+}
+
+.create-shipment-content .inputBoxOrder,
+.create-shipment-content .inputLabelOrder {
+    position: static;
+}
+
+.create-shipment-content .inputBoxOrder .input-wrap label { display: none !important; }
+
+.create-shipment-content .select-container .select__control { min-height: 40px; padding: 0 14px; }
+
+.create-shipment-content .form-group .input-wrap .MuiInputBase-root,
+.create-shipment-content .form-group .custom-date-picker .MuiInput-root { 
+    height: 40px;
+    padding: 0 14px;
+}
+
+.create-shipment-content .remarks textarea { height: 40px !important; }
+
+.create-shipment-content .form-group .autosuggest-wrap .MuiInputBase-input { 
+    height: 36px;
+    padding: 0 14px;
+}
+
+.create-shipment-content .custom-form-row .form-group { margin-bottom: 15px; }
+
+.create-shipment-content .details { height: auto; }
+
+.dispatch-card-wrapper .shipment-order-wrapper .create-shipment-content label { font-size: 12px;}
+
+.shipment-order-wrapper .create-shipment-content:last-child { padding-bottom: 10px; }
+.shipment-order-wrapper .create-shipment-content .select__value-container { padding-left: 0; }
+
+.create-shipment-content .remarks label,
+.create-shipment-content .picker-label { margin-bottom: 5px; }
+
+
+@media screen and (max-width:767px) {
+    .shipment-order-wrapper .create-shipment-content:last-child { padding: 15px; }
+    .create-shipment-content .details-mobile,
+    .create-shipment-content .inputLabelOrder { padding-right: 15px; }
+
+}

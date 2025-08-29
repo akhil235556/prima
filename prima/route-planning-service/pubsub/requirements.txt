@@ -1,0 +1,8 @@
+grpcio-tools==1.27.2
+google-cloud-pubsub==1.5.0
+google-cloud-tasks==1.5.0
+https://storage.googleapis.com/gobolt-toolbox/sentry-integration/sentry-integration1.4.tar.gz
+https://storage.googleapis.com/gobolt-toolbox/python-grpc-utils/python-grpc-utils1.2.4.5.tar.gz
+https://storage.googleapis.com/gobolt-toolbox/client-credential-auth/client-credential-auth2.0.5.tar.gz
+https://storage.googleapis.com/gobolt-toolbox/service-accounts/dist/service-accounts-4cd8d47.tar.gz
+https://storage.googleapis.com/gobolt-toolbox/viper/viper1.0.3.3.tar.gz

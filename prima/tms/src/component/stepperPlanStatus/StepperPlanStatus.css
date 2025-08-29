@@ -1,0 +1,42 @@
+.createplan-process ul{
+    display: flex;
+    background: #fff;
+    padding: 5px;
+    margin-left: 2px;
+}
+.createplan-process ul li{
+    flex: auto;
+    border-right: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+    border-top: 1px solid #DADADA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 24px;
+}
+.createplan-process ul li p{
+    margin-bottom: 0;
+    color: #323232;
+    font-weight: 400;
+}
+.createplan-process ul li p:first-child{
+    color: #193651;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.createplan-process ul li span{
+    color: #454545;
+}
+.createplan-process ul li:first-child{
+    border-left: 1px solid #DADADA;
+}
+@media (max-width:767px){
+    .createplan-process ul{
+        overflow: auto;
+        display: -webkit-box;
+    }
+    .createplan-process ul li{
+        padding: 8px;
+    }
+}

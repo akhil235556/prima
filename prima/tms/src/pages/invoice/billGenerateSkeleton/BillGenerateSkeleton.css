@@ -1,0 +1,21 @@
+.bill-generate-skeleton .MuiSkeleton-root {
+    background-color: #eaeff3;
+    transform: none;
+    border-radius: 20px;
+    height: 16px;
+}
+.bill-generate-skeleton .billing-info-header .MuiSkeleton-root{
+    background: #d6dee4;
+    height: 20px;
+}
+
+@media (min-width:768px){
+    .bill-generate-skeleton {
+        padding: 16px 5px;
+    }
+}
+@media (max-width:767px){
+    .bill-generate-skeleton .billing-info-wrapp{
+        margin-bottom: 15px;
+    }
+}

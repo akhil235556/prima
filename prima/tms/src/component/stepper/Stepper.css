@@ -1,0 +1,54 @@
+.stepper-plan{
+    width: 16%;
+    background: #fff;
+    height: calc(100vh - 125px);
+    padding: 37px 9px;
+}
+.stepper-plan ul{
+    position: relative;
+}
+.stepper-plan li{
+    margin-bottom: 46px;
+    position: relative;
+}
+.stepper-plan li::after{
+    content: '';
+    height: 42px;
+    border: 1px solid #E9EFF4;
+    width: 1px;
+    position: absolute;
+    top: 24px;
+    left: 10px;
+}
+.stepper-plan li:last-child::after{
+    display: none;
+}
+.stepper-plan li:last-child::before{
+    content: '';
+    height: 30px;
+    border: 1px solid #E9EFF4;
+    width: 1px;
+    position: absolute;
+    bottom: 24px;
+    left: 10px;
+}
+.stepper-plan ul li span.tick-icon svg.MuiSvgIcon-root{
+    width: 13px;
+    height: 13px;
+}
+.stepper-plan ul li svg.MuiSvgIcon-root{
+    width: 20px;
+    height: 20px;
+}
+.stepper-plan ul li span{
+    margin-right: 9px;
+}
+
+.stepper-plan ul li span.tick-icon{
+    color: #1FC900;
+    margin: 0 14px 0 4px;
+}
+.stepper-plan img.icon {
+    width: 18px;
+    height: 18px;
+}

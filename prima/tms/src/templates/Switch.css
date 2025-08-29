@@ -1,0 +1,103 @@
+.custom-switch{
+    padding-left: 0;;
+}
+.switch-content {
+    margin-bottom: 0;
+    display: block;
+    height: 30px;
+    position: relative;
+    overflow: visible;
+    background: #eaeff3;
+    border-radius: 3px;
+}
+.switch-content input:focus~label,
+.switch-content input:focus+label {
+	outline: 1px dotted rgb(136, 136, 136);
+}
+
+.switch-content input {
+	position: absolute;
+	opacity: 0;
+	z-index: 5;
+}
+.switch-content input:checked~span span:last-child{
+    color: #ffffff;
+}
+.switch-content input[type="checkbox"]:not(:checked) ~span span:first-child{
+    color: #ffffff;
+}
+.switch-content input:checked~label {
+    right: 0%;
+    background-color: #1fc900;
+}
+.switch-content>span,
+.switch-toggle>span {
+	color: #000000;
+}
+.switch-content>span {
+	position: absolute;
+	left: -100px;
+	width: 100%;
+	margin: 0px;
+	padding-right: 100px;
+	text-align: left;
+}
+.switch-toggle label,
+.switch-content span span {
+	display: none;
+}
+.switch-content>span span {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	display: block;
+	width: 50%;
+	margin-left: 100px;
+	text-align: center;
+}
+.switch-content>span span:last-child {
+    left: 50%;
+}
+.switch-content span span,
+.switch-content label,
+.switch-toggle span span,
+.switch-toggle label {
+    font-size: 13px;
+    font-weight: 500;
+    color:#6e8ba9;
+}
+
+.switch-content * {
+	box-sizing: border-box;
+}
+
+.switch-content label {
+	display: block;
+    transition: all 0.3s ease-out 0s;
+    background-color: #acb6c0;
+}
+
+.switch-content label,
+.switch-content>span {
+	line-height: 30px;
+	vertical-align: middle;
+}
+.switch-content label {
+	font-weight: 700;
+	margin-bottom: px;
+	max-width: 100%;
+}
+
+.switch-content label {
+	margin-bottom: 0;
+	position: absolute;
+	right: 50%;
+	top: 0px;
+	z-index: 4;
+	display: block;
+	width: 50%;
+	height: 100%;
+    padding: 0px;
+    border-radius: 3px;
+}

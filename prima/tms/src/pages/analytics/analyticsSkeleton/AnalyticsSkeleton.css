@@ -1,0 +1,20 @@
+.analytics-skeleton .MuiSkeleton-root {
+    background-color: #eaeff3;
+    transform: none;
+    border-radius: 15px;
+}
+.analytics-skeleton .analytics-data h4 .MuiSkeleton-root{
+    width: 62px;
+    height: 29px;
+    margin: 0 auto;
+}
+.analytics-skeleton .analytics-data p .MuiSkeleton-root{
+    width: 54px;
+    height: 11px;
+    margin-right: 3px;
+    display: inline-block;
+}
+.shortage-damage-report .analytics-skeleton .analytics-card .analytics-data{
+    min-height: 230px;
+    justify-content: space-evenly;
+}

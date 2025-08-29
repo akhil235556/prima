@@ -1,0 +1,59 @@
+.Tracking-View .trackingView {
+  position: sticky;
+  position: -webkit-sticky;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  height: calc(100%);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  background: #ffffff;
+}
+
+.mapViewSec{
+  background: #ffffff;
+  border-radius: 14px;
+  border: solid 2px #ebeff3;
+  background-color: #f9f9f9;
+  padding: 6px 8px;
+
+  /* TODO Added for mobile view*/
+  position: absolute; 
+}
+.mapViewSec,
+.mapViewSec #map,
+.mapViewSec #map iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.gm-bundled-control-on-bottom{
+  display: none
+}
+.gm-style .gm-style-iw-d{
+  font-weight: 500;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+  .mapViewSec, .mapViewSec #map{
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width:767px) {
+  .mapViewSec, .mapViewSec #map, .mapViewSec #map iframe{
+    border-radius: 0;
+  }
+  .mapViewSec{
+    background: transparent;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+}

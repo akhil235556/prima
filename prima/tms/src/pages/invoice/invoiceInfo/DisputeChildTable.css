@@ -1,0 +1,15 @@
+.dispute__row{
+    padding: 5px 40px 0 40px;
+}
+.dispute__row.custom-form-row .form-group{
+    padding: 5px;
+    /* margin-bottom: 5px; */
+}
+.dispute__row .dispute__btn-container{
+    display: flex;
+    align-items: center;
+}
+.dispute__row .dispute__btn-container .dispute-btn{
+    height:20px;
+    width:20px;
+}

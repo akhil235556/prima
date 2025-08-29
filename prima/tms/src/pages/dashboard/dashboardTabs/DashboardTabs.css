@@ -1,0 +1,62 @@
+.dashboard-tabs-wrap .MuiBox-root{
+    background: #fff !important;
+    padding: 18px 10px;
+}
+
+.dashboard-tabs-wrap{
+    margin-bottom: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    position: relative;
+}
+/* table */
+.dashboard-tabs-wrap .table-list-view .MuiTableRow-root .MuiTableCell-head{
+    background: #fff;
+    font-size: 11px;
+    padding-bottom: 8px;
+}
+.dashboard-tabs-wrap .table-list-view .MuiTableRow-root .MuiTableCell-body{
+    font-size: 12px;
+    padding: 3px 0px 3px 10px;
+}
+.dashboard-tabs-wrap -detail{
+    font-size: 13px;
+}
+.dashboard-tabs-wrap .table-list-view .MuiTableCell-body .btn-detail svg{
+    font-size: 15px;
+}
+.dashboard-tabs-wrap .table-list-view .table-wrapper {
+    min-height: 400px;
+    max-height: 400px;
+}
+.dashboard-tabs-wrap .table-list-view .MuiTable-root th:last-child,
+.dashboard-tabs-wrap .table-list-view .MuiTable-root td:last-child{
+    width: 110px;
+    padding-right: 10px;
+}
+/* tabs */
+.dashboard-tabs-wrap .MuiTabs-root{
+    background: #eaeff3;
+}
+.dashboard-tabs-wrap .MuiTab-root{
+    color: #797979;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 1;
+    text-transform: capitalize;
+}
+.dashboard-tabs-wrap .MuiTab-root.Mui-selected{
+    color: #f7931e !important;
+}
+.dashboard-tabs-wrap .MuiTabs-indicator{
+    background-color: #f7931e;
+}
+
+@media(max-width:992px){
+    .dashboard-tabs-wrap{
+        margin-bottom: 15px;
+    }
+}
+
+

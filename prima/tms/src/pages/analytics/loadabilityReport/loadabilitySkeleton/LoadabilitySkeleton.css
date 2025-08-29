@@ -1,0 +1,34 @@
+.load-skeleton .MuiSkeleton-root {
+    background-color: #eaeff3;
+    transform: none;
+    border-radius: 15px;
+}
+.load-skeleton .load-list li .MuiSkeleton-root{width: 200px;}
+.load-skeleton .load-list li h4 .MuiSkeleton-root{height: 14px;width: 100%;}
+.load-skeleton .load-list li span .MuiSkeleton-root{
+    height: 10px;
+    width: 80px;
+}
+
+@media (min-width:768px) {
+    .load-skeleton .load-graph{padding: 9px 0;}
+    .load-skeleton .load-list{min-height: 89px;}
+}
+@media (max-width:767px) {
+    .load-skeleton .load-list li{
+        order: 1;
+        margin: 0;
+    }
+    .load-skeleton .load-list li .MuiSkeleton-root{
+        width: 62px;
+        height: 29px;
+        margin: auto;
+        margin-bottom: 8px;
+    }
+    .load-skeleton .load-list li h4 .MuiSkeleton-root,
+    .load-skeleton .load-list li span .MuiSkeleton-root{
+        width: 43px;
+        height: 11px;
+        margin: 0;
+    }
+}

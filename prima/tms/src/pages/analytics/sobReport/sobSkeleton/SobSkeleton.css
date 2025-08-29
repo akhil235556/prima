@@ -1,0 +1,35 @@
+.sob-skeleton-wrap .MuiSkeleton-root {
+    background-color: #eaeff3;
+    transform: none;
+    border: none;
+    border-radius: 0;
+}
+.sob-skeleton-wrap .sob-report-graph {
+    min-height: 340px;
+}
+.sob-skeleton-wrap .sob-list ul li span {
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: #eaeff3;
+}
+.sob-skeleton-wrap .sob-list ul li .MuiSkeleton-root{
+    width: 70%;
+    height: 6px;
+}
+@media (min-width:768px) {
+    .sob-skeleton-wrap .skeleton-graph-circle {
+        width: 300px;
+        height: 300px;
+    }
+    .sob-skeleton-wrap .skeleton-graph-border{
+        width: 250px;
+        height: 300px;
+        bottom: -110px;
+        transform: skewY(19deg);
+        left: -100px;
+    }
+}
+/* @media (max-width:767px) {
+   
+} */

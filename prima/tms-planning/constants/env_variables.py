@@ -1,0 +1,13 @@
+
+class PostgresEnvVariables(object):
+    HOST = "DB_PG_HOST"
+    PORT = "DB_PG_PORT"
+    USERNAME = "DB_PG_USERNAME"
+    PASSWORD = "DB_PG_PASSWORD"
+    DATABASE = "DB_PG_DATABASE"
+
+
+class ServerDetails(object):
+    HOST = "TMS_PLANNING_GRPC_HOST"
+    PORT = "TMS_PLANNING_GRPC_PORT"
+    MAX_WORKERS = "TMS_PLANNING_GRPC_WORKERS"

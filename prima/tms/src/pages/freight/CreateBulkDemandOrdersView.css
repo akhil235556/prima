@@ -1,0 +1,122 @@
+.btn.demand-icon-white img{
+    width: 21px;
+}
+.do-creation-wrapper .billing-info-remark textarea {
+    border: 2px solid #e5ebf0;
+    height: 38px !important;
+    padding: 9px 13px;
+}
+.do-creation-wrapper .billing-info-remark label  {
+    margin-bottom: 0;
+    color: #083654;
+    font-weight: normal;
+}
+.dispatch-row-item{
+    align-items: center;
+}
+.do-create-row{
+    position: relative;
+}
+.apply-all-btn{
+    align-items: center;
+    margin-bottom: 20px;
+}
+.checkbox-warp .MuiIconButton-root{
+    padding: 0;
+}
+.apply-btn {
+    margin-top: 15px;
+    height:38px;
+}
+.do-creation-wrapper .billing-info-remark {
+    padding: 6px 0 0;
+}
+.do-creation-wrapper .total-demand-qty {
+    padding: 0px 25px 12px;
+}
+
+.do-creation-wrapper .custom-checkbox.MuiCheckbox-colorSecondary.Mui-checked {
+    color: #006cc9 !important;
+}
+.do-creation-wrapper .select-container .select__control{
+    min-height: 38px;
+    height: 38px;
+}
+/* .do-creation-wrapper .select-container{
+    width:200px;
+} */
+.do-creation-wrapper .MuiPaper-root {
+    background-color: #f9f9f9;
+}
+.do-creation-wrapper .MuiPaper-elevation1{
+    box-shadow: none;
+}
+.do-creation-wrapper .creat-contract-wrapp{
+    box-shadow: none;
+    border-left: 1px solid #ebeff3;
+    border-right: 1px solid #ebeff3;
+}
+.do-creation-wrapper .custom-date-picker .MuiInput-root{
+    height: 38px;
+    padding: 0 10px;
+}
+.do-creation-wrapper .shipment-checkbox h4{
+    font-weight: 500;
+}
+.do-creation-wrapper table tr th:first-child, .do-creation-wrapper table tr td:first-child{
+    width:20px;
+}
+.do-creation-wrapper .input-wrap .MuiInputBase-root{
+    height:38px;
+}
+.select__menu{
+    margin-top: 5px !important;
+}
+@media(min-width:320px) and (max-width:1024px){
+    .do-creation-wrapper .dispatch-row-item{
+        margin-top: 20px;
+    }
+    .do-creation-wrapper .select-container {
+        width: 179px;
+    }
+    .do-creation-wrapper .custom-date-picker .MuiInput-root{
+        padding: 0 8px;
+    }
+    .do-creation-wrapper .billing-info-remark textarea{
+        padding:8px;
+    }
+}
+
+.do-creation-wrapper .autocomplete-width {
+    width: 200px;
+}
+.do-creation-wrapper thead.MuiTableHead-root {
+    position: relative;
+    z-index: 0;
+}
+.do-creation-wrapper .apply-btn {
+    margin-top: 0px;
+    height: 36px;
+}
+
+@media screen and (min-width: 768px){
+    .do-creation-wrapper .dispatch-card-wrapper {
+        padding: 15px 25px 20px;
+    }
+    .do-creation-wrapper .dispatchInput {
+        margin: 0;
+    }
+    .do-creation-wrapper .applyAll {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 767px){
+
+    .do-creation-wrapper .dispatchInput {
+        margin: 10px 0px 0;
+    }
+    .do-creation-wrapper .applyAll {
+        margin-bottom: 1rem;
+        margin-top: -4px;
+    }
+}

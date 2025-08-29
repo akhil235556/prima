@@ -1,0 +1,59 @@
+/* Table tooltip */
+.tooltip-table-info{
+   width: 100%;
+   padding: 0 0 0;
+   margin: 0;
+}
+.tooltip-table-info .table{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
+.tooltip-table-info .table th{
+   height: 35px;
+   font-size: 12px;
+   font-weight: normal;
+   border: solid 1px #f9f9f9;
+   color: #fff;
+}
+.tooltip-table-info .table td{
+   color: #083654;
+   font-weight: normal;
+   border: solid 1px #f9f9f9;
+   padding: 10px 12px;
+   letter-spacing: 0.6px;
+}
+.tooltip-table-info .table thead tr {
+   background-image: linear-gradient(to bottom, #f7931e, #f73f1e);
+}
+
+.tooltip-table-info .table th:first-child{
+   border-top-left-radius: 10px;
+}
+.tooltip-table-info .table th:last-child{
+   border-top-right-radius: 10px;
+}
+.tooltip-table-info .table-responsive {
+   pointer-events: all;
+}
+
+.tooltip-table-info tbody tr{
+   word-break: break-all;
+}
+.tooltip-icon svg {
+   color: #006cc9;
+   font-size: 17px;
+}
+.tooltip-table-info .zone-info{
+   color: #083654;
+   padding: 6px 12px 4px;
+   font-size: 11px;
+}
+.tooltip-table-info .zone-info span{
+   color: #768AB2;
+}
+.tooltip-table-info .zone-info .MuiSvgIcon-root {
+   font-size: 20px;
+   color: #1fc900;
+   padding: 4px;
+}

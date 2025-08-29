@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package com.gobolt.tms.planning.health;
+
+import "health_models.proto";
+import "google/api/annotations.proto";
+import "google/protobuf/empty.proto";
+
+
+service HealthService {
+
+  rpc checkHealth (google.protobuf.Empty) returns (HealthResponse) {
+        option (google.api.http) = {
+            get: "/v1/health"
+        };
+  }
+}

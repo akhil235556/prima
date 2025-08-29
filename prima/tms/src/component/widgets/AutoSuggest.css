@@ -1,0 +1,11 @@
+.clear-label{
+    cursor: pointer;
+}
+.center-align{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.menu-options.lane-wrap-text {
+    word-break: break-all;
+}

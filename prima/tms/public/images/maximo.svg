@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_9090" data-name="Group 9090" transform="translate(-5458 561)">
+    <g id="Group_9084" data-name="Group 9084" transform="translate(677 -330)">
+      <circle id="Ellipse_23" data-name="Ellipse 23" cx="25" cy="25" r="25" transform="translate(4781 -231)" fill="#f5f5f5"/>
+      <g id="Group_9062" data-name="Group 9062" transform="translate(-0.912 1.305)">
+        <path id="flexibility-scalability" d="M17.006,9.461,7.353,12.675l10.518,4.77L28.389,12.81l-6.231-2.691V8.666l8.34,3.412a.7.7,0,0,1,.464.711.365.365,0,0,1,0,.049V25.422c.085-.044-1.678-.162-1.38-.8V13.785l-11.03,4.86V32.5l7.667-3.1,1.421.82-9.42,3.989a.692.692,0,0,1-.73-.01L8.209,30.135l1.409-.813,7.559,3.167V18.64L6.109,13.622V24.627c.077.8-1.678,1.353-1.375.795l0-12.835c0-.375.256-.544.591-.683l4.853-1.615,6.83-2.274C17.006,8.471,17,10.088,17.006,9.461Z" transform="translate(4789.151 -225.311)" fill="#123751" stroke="#123751" stroke-width="0.9"/>
+        <g id="Group_9059" data-name="Group 9059" transform="translate(-253 -11)">
+          <path id="height_FILL0_wght400_GRAD0_opsz48" d="M19.084,19.043V8.557l-2.04,1.863L16,9.466,19.8,6l3.8,3.466-1.044.953-2.04-1.863V19.043Z" transform="translate(5040.205 -220.305)" fill="#f7931d" stroke="#f7931d" stroke-width="0.8"/>
+          <g id="Rectangle_2670" data-name="Rectangle 2670" transform="translate(5058.9 -205)" fill="#f7931d" stroke="#f7931d" stroke-width="1">
+            <rect width="2.2" height="5" rx="1" stroke="none"/>
+            <rect x="0.5" y="0.5" width="1.2" height="4" rx="0.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_9060" data-name="Group 9060" transform="matrix(-0.53, 0.848, -0.848, -0.53, 7324.278, -4600.519)">
+          <path id="height_FILL0_wght400_GRAD0_opsz48-2" data-name="height_FILL0_wght400_GRAD0_opsz48" d="M19.084,18.526V8.455l-2.04,1.789L16,9.329,19.8,6l3.8,3.329-1.044.916-2.04-1.789V18.526Z" transform="translate(5040.205 -220.305)" fill="#f7931d" stroke="#f7931d" stroke-width="0.8"/>
+          <g id="Rectangle_2670-2" data-name="Rectangle 2670" transform="translate(5058.9 -205.517)" fill="#f7931d" stroke="#f7931d" stroke-width="1">
+            <rect width="2.2" height="5" rx="1" stroke="none"/>
+            <rect x="0.5" y="0.5" width="1.2" height="4" rx="0.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_9061" data-name="Group 9061" transform="translate(7353.44 4170.856) rotate(-118)">
+          <path id="height_FILL0_wght400_GRAD0_opsz48-3" data-name="height_FILL0_wght400_GRAD0_opsz48" d="M19.084,18.526V8.455l-2.04,1.789L16,9.329,19.8,6l3.8,3.329-1.044.916-2.04-1.789V18.526Z" transform="translate(5040.205 -220.305)" fill="#f7931d" stroke="#f8931c" stroke-width="0.8"/>
+          <g id="Rectangle_2670-3" data-name="Rectangle 2670" transform="translate(5058.9 -205.517)" fill="#f7931d" stroke="#f7931d" stroke-width="1">
+            <rect width="2.2" height="5" rx="1" stroke="none"/>
+            <rect x="0.5" y="0.5" width="1.2" height="4" rx="0.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

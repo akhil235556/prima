@@ -1,0 +1,74 @@
+.vehicle-report-card{margin-bottom: 20px;}
+.vehicle-report-card .billing-info-wrapp{border-radius: 8px;}
+.vehicle-report-card .billing-info-header {
+    padding: 6px 20px;
+    border-radius: 8px 8px 0 0;
+    max-height: 40px;
+    min-height: 38px;
+}
+.vehicle-report-card .billing-info-header h4{
+    font-size: 14px;
+}
+.vehicle-report-card .view-pod-btn.btn{
+    height: 28px;
+    min-width: 83px;
+}
+
+.vehicle-report-card .not-found{
+    padding-bottom: 1px;
+    max-width: 190px;
+}
+.vehicle-report-card .not-found .content h4{
+    margin-top: 0;
+}
+
+.vehicle-report-content .vehicle-data {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #eaeff3;
+}
+.vehicle-report-content .vehicle-data:first-child {
+    border-bottom: 1px solid #eaeff3;
+}
+.vehicle-report-content .vehicle-data h4{
+    font-size: 24px;
+    color: #006cc9;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.vehicle-report-content .vehicle-data span{
+    line-height: 1.15;
+    font-size: 13px;
+    color: #133751;
+    padding: 0 30px;
+}
+
+@media screen and  (max-width:767px) {
+    .vehicle-report-content .vehicle-left{
+        display: flex;
+    }
+    .vehicle-report-content .vehicle-right{
+        padding: 10px 15px;
+    }
+    .vehicle-report-card {
+        margin-bottom: 14px;
+    }
+    .vehicle-report-content .vehicle-data:first-child {
+        border-right: 1px solid #eaeff3;
+    }
+    .vehicle-report-content .vehicle-data{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #eaeff3;
+        max-height: 69px;
+    }
+    .vehicle-report-content .vehicle-data h4 {
+        font-size: 20px;
+    }
+    .vehicle-report-content .vehicle-data span {
+        font-size: 12px;
+        padding: 0;
+    }
+}

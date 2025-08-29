@@ -1,0 +1,164 @@
+
+.disputed-update-modal.custom-modal .MuiDialogContent-root {
+    padding: 10px 0px 0;
+    min-height: 428px;
+}
+.disputed-update-modal.custom-modal .MuiListItem-root{
+    padding: 8px 20px;
+}
+.disputed-update-modal.custom-modal .MuiDialogActions-root{padding: 0;}
+.comment-content .MuiListItem-root{
+    align-items: flex-start;
+}
+.comment-content{
+    padding-bottom: 25px;
+    max-height: 330px;
+    min-height: 330px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.comment-content .chat-icon.MuiListItemAvatar-root{min-width: 35px;}
+.chat-icon.MuiListItemAvatar-root svg{font-size: 26px;}
+
+/* chat-box */
+.chat-box{
+    flex: 1 1 auto;
+    max-width: 320px;
+    margin-bottom: 5px;
+}
+.chat-box .chat-content{
+    border: 1px solid #eaeff3;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+}
+.chat-content .chat-head{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.26px;
+    margin-bottom: 5px;
+}
+.chat-content .chat-desc{
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.16;
+    color: #083654;
+}
+
+/* chat date */
+.chat-date .MuiAvatar-root{
+    width: 24px;
+    height: 24px;
+    background: #eaeff3;
+    margin-right: 10px;
+}
+.chat-date .MuiAvatar-root svg{
+    font-size: 14px;
+    color: #768a9e;
+}
+.chat-date span{
+    color: #768a9e;
+    font-size: 12px;
+    line-height: 1.17;
+}
+
+/* info css */
+.client-info .chat-date .MuiAvatar-root{
+    margin-left: 10px;
+    margin-right: 0;
+}
+.trans-info .chat-icon .MuiAvatar-root{
+    width: 26px;
+    height: 26px;
+    background-color: #006cc9;
+}
+.trans-info .chat-icon.MuiListItemAvatar-root svg{font-size: 18px;}
+
+/* comment footer */
+.comment-footer{
+    background-color: #f9f9f9;
+    padding: 4px 0 2px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.comment-box{flex: 1 1 auto;}
+.comment-box textarea{
+    height: 50px;
+    border-radius: 4px;
+    border: solid 2px #eaeff3;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.21;
+    width: 100%;
+    padding: 12px;
+}
+.comment-box textarea::placeholder{
+    color: #acb6c0;
+    font-weight: normal;
+}
+.comment-footer .MuiAvatar-root{
+    height: 43px;
+    background-image: linear-gradient(to bottom, #006cc9, #145288);
+    width: 43px;
+    margin-left: auto;
+}
+.comment-footer .MuiAvatar-root svg{
+    color: #fff;
+    font-size: 20px;
+}
+
+.send-btn {
+    padding: 4px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.send-btn .MuiSvgIcon-root {
+    margin-right: 0px;
+}
+
+/* scroll */
+.disputed-update-modal.custom-modal .not-found .content{margin-top: 15px;}
+
+
+@media (min-width:768px) {
+    .disputed-update-modal.custom-modal .MuiDialog-paper{
+        min-width: 520px;
+    }
+    /* .comment-content{
+        padding-bottom: 25px;
+        max-height: 435px;
+        overflow: hidden;
+        overflow-y: auto;
+    } */
+}
+
+@media (max-width:767px) {
+    .disputed-update-modal.custom-modal .MuiDialog-paper{
+        box-shadow: none;
+        height: 100%;
+    }
+    .comment-content {
+        max-height: calc(100vh - 136px);
+    }
+    .comment-footer{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 99;
+    }
+    /* .disputed-update-modal.custom-modal .MuiDialog-paper,
+    .disputed-update-modal.custom-modal .MuiDialog-scrollPaper{
+        overflow: hidden;
+        position: fixed;
+    }
+    .disputed-update-modal.custom-modal .MuiDialogContent-root{
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100%;
+        padding-bottom: 130px;
+    } */
+}

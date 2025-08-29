@@ -1,0 +1,20 @@
+
+.icon-small{
+    margin: 0 5px;
+    font-size: 20px !important;
+    color: #133751;
+    cursor: pointer;
+}
+.delete-icon{
+    display: inline-block;
+}
+.assign-role{
+    color: #006cc9;
+    cursor: pointer;
+}
+.users-modal.custom-modal .MuiDialog-paper {
+    min-height: 600px;
+    overflow-y: scroll;
+}
+
+

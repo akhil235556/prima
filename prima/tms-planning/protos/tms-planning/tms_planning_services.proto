@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+package com.gobolt.tms.planning;
+
+import "tms_planning_models.proto";
+import "google/api/annotations.proto";
+import "google/protobuf/empty.proto";
+
+
+service TmsPlanningService {
+  rpc getPlanningConfig (getPlanningConfigRequest) returns (getPlanningConfigResponse) {
+        option (google.api.http) = {
+            get: "/v1/planning/config"
+            body: "*"
+        };
+    }
+
+  rpc getOutputFile (getOutputFileRequest) returns (getOutputFileResponse) {
+        option (google.api.http) = {
+            get: "/v1/planning-output-file"
+            body: "*"
+        };
+    }
+
+  rpc getSampleFile (getSampleFileRequest) returns (getSampleFileResponse) {
+        option (google.api.http) = {
+            get: "/v1/sample-file"
+            body: "*"
+        };
+    }
+
+  rpc upload(stream FileStream) returns (FileUploadResponse){
+      option(google.api.http) = {
+          post: "/v1/file/upload"
+          body:"*"
+      };
+  }
+
+  rpc getIndentOutputFile (getOutputFileRequest) returns (getIndentOutputFileResponse) {
+        option (google.api.http) = {
+            get: "/v1/planning-indent-output-file"
+            body: "*"
+        };
+    }
+
+  rpc getPlanningListing (getPlanningListingRequest) returns (getPlanningListingResponse) {
+        option (google.api.http) = {
+            get: "/v1/planning/listing"
+            body: "*"
+        };
+    }
+
+  rpc getTaskListing (getTaskListingRequest) returns (getTaskListingResponse) {
+        option (google.api.http) = {
+            get: "/v1/task/listing"
+            body: "*"
+        };
+    }
+
+  rpc getErrorListing (getErrorListingRequest) returns (getErrorListingResponse) {
+        option (google.api.http) = {
+            get: "/v1/error/listing"
+            body: "*"
+        };
+    }
+    
+  rpc getPlanningResult (getPlanningResultRequest) returns (getPlanningResultResponse) {
+        option (google.api.http) = {
+            get: "/v1/planning/result"
+            body: "*"
+        };
+    }
+
+  rpc getPlanningRoutes (getPlanningRoutesRequest) returns (getPlanningRoutesResponse) {
+        option (google.api.http) = {
+            get: "/v1/planning/routes"
+            body: "*"
+        };
+    }
+
+  rpc updateSolverConfig (updateSolverConfigRequest) returns (updateSolverConfigResponse) {
+        option (google.api.http) = {
+            post: "/v1/planning/update_solver_config"
+            body: "*"
+        };
+    }
+}

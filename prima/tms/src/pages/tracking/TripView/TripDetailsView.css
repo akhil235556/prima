@@ -1,0 +1,643 @@
+/* .trip-detail {
+    background: #ffffff;
+    border-radius: 14px;
+    border: solid 2px #ebeff3;
+    background-color: #f9f9f9;
+    padding: 10px 0;
+} */
+.tracking-container{
+    display:block;
+    position:relative;
+}
+.tracking-container ul.tracking-list{
+    margin:0px;
+    padding:0;
+    display:block;
+}
+.tracking-container ul.tracking-list li{
+    list-style: none;
+    margin:auto;
+    min-height:30px;
+    border-left:2px solid #ccc;
+    padding:0 0 30px 30px;
+    position:relative;
+    opacity: 0.8;
+}
+.tracking-container ul.tracking-list li:last-child,
+.tracking-container ul.tracking-list li.active:last-child{
+    border-left:2px solid transparent;
+}
+.tracking-container ul.tracking-list li::before{
+    position: absolute;
+    left: -6px;
+    top: 0px;
+    content: " ";
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    background: #ccc;
+    height: 10px;
+    width: 10px;
+    transition: all 500ms ease-in-out;
+    z-index: 9;
+}
+.tracking-container ul.tracking-list li:first-child{
+    opacity: 1;
+}
+.tracking-container ul.tracking-list li:first-child::before{
+    background: green;
+}
+.tracking-container ul.tracking-list li.active,
+.tracking-container ul.tracking-list li.stopped{
+    opacity: 1;
+}
+.tracking-container ul.tracking-list li.border-active{
+    border-color: green;
+}
+.tracking-container ul.tracking-list li.active::before{
+    background: green;
+    border: 3px solid rgba(255, 255, 255, 0.74);
+    height: 20px;
+    width: 20px;
+    left: -11px;
+    top: 0px;
+    animation: shadow-pulse 1s infinite;
+}
+.tracking-container ul.tracking-list li.stopped::before{
+    background: red;
+    border: 3px solid rgba(255, 255, 255, 0.74);
+    height: 20px;
+    width: 20px;
+    left: -11px;
+    top: 0px;
+    animation: shadow-pulse 1s infinite;
+}
+.tracking-container ul.tracking-list li .stop-label{ display: none;}
+.tracking-container ul.tracking-list li.stopped .stop-label{
+    font-size: 12px;
+    color: red;
+    display: block;
+}
+.tracking-container ul.tracking-list li .item-title{font-size: 16px;}
+.tracking-container ul.tracking-list li .item-detail{
+    color:rgba(0,0,0,0.5);
+    font-size:14px;
+    margin-top: 5px;
+}
+
+/* tracking check */
+.tracking-container .status-btn-wrap .col{
+    padding: 0 5px;
+}
+.tracking-container.tracking-check .status-btn-wrap,
+.tracking-container .status-btn-wrap{
+    margin: 20px 0;
+}
+.tracking-container.tracking-check .status-btn-wrap .status-btn,
+.status-btn-wrap .status-btn{
+    background: green;
+    color: #fff;
+    min-width: 106px;
+    height: 25px;
+    border-radius: 14px;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.17;
+}
+
+.tracking-container.tracking-check .status-btn-wrap .delay-status{
+    background: red;
+}
+.status-btn-wrap .status-btn:hover{color: #fff;}
+.tracking-container.tracking-check .red, .red-text{color: red !important}
+.tracking-container.tracking-check .green, .green-text{color: #1FC900 !important}
+
+ @keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+
+
+ /* tracking tabs */
+ .tracking-tabs .MuiTabs-indicator{
+     background: #f7931e;
+ }
+ .tracking-tabs .MuiAppBar-colorPrimary {
+    color: #000;
+    background-color: transparent;
+    box-shadow: none;
+}
+.tracking-tabs .MuiTab-root{
+    min-width: 130px;
+}
+.tracking-tabs .top-tab .MuiTab-root{
+    min-width: 130px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    text-align: center;
+    color: #323232;
+    opacity: 1;
+}
+.tracking-tabs .top-tab .MuiTab-root.Mui-selected{
+    color:  #f7931e;
+}
+.tracking-tabs .top-tab .btn{
+    color: #006cc9;
+    padding: 0;
+    position: fixed;
+    right: 0;
+}
+.tracking-tabs .top-tab .btn .MuiSvgIcon-root{
+    font-size: 24px;
+    margin-right: 15px;
+}
+.tracking-tabs .top-tab .MuiTab-root:focus,
+.trip-track-detail .MuiTab-root:focus{outline: none;}
+.tracking-tabs .MuiBox-root{
+    padding: 16px;
+}
+.time-track ul{
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+}
+.time-track ul li{
+    border: 1px solid #c6c5c5;
+    padding: 7px 10px;
+    margin-right: 12px;
+    min-width: 120px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.time-track ul li p{
+    margin: 0 0 3px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.7);
+}
+.time-track ul li span{
+    display: block;
+    font-size: 12px;
+    color: rgba(0,0,0,0.7);
+}
+.time-track ul li.active{
+    background: #eee;
+}
+.time-track ul li.active p{
+    color: #0d3654;
+}
+
+/* track vehicle details */
+.track-vehicle-details{margin-top: 5px;}
+.track-vehicle-details .track-detail-head{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #768a9e;
+    font-weight: normal;
+}
+.track-vehicle-details .track-detail-head svg{
+    margin-right: 3px;
+    font-size: 16px;
+}
+.track-vehicle-details .driver-head {
+    margin-bottom: 0;
+}
+.track-vehicle-details .track-detail-card{
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+}
+.track-vehicle-details .track-detail-card:not(:last-child){
+    border-bottom: 1px solid #e4e4e4;
+}
+.track-vehicle-details .track-detail-card p{
+    font-size: 14px;
+    color: #133751;
+    margin: 0;
+}
+.track-vehicle-details .track-detail-card p:not(:last-child){
+    margin-bottom: 10px;
+}
+.track-vehicle-details .track-detail-card p svg{
+    font-size: 24px;
+    color: #768a9e;
+    margin-right: 16px;
+    background-color: #eaeff3;
+    padding: 5px;
+    border-radius: 20px;
+}
+.track-vehicle-details .track-detail-card p img{
+    margin-right: 16px;
+    background-color: #eaeff3;
+    padding: 4px;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+}
+
+.track-vehicle-details .track-detail-card p.pending-case svg{
+    padding: 4px;
+    background-color: #ffb100;
+}
+.track-detail-card .trigger-btn, .track-vehicle-details .trigger-btn{
+    height: 28px;
+    border-radius: 50px;
+    font-size: 12px;
+    padding: 0 24px;
+}
+.track-detail-card .trigger-btn svg, .track-vehicle-details .trigger-btn svg{font-size: 14px;}
+
+.track-vehicle-details .track-detail-card p span + span{
+    margin-left: 20px;
+}
+.main-container .view-map-button{
+    padding: 10px ;
+    width: 100% ;
+    border-radius: 0;
+    margin: 0;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    background: linear-gradient(to right, #f7931e, #de5811);
+}
+
+.trip-detail .trip-track-detail .MuiBox-root{
+    padding: 0;
+}
+
+/* trip-stopped */
+.trip-stop-container .tracking-list-stopped h4{
+    font-size: 14px;
+    color: #0d3654;
+}
+.trip-stop-container .tracking-list-stopped{
+    list-style: none;
+    margin-bottom: 6px;
+}
+.trip-stop-container .tracking-list-stopped li{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: solid 1px #dbe0e6;
+    background-color: #ffffff;
+}
+.trip-stop-container .tracking-list-stopped li .item-title{
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+.trip-stop-container .tracking-list-stopped li .item-detail{
+    font-size: 11px;
+    color: #768a9e;
+}
+.tracking-container .total-stat-time{
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.15;
+    color: #323232;
+}
+.tracking-container .total-stat-time .MuiSvgIcon-root{
+    font-size: 14px;
+    margin-right: 7px;
+    color: #777777;
+}
+.trip-track-detail .MuiTab-root{
+    border: solid 1px #aeb6bf;
+    background-color: #f9f9f9;
+    padding: 5px 10px;
+    margin-right: 12px;
+    min-height: auto;
+    border-radius: 4px;
+    min-width: 132px;
+    color: #768a9e;
+    opacity: 1;
+}
+.trip-track-detail .MuiTab-root.Mui-selected{
+    border: solid 1px #798b9c;
+    line-height: 1.15;
+    color: #133751;
+    background-color: #eaeff3;
+}
+.tracking-tabs .trip-track-detail .MuiTabs-indicator{
+    display: none;
+}
+.trip-track-detail .MuiTab-wrapper{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+.tracking-container .tracking-list.track-way{
+    overflow: hidden;
+    padding-left: 20px;
+    margin-left: -20px;
+}
+.tracking-container .track-way .tl-item{
+    position: relative;
+    border: none;
+    height: 80px;
+    padding: 0;
+    padding-left: 30px;
+}
+.track-way .tl-item .track-line{
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    height: 4px;
+    width: 100%;
+    max-width: 80px;
+    position: absolute;
+    left: -41px;
+    top: 48px;
+    background: #cccccc;
+    overflow: visible;
+    z-index: 2;
+}
+.track-way .tl-item .MuiLinearProgress-root{
+    background: #cccccc;
+}
+.track-way .border-active .track-line.completed{
+    background: green;
+}
+.track-way .tl-item .track-line .MuiLinearProgress-bar{
+    background: transparent;
+}
+.track-way .tl-item .track-line.current .MuiLinearProgress-bar{
+    background: green;
+}
+.track-way .tl-item .track-line.current .MuiLinearProgress-bar::after{
+    content: "";
+    background: green;
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    height: 14px;
+    width: 14px;
+    right: -2px;
+    bottom: -5px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 10;
+    animation: shadow-pulse 1s infinite;
+}
+/* .track-way .tl-item .track-line.stop .MuiLinearProgress-bar::after{
+    content: "";
+    background: red;
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    height: 14px;
+    width: 14px;
+    right: 0;
+    bottom: -5px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 10;
+    animation: shadow-pulse 1s infinite;
+} */
+.tracking-container .track-way .tl-item.stop .MuiLinearProgress-bar::after{
+    content: "";
+    background: red;
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    height: 12px;
+    width: 12px;
+    right: 0;
+    bottom: -4px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 10;
+    animation: shadow-pulse 1s infinite;
+}
+.tracking-container .track-way .tl-item .stop-label{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+.tracking-container .track-way .stop .stop-label{
+    display: block;
+}
+.tracking-container .track-way li:nth-last-child(1)::before{
+    left: -8px;
+}
+.tracking-container .track-way li:nth-last-child(1) .MuiLinearProgress-root{
+    display: none;
+}
+.tracking-container .track-way li:nth-last-child(1),
+.tracking-container .track-way li:nth-last-child(1).border-active,
+.tracking-container .track-way li:nth-last-child(1) .track-line{
+    border: none;
+}
+.tracking-container .track-way li:nth-last-child(1).border-active::before{
+    left: -6px;
+}
+
+/* Tracking Way Points */
+.tracking-container .track_way_points{
+    list-style: none;
+}
+.tracking-container .track_way_points.MuiBox-root{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tracking-container li.way_points.active::before{
+    background: green;
+}
+.tracking-container li.way_points{
+    margin: 0;
+    line-height: normal;
+    position: relative;
+}
+.tracking-container li.way_points.MuiBox-root{
+    padding-left: 30px;
+}
+.tracking-container li.way_points .track-line{
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    width: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #cccccc;
+}
+.tracking-container li.way_points::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: -2px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    background: #ccc;
+    height: 10px;
+    width: 10px;
+    transition: all 500ms ease-in-out;
+    z-index: 9;
+}
+.tracking-container li.way_points .fill-line{
+    background: green;
+    position: relative;
+}
+.tracking-container li.way_points .fill-line.active,
+.tracking-container li.way_points .fill-line.stopped{
+    background: green;
+    z-index: 1;
+    width: 4px;
+    top: 0;
+    position: absolute;
+}
+
+.tracking-container li.way_points .active::after{
+    content: "";
+    background: green;
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    height: 14px;
+    width: 14px;
+    left: -5px;
+    bottom: 0px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 10;
+    animation: shadow-pulse 1s infinite;
+}
+.tracking-container li.way_points.active .fill-line::before{
+    content: "";
+    background: green;
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    height: 14px;
+    width: 14px;
+    left: -5px;
+    bottom: 0px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 10;
+    animation: shadow-pulse 1s infinite;
+}
+.tracking-container li.way_points.stopped .fill-line::before{
+    content: "";
+    background: red;
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    height: 14px;
+    width: 14px;
+    left: -5px;
+    bottom: 0px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 10;
+    animation: shadow-pulse 1s infinite;
+}
+.tracking-container li.way_points .stop-label{ display: none;}
+.tracking-container li.way_points.stopped .stop-label{
+    font-size: 12px;
+    color: red;
+    display: block;
+    margin-top: 5px;
+}
+.tracking-container .way_points .item-title{font-size: 16px;}
+.tracking-container .way_points .item-detail{
+    color:rgba(0,0,0,0.5);
+    font-size:14px;
+    margin-top: 5px;
+}
+.stop-wrap{
+    display: flex;
+    min-height: 55vh;
+    margin: auto;
+}
+.no-stoppages{
+    text-align: center;
+    padding: 0;
+    margin: auto
+ }
+ .no-stoppages img{
+    width: auto;
+    max-width: 100%;
+ }
+ .location-not-found  .no-stoppages img{
+    max-width: 165px;
+ }
+ .no-stoppages p{
+    font-size: 19px;
+    margin-top: 20px;
+    color: #083654;
+    font-weight: 300;
+    max-width: 120px;
+ }
+ .grab-location-wrapp {
+    max-width: 180px;
+    margin: 0 auto;
+}
+ .grab-location-wrapp .or-text{
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+    color: #768A9E;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grab-location-wrapp .or-text:before, .grab-location-wrapp .or-text:after{
+    content: '';
+    border-top: 1px solid #EAEFF3;
+    margin-right: 10px;
+    flex: 1 0 20px;
+}
+.grab-location-wrapp .or-text:after {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.location-btn-wrapp .btn-orange{
+    min-width: 180px;
+}
+
+
+
+@media (min-width: 1200px){
+    .trip-wrapper .view-map-button{
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1024px){
+    .tablet_map_view .view-map-button{
+        left: inherit;
+        right: 17px;
+        bottom: 0px;
+        max-width: 318px;
+    }
+    .tab-map-view .makeStylesPopup{
+        height: 600px;
+    }
+    .tracking-tabs .top-tab .btn{display: none;}
+}
+@media (min-width:993px) and (max-width: 1024px){
+    .tablet_map_view .view-map-button{
+        max-width: 443px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .tracking-tabs .MuiBox-root{
+        padding: 23px 0;
+    }
+    .tracking-tabs .top-tab .btn .MuiSvgIcon-root{margin: 0;}
+}

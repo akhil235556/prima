@@ -1,0 +1,17 @@
+.device-form .input-wrap .MuiInputBase-root{ 
+    margin-right: 0;
+    min-width: 100%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+    border: solid 2px #ffffff;
+    background-color: #ffffff;
+
+}
+.access-token{
+    word-break: break-word;
+}
+
+
+
+.tracking-assets .table-list-view .MuiTable-root td:last-child, .tracking-assets .table-list-view .MuiTable-root th:last-child {
+    width: 110px;
+}

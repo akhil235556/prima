@@ -1,0 +1,1 @@
+export type ValueType<OptionType> = OptionType | OptionsType<OptionType> | null | undefined;

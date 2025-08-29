@@ -1,0 +1,17 @@
+.map-tool-tip{
+    width: 188px;
+    list-style-type: none;
+        height: 120px;
+    scroll-behavior: smooth;
+
+}
+.map-tool-tip-data{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #083654;
+    display: block;
+    list-style: none;
+    text-transform: capitalize;
+}

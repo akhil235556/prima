@@ -1,0 +1,80 @@
+.detail-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.detail-header h4{
+    flex: 1;
+}
+.detail-header .view-pod-btn.btn {
+    max-width: 110px;
+}
+.detail-wrapp .divider-bottom{
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.status-text .media-body{
+    color: #F7931E !important;
+}
+
+.order-shipment-modal .material-detail {
+    padding: 0;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+.order-shipment-modal .custom-form-row .remarks {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .order-shipment-modal .shipmentDetails {
+    overflow-y: auto;
+    max-height: 440px;
+} */
+
+.inputBox {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+/* .shipment_Details .css-yk16xz-control{
+min-height: 36px !important;
+}
+.shipment_Details .select-container .select__control{min-height: 36px;}
+.shipment_Details .MuiInputBase-input{height: 32px !important;}
+.shipment_Details .custom-date-picker .MuiInput-root{height: 36px !important}
+.shipment_Details .input-wrap .MuiInputBase-roo{height: 36px !important}
+.shipment_Details .MuiInputBase-root{height: 36px !important}
+.shipment_Details .autosuggest-wrap .MuiInputBase-input{height: 36px !important}
+.shipment_Details  .select-container .select__dropdown-indicator{padding: 0 8px;} */
+.inputBox .form-group {
+    width: 32%;
+}
+.inputBox .MuiInputBase-root{margin-right: 0 !important;}
+
+.input-lbh .input-wrap .MuiInputBase-root{
+    padding: 0 14px;
+}
+.MuiBadge-root .MuiBadge-badge{
+    background-color: #f7931e;;
+}
+.order-listing-wrapper .pt-10{
+    padding: 15px 20px 8px 20px;
+}
+@media (max-width:767.98px){
+    .order-shipment-modal .material-detail {
+        margin-bottom: 0;
+    }
+    .inputBox {width: 100%;}
+}
+@media (max-width: 640px){
+    .detail-header{
+        display: block;
+    }
+    .detail-header h4{
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+}

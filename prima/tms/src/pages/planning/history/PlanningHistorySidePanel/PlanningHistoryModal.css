@@ -1,0 +1,21 @@
+.planning-history-modal.custom-modal .MuiDialogContent-root {
+  padding: 0;
+}
+.planning-history-modal.custom-modal .MuiDialogActions-root {
+  padding: 12px;
+}
+.planning-history-modal.custom-modal
+  .MuiDialogContent-root
+  .planning_history--panel {
+  margin: 0;
+  height: 87vh;
+}
+.planning-history-modal.custom-modal .btn-detail {
+  height: 40px;
+  margin-right: 10px;
+}
+@media (max-width: 767px){
+  .create-plan-modal.custom-modal .MuiDialogActions-root{
+    padding: 0;
+  }
+}

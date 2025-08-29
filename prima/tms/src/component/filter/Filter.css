@@ -1,0 +1,109 @@
+.filter-panel {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+  padding: 8px 20px;
+}
+.icon-list .MuiSvgIcon-root{
+  margin-right: 0 !important;
+}
+
+.filter-panel .btn {
+  margin-left: 10px;
+  height: 40px;
+  font-weight: normal;
+}
+.filter-panel .btn-detail{
+  color: #768A9E;
+}
+.filter-panel .btn-detail:hover{
+  color: #ffffff;
+}
+.filter-panel .MuiToolbar-root {
+  min-height: 40px;
+  max-height: 40px;
+  padding: 0;
+}
+
+.filter-panel .MuiTypography-root {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.17;
+  color: #133751;
+}
+
+
+@media (max-width: 767px) {
+
+  .filter-panel .btn-orange ,
+  .filter-panel .mob-btn-blue{
+    height: 34px;
+    padding: 5px 12px;
+  }
+
+  .filter-panel .btn-orange .MuiSvgIcon-root,
+  .filter-panel .mob-btn-blue .MuiSvgIcon-root {
+    margin-right: 0;
+    font-size: 19px;
+  }
+  .filter-panel .btn-detail-mob .MuiSvgIcon-root{
+    margin-right: 0;
+  }
+  .filter-panel .MuiTypography-h6 {
+    font-size: 14px;
+    color: #083654;
+  }
+  .filter-panel{
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    padding: 3px 15px;
+  }
+  button.btn.btn-detail-mob {
+    height: 34px;
+    min-width: auto;
+    background: #f9f9f9;
+    background-image: linear-gradient( 
+180deg
+ ,#f9f9f9,#eaeff3);
+}
+}
+
+.filter-panel .autocomplete-wrap label {
+  display: none!important;
+}
+.filter-panel .select-container .select__control {
+  min-height: 41px;
+  background: #006cc9;
+  background-image: linear-gradient(to right,#006cc9 ,#145288, #006cc9);
+  border: solid 2px #006cc9;
+}
+.filter-panel .select-container{
+  border-radius: 4px;
+}
+.filter-panel .select-container .select__single-value{
+  color: #fff;
+}
+.filter-panel .autocomplete-wrap {
+  width: 240px;
+  margin-left: 10px;
+}
+.filter-panel .select-container .select__control .select__indicators svg {
+  fill: #fff;
+}
+
+@media (max-width: 767px){
+  .filter-panel .select-container .select__control{
+    height: 34px;
+    min-height: 34px;
+  }
+  .filter-panel .select-container .select__control .select__value-container {
+    margin-top: -3px;
+  }
+  .filter-panel .select-container .select__control .select__indicators {
+    height: 32px;
+  }
+}

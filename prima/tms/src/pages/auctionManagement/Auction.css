@@ -1,0 +1,139 @@
+.bidding-list {
+    padding: 0 !important;
+}
+.bidding-list-row{
+    width: auto !important;
+    padding: 15px 0 !important;
+    border-bottom: 1px solid #EAEFF3;
+    cursor: pointer;
+}
+.bidding-big-title {
+    margin-bottom: 3px;
+}
+.bidding-big-title, .bidding-score {
+    font-size: 14px;
+    color: #083654;
+}
+.bidding-list-row .MuiSvgIcon-root {
+    margin-right: 6px;
+    font-size: 14px;
+    color: #acb6c0;
+    vertical-align: text-top;
+}
+.bidding-small-title {
+    margin-bottom: 3px;
+    font-size: 10px;
+    line-height: 1.1;
+    color: #083654;
+
+}
+.customer-info {
+    font-size: 12px;
+    letter-spacing: 0.24px;
+    color: #768a9e;
+}
+.customer-email{
+    padding-right: 0;
+}
+.bidding-price{
+    font-size: 17px;
+    line-height: 1.18;
+    letter-spacing: 0.34px;
+    color: #083654;
+}
+.lane-sm-arrow .MuiSvgIcon-root{
+    font-size: 14px;
+}
+.active-bid{
+    background-color: #f7931e;
+}
+.active-bid .bidding-big-title, .active-bid .bidding-score, .active-bid .bidding-small-title,
+.active-bid .customer-info, .active-bid .bidding-price, .active-bid.bidding-list-row .MuiSvgIcon-root{
+    color: #fff;
+}
+.job-detail-row .lane-item{cursor: pointer;}
+
+.job-detail-left {
+    min-height: 775px;
+}
+.job-detail-left .data-not-found, .job-detail-live .data-not-found {
+    min-height: 775px;
+    max-height: 775px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.job-detail-live {
+    min-height: 826px;
+}
+.job-detail-live .data-not-found {
+    min-height: 826px;
+    max-height: 826px;
+}
+
+/* score tooltip */
+.auc-score-tip{position: relative;}
+.auc-score-tip .tooltip-table-wrap{
+    position: absolute;
+    top: -1px;
+    right: 5px;
+}
+.auc-score-tip .tooltip-table-wrap svg{
+    font-size: 18px;
+    color: #006cc9;
+}
+
+/* auction-card-row */
+.auction-card-row .tooltip-table-wrap .tooltip-icon{
+    position: absolute;
+    top: 27px;
+    right: 27px;
+}
+.auction-card-row .tat-no-field label{
+    opacity: 0;
+}
+.remark-input textarea{
+    height: 60px !important;
+}
+.auction-label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    width: 200px;
+}
+.auction-remarks>label{
+    font-size: 13px;
+    line-height: 1.15;
+    margin-bottom: 5px;
+    color: #083654;
+}
+.auction-remarks>textarea{
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #e0e4e6;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 1.15;
+    letter-spacing: 0.26px;
+    color: #083654;
+}
+.auction-remarks>textarea::placeholder{
+    color: rgba(8, 54, 84, .5);
+}
+@media(max-width:992px){
+    .mb-10{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:767px){
+    .job-detail-left, .job-detail-live {
+        min-height: auto;
+    }
+    .job-detail-left .data-not-found, .job-detail-live .data-not-found {
+        max-width: 130px;
+        min-height: 210px;
+        max-height: 210px;
+    }
+}
+

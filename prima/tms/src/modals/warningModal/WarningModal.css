@@ -1,0 +1,33 @@
+.warning-container h3{
+    color: #ffb100;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    margin: 7px 0 22px;
+}
+.warning-container h4{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.17;
+    color: #133751;
+    max-width: 278px;
+    margin: 0 auto 15px;
+}
+.warning-container h5{
+    color: #768a9e;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.17;
+    margin-bottom: 10px;
+}
+.warning-modal .MuiDialogActions-root{ justify-content: center;}
+
+.warning-modal .MuiDialogContent-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:768px){
+    .warning-modal.custom-modal .MuiDialog-paper{min-width: 560px;}
+}

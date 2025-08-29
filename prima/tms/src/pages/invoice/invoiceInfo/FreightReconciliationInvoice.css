@@ -1,0 +1,97 @@
+.card-detail-wrap .custom-form-row {
+    margin: 0;
+}
+/* .card-detail-wrap .billing-group {
+    margin-bottom: 0;
+    padding: 12px 20px 8px;
+    border-bottom: 1px solid #eaeff3;
+} */
+.card-detail-wrap .creat-contract-content , .card-detail-wrap .MuiCardContent-root:last-child{
+    padding: 0;
+}
+
+.list-info-wrap .MuiCardContent-root:last-child{
+    padding: 0 20px;
+}
+
+.remark-row.billing-info-remark{
+    padding: 0;
+}
+/* info-total */
+.info-total .billing-info-footer {
+    background: #fff;
+    min-width: 315px;
+}
+.info-total .billing-info-footer .d-flex{
+    width: 28%;
+    text-align: left;
+}
+.info-total .billing-info-footer .input-wrap{
+    padding: 8px 0;
+    min-height: auto;
+    width: auto;
+}
+.file-name{
+    margin-top: 4px;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    color: #083654;
+}
+
+.billing-dispute:hover {
+    cursor: pointer;
+}
+.freignt-recon-info-wrap .input-wrap .MuiInputBase-root.Mui-disabled, 
+.freightDetail .input-wrap .MuiInputBase-root.Mui-disabled  {
+    background:#ebeff3 !important ;
+}
+
+/*Waiting for approval*/
+.approve-text{
+    cursor: pointer;
+}
+
+.approve-user{
+    padding: 10px 15px;
+    border-bottom: 1px solid #eaeff3;
+}
+
+.approve-user-content>strong{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.15;
+    color: #083654;
+    display: block;
+}
+.approve-user-content>span{
+    font-size: 11px;
+    line-height: 1.18;
+    color: #768a9e;
+    font-weight: normal;
+    display: block;
+    margin-top: 3px;
+}
+.user-status-type{
+    text-align: left;
+}
+.user-status-type span{
+    font-size: 11px;
+    line-height: 1.18;
+}
+/* comments tooltip css */
+.custom-list-tool .user-status-type span{
+    font-size: 10px;
+    font-weight: 500;
+    text-align: right;
+    color: #768a9e;
+}
+.custom-list-tool .pr-text {
+    color: #454545;
+    font-size: 11px;
+    line-height: 1.18;
+    padding-left: 32px;
+}
+
+

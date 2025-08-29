@@ -1,0 +1,330 @@
+.main-container.tracking-wrapper{
+  height: calc(100vh - 64px);
+  overflow: hidden;
+  background: #fff;
+}
+.main-container.tracking-wrapper .filter-panel{
+    top: 0;
+}
+.tatTrip{
+    position: relative;
+    top: 14px;
+}
+.Tracking-View{
+    height: calc(100%);
+    padding: 0px 20px 0px;
+    padding-bottom: 64px;
+}
+/* .Tracking-View.track-view-chip{
+    padding-bottom:120px;
+} */
+.Tracking-View .ht100{
+    height: calc(100%);
+}
+.trackingList{
+    height: 100%;
+}
+.liveTracking li.card{
+    padding: 0;
+    border-radius: 0;
+    background-color: #f7f7f7;
+    margin-bottom: 5px;
+    border: none;
+    border-left: solid 4px #f7f7f7;
+    position: relative;
+}
+.liveTracking li.card.active{
+    border-left: solid 4px #e57937;
+    background-color: #ffffff;
+}
+.liveTracking .clickcard{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.liveTracking li .card-header{
+    padding: 7px 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: dashed 1px #ddd;
+}
+.liveTracking li .htt{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    line-height: 13px;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.liveTracking li.card.active .htt{
+    color: #e57937;
+}
+ .liveTracking li .htt .t13{
+    font-size: 15px;
+}
+.liveTracking li .htt label{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.liveTracking li .htt input{
+    opacity: 0;
+    position: absolute;
+} 
+.liveTracking .tripli .ckinpt{
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    /* background-image: url('../images/uncheck.svg'); */
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+.liveTracking input[type="radio"]:checked + label .ckinpt{
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    /* background-image: url('../images/check.svg'); */
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+.liveTracking input[type="radio"]:checked + label{
+    color: #e57937;
+}
+.liveTracking .tripli .t13{
+    margin-left: 5px;
+}
+.liveTracking li .htm{
+    font-size: 15px;
+    line-height: 16px;
+    margin: 0;
+    color: #0d3654;
+}
+.liveTracking li .card-header .htt img{
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
+}
+.liveTracking .card-body{
+    padding: 0 15px;
+    background-color: transparent;    
+}
+.liveTracking li .tripli div,
+.liveTracking li .tripli .col,
+.liveTracking li .tripli .col-auto{
+    line-height: 16px;
+}
+.liveTracking li .tripli .stt{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0, 0.8);
+    font-weight: 500;
+}
+.liveTracking li .tripli .smt{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color:rgba(0, 0, 0, 0.5);
+    display: block;
+}
+.liveTracking .listInf{
+    text-align: center;
+}
+.liveTracking li.card.active .listInf span{
+    position: relative;
+    z-index: 2;    
+}
+.liveTracking .listInf span:hover i,
+.liveTracking .listInf span:hover em{
+    color: #e57937;
+}
+.liveTracking .listInf span,
+.liveTracking .listInf .col,
+.liveTracking .listInf .col-auto{
+    padding: 5px;
+    line-height: 14px;
+    margin-bottom: 5px;
+}
+.liveTracking .listInf i{
+    font-size: 18px;
+    height: 22px;
+    display: block;
+    margin: 0 auto;
+    color: rgba(13,54,84, 0.8);
+    line-height: normal;
+}
+.liveTracking .listInf em {
+    font-style: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    color: rgba(0, 0, 0, 0.5);
+}
+.listInf .kmh {
+    font-size: 15px;
+    padding: 3px 0;
+    font-family: 'Arial', sans-serif;
+}
+.liveTracking .card-footer{
+    padding: 5px 10px; 
+    background-color: transparent;       
+    border: none;
+}
+.fulldetailbtn{
+    padding: 3px 20px;
+    border-radius: 40px;
+    font-size: 14px;
+}
+.listTripli{
+    position: relative;
+    padding: 10px 0;
+/*    border-right: dashed 1px #ddd;
+*/}
+.liveTracking li.card.active .listTripli li{
+    position: relative;
+    opacity: 1;
+}
+.listTripli li{
+    position: relative;
+}
+.listTripli li a{
+    font-size: 14px;
+    padding:0 0 8px;
+    padding-right: 10px;
+    display: block;
+    color: rgba(0,0,0, 0.4);
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;  
+}
+.listTripli li a:after{
+    content: "";
+    width: 14px;
+    height: 19px;
+    border-bottom: dotted 2px rgba(0,0,0, 0.3);
+    position: absolute;
+    left: 7.5px;
+    top: 17px;
+    transform: rotate(90deg);
+}
+.listTripli li:nth-last-child(1) a:after{
+    border-bottom: none;
+}
+.listTripli li a:before{
+    content: '\f26e';    
+    display: inline-block;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 10px;
+}
+.listTripli li.active a{
+    color: rgba(13,54,84, 0.9);
+}
+.listTripli li.active a:before{
+    content: '\f26f';    
+    color: #e57937;
+}
+.listTripli li:hover a{
+    color: #e57937;
+}
+.filterbtn{
+    border-radius: 30px;
+    padding: 0 20px;
+}
+.filterbtn:before{
+    content: '\f160';    
+    display: inline-block;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 10px;
+}
+.stop-reporting-modal .MuiDialog-paper {
+    min-width: 450px;
+    max-width: 450px;
+}
+.stop-reporting-modal .MuiDialogActions-root{
+    justify-content: center !important;
+}
+.stop-reporting-modal .MuiDialogActions-root .ok-btn{
+    min-width: 170px;
+}
+.stop-reporting-modal .input-wrap .MuiInputBase-root{
+    margin-right: 0;
+}
+.reporting-comment label {
+    margin-bottom: 0px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.15;
+    color: #083654;
+}
+.reporting-comment textarea{
+    padding: 14px;
+    width: 100%;
+    height: 69px;
+    border-radius: 4px;
+    border: solid 2px #e5ebf0;
+    font-size: 13px;
+    line-height: 1.15;
+    letter-spacing: .26px;
+    color: #083654;
+}
+.reporting-comment textarea::placeholder{
+    color: #acb6c0;
+}
+@media (min-width: 768px){
+    .track-chip-wrap{padding-top: 15px;}
+    .tracking-wrapper.tracking-wrapper-2{
+        height: auto;
+        overflow: auto;
+    }
+    .tracking-wrapper-2 .Tracking-View{
+        height: calc(100vh - 195px);
+        padding-bottom: 0;
+    }
+}
+@media (min-width: 768px) and (max-width:1024px){
+    .Tracking-View{padding: 0 0 64px 15px;}
+}
+
+@media (max-width: 767px){
+    .main-container.tracking-wrapper {
+        /* height: calc(100vh - 107px); */
+        height: calc(100%);
+        overflow: inherit;
+        padding-bottom: 50px;
+    }
+        
+    /* tracking chips */
+    .tracking-wrapper .tracking-chips{
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .stop-reporting-modal .MuiDialog-paper {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+

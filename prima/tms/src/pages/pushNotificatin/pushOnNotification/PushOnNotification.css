@@ -1,0 +1,96 @@
+.notification-wrapp {
+    margin-right: 10px;
+    flex: 1;
+}
+.notification-sub-heading{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.19;
+    align-items: center;
+    color: #133751;
+}
+.on-notification-content{
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-size: 11px;
+    color: #768a9e;
+    line-height: 1.1;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+    max-width: 355px;
+    /* white-space: nowrap; */
+}
+/* Swittch Button CSS */
+.custom-switch-small .MuiSwitch-root {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 20px;
+    border-radius: 30px;
+}
+.custom-switch-small .MuiFormControlLabel-root{
+    margin: 0;
+}
+.custom-switch-small .MuiSwitch-track{
+    background: #acb6c0;
+    opacity: 1;
+}
+.custom-switch-small .MuiSwitch-thumb{
+    width: 16px;
+    height: 16px;
+}
+.custom-switch-small .MuiSwitch-switchBase{
+    padding: 2px;
+}
+.custom-switch-small .MuiSwitch-switchBase.Mui-checked {
+    transform: translateX(10px);
+}
+.custom-switch-small .MuiSwitch-colorSecondary.Mui-checked {
+    color: #ffffff;
+}
+.custom-switch-small .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+    background-color: #006CC9;
+    opacity: 1;
+}
+/* Swittch Button CSS End */
+
+@media (max-width:767.98px){
+    .notification-sub-heading{
+        font-size: 13px;
+    }
+    .push-notification-card{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .on-notification-content {
+        max-width: 218px;
+
+    }
+}
+
+.notification-content_child  {
+    padding-left: 24px;
+    margin-top: 10px;
+}
+.notification-content_child h3.notification-sub-heading {
+    font-size: 13px;
+    color: #133751;
+}
+.notification-content_child  p.on-notification-content {
+    font-size: 10px;
+    margin-top: 3px;
+}
+.notification-content_child .notification-wrapp {
+    position: relative;
+}
+.notification-content_child .notification-wrapp:before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #ACB6C0;
+    border-radius: 50%;
+    margin-left: -14px;
+    top: 4px;
+}

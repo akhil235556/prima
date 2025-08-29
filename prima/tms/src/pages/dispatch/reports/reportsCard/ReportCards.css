@@ -1,0 +1,122 @@
+.report-card {
+  padding: 24px 28px 23px;
+  position: relative;
+  width: 100%;
+  min-height: 150px;
+  border-radius: 28px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.report-card:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.avg-bg:before {
+  background-image: url("/images/avg-bg.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-bottom-left-radius: 28px;
+  background-size: 100% 100%;
+}
+.inbound-bg:before {
+  content: "";
+  background-image: url("/images/inbound-bg.png");
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 28px;
+  background-size: 100% 100%;
+}
+.dispatch-bg:before {
+  content: "";
+  background-image: url("/images/dispatch-bg.png");
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 28px;
+  background-size: 100% 100%;
+}
+.report-card .card-head {
+  margin-bottom: 21px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #083654;
+
+}
+.report-card .card-value {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: #083654;
+}
+
+.report-card .percent-icon .MuiSvgIcon-root {
+  margin-top: -3px;
+  font-size: 14px;
+  line-height: 1.07;
+  color: #1fc900;
+}
+.report-card .percent-value span {
+  margin-left: 6px;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #1fc900;
+}
+
+.report-card .arrow-red .MuiSvgIcon-root{
+  color: #FF0000;
+}
+
+.report-card .card-image {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  transform: translateY(-50%);
+}
+@media (max-width: 992px) {
+  .report-card {
+    margin-bottom: 15px;
+    min-height: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .report-card {
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    border: solid 1px #e0e0e0;
+    box-shadow: none;
+  }
+
+  .mobile-card {
+    display: flex;
+    align-items: center;
+  }
+  .card-image {
+    width: 60px;
+  }
+  .report-card .percent-value span {
+    margin-left: 2px;
+    font-size: 13px;
+  }
+  .report-card .card-head {
+    margin-bottom: 16px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .report-card .card-value {
+    min-width: 80px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+}

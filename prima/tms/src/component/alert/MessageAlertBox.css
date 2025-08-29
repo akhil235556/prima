@@ -1,0 +1,78 @@
+/* message modal */
+.message-modal.custom-modal .MuiDialogContent-root{
+    padding: 24px 10px 0;
+}
+.message-modal.custom-modal .MuiDialog-paper{
+    min-width: 450px;
+    max-width: 450px;
+}
+.message-modal.custom-modal .MuiDialogContent-root .MuiSvgIcon-root{
+    font-size: 56px;
+    line-height: 1.09;
+    color: #ED1B00;
+    opacity: 0.9;
+}
+.message-modal.custom-modal.success .MuiDialogContent-root .MuiSvgIcon-root{
+    color: #1FC900;
+}
+.message-modal.custom-modal.error .MuiDialogContent-root .MuiSvgIcon-root{
+    color: #ED1B00;
+}
+.message-modal.custom-modal.info .MuiDialogContent-root .MuiSvgIcon-root{
+    color: #f7931e;
+}
+.message-modal.custom-modal .MuiDialogContent-root .content-heading{
+    line-height: 1.18;
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+.message-modal.custom-modal .MuiDialogContent-root .content-heading.success{
+    color: #1FC900;
+}
+.message-modal.custom-modal .MuiDialogContent-root .content-heading.error{
+    color: #ED1B00;
+}
+
+.message-modal.custom-modal .MuiDialogContent-root .content-heading.info{
+    color: #f7931e;
+}
+
+.message-modal.custom-modal .MuiDialogContent-root label,.warning-constraint{
+    line-height: 20px;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: #768a9e;
+    margin-top: 10px;
+    max-width:400px;
+    word-break: break-word;
+}
+
+.warning-continue {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.17;
+    color: #797979;
+}
+
+.message-modal.custom-modal .MuiDialogActions-root{
+    justify-content: center !important;
+    padding: 32px 0px 20px;
+}
+
+.message-modal.custom-modal .center .MuiDialogActions-root .MuiDialogActions-spacing{
+    justify-content: center;
+}
+
+.message-modal.custom-modal .csv .MuiDialogActions-root .MuiDialogActions-spacing{
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .message-modal.custom-modal .MuiDialog-paper{
+        min-width: 100%;
+    }
+}

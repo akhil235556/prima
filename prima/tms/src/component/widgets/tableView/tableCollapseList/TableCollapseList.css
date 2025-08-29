@@ -1,0 +1,69 @@
+/* table collapse list */
+.table-collapse-list.table-list-view .expand-btn{
+    width: 80px;
+    padding-left: 15px;
+}
+.table-collapse-list.table-list-view .expand-btn .MuiIconButton-root{
+    width: 28px;
+    height: 28px;
+    border: solid 1px #acb6c0;
+    background-color: #f9f9f9;
+    color: #acb6c0;
+}
+.table-collapse-list.table-list-view .expand-btn .MuiIconButton-root svg{
+    font-size: 20px;
+}
+.table-collapse-list.table-list-view .expand-btn.active .MuiIconButton-root{
+    width: 28px;
+    height: 28px;
+    border: solid 1px #006cc9;
+    background-color: #f9f9f9;
+    color: #006cc9;
+}
+.table-collapse-list.table-list-view .collapse-cell{
+    background: transparent;
+    border: none;
+    height: auto;
+    padding: 0;
+}
+
+/* collapse detail */
+.table-collapse-list.table-list-view .table-collapse-detail{
+    border-spacing: 0;
+    margin-bottom: 4px;
+}
+.table-collapse-list.table-list-view .table-collapse-detail .MuiTableCell-head{
+    padding: 0 10px 6px;
+}
+.table-collapse-list.table-list-view .table-collapse-detail .MuiTableCell-head:first-child{
+    border-left: 1px solid #ebeff3;
+
+}
+.table-collapse-list.table-list-view .table-collapse-detail .MuiTableCell-head:last-child{
+    border-right: 1px solid #ebeff3;
+}
+.table-collapse-list .MuiCollapse-entered{
+    overflow: auto;
+}
+
+/*Shipment Not Found CSS*/
+.shipment-not-found{ 
+    padding: 12px 15px;
+    background: #fff;
+    border: 1px solid #ebeff3;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #133751;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    .shipment-not-found{
+        width: 100%;
+        padding: 8px 10px;
+        border: none;
+        font-size: 13px;
+        border-top: 1px solid #ebeff3;
+        display: block;
+    }
+}

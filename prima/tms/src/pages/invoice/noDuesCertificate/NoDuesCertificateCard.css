@@ -1,0 +1,28 @@
+.certificate-detail h4{
+    font-size: 18px;
+    color: #083654;
+    margin-bottom: 18px;
+}
+.certificate-detail h4.blue-text{margin: 25px 0;}
+.certificate-detail p{
+    font-size: 16px;
+    color: #083654;
+}
+.certificate-detail span{
+    color: #768A9E;
+    font-size: 14px;
+}
+@media (min-width:768px){
+    .cert-detail-wrap .dispatch-card-wrapper{
+        padding: 35px 80px;
+    }
+}
+@media(max-width:768px){
+    .no-dues-form .autosuggest-wrap{
+        margin-bottom: 20px;
+    }
+    .no-dues-form .btn-blue{
+        float: right;
+
+    }
+}

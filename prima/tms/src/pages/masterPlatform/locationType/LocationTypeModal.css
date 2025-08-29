@@ -1,0 +1,5 @@
+@media(min-width:767px){
+    .enable-location-modal .MuiDialog-paper {
+        min-width: 600px;
+    }
+}

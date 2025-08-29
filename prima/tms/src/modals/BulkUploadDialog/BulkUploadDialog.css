@@ -1,0 +1,65 @@
+
+.upload-dialog .MuiDialog-paper {
+    min-width: 550px;
+}
+
+.modal-create-row .select-container .select__control{
+    padding: 0;
+}
+.modal-create-row .select__indicator-separator{display: none;}
+.modal-create-row .input-wrap .MuiInputBase-root{
+    padding: 0 8px;
+}
+.download-csv{
+    font-size: 14px;
+    color:#F7931E;
+    cursor: pointer;
+}
+.download-csv .MuiSvgIcon-root{
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+.upload-pdf .MuiDialogActions-root.csv.MuiDialogActions-spacing{
+    justify-content: flex-end;
+}
+@media (max-width: 767px) {
+    .mr-10{
+        margin-right: 0;
+    }
+    .upload-dialog .MuiDialog-paper{
+        margin-top: 64px;
+        min-width: 94%;
+        width: 94%;
+        border-radius: 8px;
+    }
+    .upload-dialog .MuiDialogTitle-root {
+        padding: 6px 15px;
+        height: auto;
+        box-shadow: none;
+        background-image: linear-gradient(to right, #f9f9f9,#eaeff3);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .upload-dialog .MuiTypography-root {
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 1.2;
+        color: #083654;
+    }
+    .upload-dialog .MuiDialogContent-root{
+        padding: 20px 15px 0;
+    }
+    .upload-dialog .MuiSvgIcon-root {
+        color: inherit;
+    }
+    .upload-dialog .MuiDialog-scrollPaper {
+        background-color: inherit;
+    }
+    .upload-dialog .MuiDialogActions-spacing > :not(:first-child) {
+        width: auto;
+    }
+}

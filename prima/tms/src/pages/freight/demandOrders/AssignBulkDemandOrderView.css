@@ -1,0 +1,46 @@
+.transporterInput .input-wrap input {
+    border: 0;
+    padding: 0;
+}
+@media (min-width: 768px) {
+    .dispatch-card-wrapper.assignTransporter {
+        padding: 15px 25px 20px;
+    }
+    .transporterInput .applyAll {
+        display: flex;
+        align-items: flex-end;
+    }
+    .transporterInput .applyAll button {
+        height: 46px;
+    }
+    .dispatchInput.row.transporterInput {
+        margin: 15px 17px 0;
+    }
+    .dispatchInput.row.transporterInput .form-group{
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width: 767px){
+    .transporterInput .applyAll{
+        margin-bottom: 1rem;
+    }
+}
+.DO-assign-transporter .table-list-view input {
+    height: 34px;
+}
+.DO-assign-transporter .table-list-view .input-wrap .MuiInputBase-root {
+    height: 38px;
+}
+.DO-assign-transporter .table-detail-listing .table-list-view .MuiTableRow-root .MuiTableCell-root {
+    min-width: 50px;
+}
+.DO-assign-transporter .table-detail-listing .table-list-view .MuiTableRow-root .MuiTableCell-root:first-child {
+    padding-right: 0px;
+}
+.DO-assign-transporter .dispatchInput .input-wrap .MuiInputBase-root {
+    height: 38px;
+}
+.DO-assign-transporter .applyAll button.btn.btn-blue {
+    height: 38px;
+}

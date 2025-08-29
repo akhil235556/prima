@@ -1,0 +1,26 @@
+.bill-tab {
+  padding: 0 20px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+.amount > img {
+  width: 7px;
+}
+@media (min-width: 600px) {
+  .bill-tab .MuiTab-root {
+    margin-right: 20px;
+    min-width: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .invoice-listing-wrapper .filter-panel {
+    margin-bottom: 0;
+  }
+  .bill-tab {
+    margin-bottom: 15px;
+  }
+  .bill-tab.tab-nav .MuiTab-root {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+}

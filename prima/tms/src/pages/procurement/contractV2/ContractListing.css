@@ -1,0 +1,166 @@
+.dispatch-card-wrapper .creat-contract-wrapp{
+    margin-bottom: 20px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: inherit;
+}
+.creat-wrapp .MuiCardContent-root{
+    padding-top: 20px;
+}
+.creat-wrapp .MuiCardContent-root:last-child{
+    padding-bottom: 0;
+}
+.creat-contract-wrapp .creat-contract-header{
+    padding: 11px 20px;
+    background: #eaeff3;
+    border-radius: 8px 8px 0 0;
+    min-height: 46px;
+}
+.creat-contract-wrapp .creat-contract-header .MuiCardHeader-avatar {
+    position: absolute;
+    right: 40px;
+    margin-right: 0;
+}
+
+.creat-contract-wrapp .creat-contract-header .MuiCardHeader-title{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.18;
+    color: #133751;
+}
+.creat-contract-wrapp .creat-contract-content {
+   padding-left: 20px;
+   padding-right: 20px;
+}
+.order-detail-wrapper .freight-charges-wrapp .creat-contract-content{
+    padding-bottom: 15px;
+}
+.pdf-button-wrapp .view-pod-btn.btn{
+    max-width: 110px;
+}
+.pdf-button-wrapp .btn-orange {
+    margin-left: 15px;
+}
+.approved-list {
+    margin: 0 -10px;
+}
+.approved-list .MuiList-padding {
+    padding: 0;
+}
+.approved-list .MuiListItem-gutters {
+    padding: 0 10px 6px;
+    border-bottom: 1px solid #ebeff3;
+}
+.approved-list .MuiListItem-gutters:last-of-type {
+    padding-top: 6px;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.approved-list .MuiListItemText-primary {
+    font-size: 12px;
+    color: #133751;
+    font-weight: 400;
+    line-height: 1.15;
+    text-transform: none;
+}
+.approved-list .MuiListItemText-root{
+    margin: 0;
+}
+.approved-list .MuiListItemIcon-root {
+    min-width: 22px;
+    color: #f7931e;
+}
+.approved-list .MuiSvgIcon-root {
+    font-size: 14px;
+}
+.lane-wrap-text .word-wrap{
+    white-space: normal;
+}
+.gst-checkbox .custom-checkbox.MuiCheckbox-colorSecondary.Mui-checked{
+    color: #f7931e;
+}
+.gst-checkbox .MuiFormControlLabel-label{
+    font-size: 13px;
+    line-height: 1.15;
+    color: #083654;
+}
+.custom-form-row .info-icon .MuiSvgIcon-root{
+    color: #006cc9 !important;
+}
+.custom-form-row .info-icon{
+    margin-left: 4px;
+    font-size: 17px;
+
+}
+.freight-charge-header .MuiCardHeader-action{
+    position: relative;
+    margin-top: -5px;
+}
+.disable-date .MuiInputBase-input.Mui-disabled {
+    color: #083654;
+}
+.disable-date .MuiInput-root {
+    background-color: #f9f9f9;
+}
+.count-num .count-text{
+    padding: 2px;
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #083654;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.con-field-wrap .info-heading{
+    display: flex;
+    align-items: center;
+}
+@media (max-width:767.98px){
+    .creat-contract-wrapp .creat-contract-content{
+        padding: 10px 15px;
+    }
+    /* .pr-m-0 {
+        padding-right: 0!important;
+    } */
+    .creat-add-btn{
+        margin-bottom: 30px !important;
+        display: flex;
+        align-items: flex-end;
+    }
+    .creat-contract-wrapp .creat-contract-header {
+        border-radius: 5px 5px 0 0;
+        padding: 5px 15px;
+        min-height: 40px;
+    }
+    .creat-contract-wrapp .creat-contract-header .MuiCardHeader-title{
+        font-size: 15px;
+    }
+    .creat-contract-wrapp .creat-contract-header .MuiCardHeader-avatar {
+        right: 26px;
+    }
+    .creat-contract-wrapp .creat-contract-header h4{
+        flex: 1;
+    }
+    .dispatch-card-wrapper .creat-contract-wrapp{box-shadow: none;}
+    .add-icon{
+        position: relative;
+        right: -3px;
+    }
+
+    .charges-select .select-container .select__placeholder{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 84px;
+    }
+
+}
+@media (max-width:320px){
+    .charges-select .select-container .select__placeholder{
+        width: 64px;
+    }
+}

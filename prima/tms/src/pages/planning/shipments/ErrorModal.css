@@ -1,0 +1,78 @@
+.job-detail{
+    padding: 0 15px !important;
+    font-size: 14px;
+    color: #768A9E;
+}
+.job-detail-row {
+    padding: 15px 0;
+    border-bottom: 1px solid #EAEFF3;
+}
+.job-detail .left-col{
+    text-align: right;
+}
+.job-detail .right-col{
+    font-weight: 500;
+    color: #083654;
+}
+.error-code {
+    margin-left: -20px !important;
+    margin-right: -20px !important;
+    min-height: 273px;
+}
+
+.error-code .table-list-view .table-wrapper {
+    min-height: 289px;
+    max-height: 273px;
+}
+
+.error-code .table-list-view .MuiTableRow-root .MuiTableCell-head:first-child{
+    padding-left: 20px;
+}
+.error-code .table-list-view .MuiTableCell-body:first-child{
+    padding-left: 20px;
+}
+.error-code .table-list-view .MuiTableRow-root .MuiTableCell-head:last-child{
+    padding-right: 20px;
+}
+.error-code .table-list-view .MuiTableCell-body:last-child{
+    padding-right: 20px;
+}
+.error-code .not-found{
+    max-width: 220px;
+}
+.error-code .data-not-found{
+    min-height: 273px;
+    max-height: 273px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error-code .data-not-found .imgbox{
+    margin-bottom: 30px;
+}
+.display-all-data .table-list-view .MuiTableRow-root .MuiTableCell-root {
+    white-space: inherit;
+    text-overflow: inherit;
+}
+
+.error-code .img-fluid{
+    height: 170px;
+}
+.img-upload .img-fluid{
+    height: 77px;
+}
+.payload-modal .MuiDialogActions-root{
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+@media (max-width:767.98px){
+    .error-code{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .job-detail .right-col{
+        white-space: inherit;
+        text-overflow: inherit;
+        word-break: break-word;
+    }
+}

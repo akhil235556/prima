@@ -1,0 +1,28 @@
+.footer {
+    display: inline-block;
+    background-color: #eee;
+    width: 100%;
+    z-index: 1024;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer .copyRight {
+    margin: 13px 0 10px;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        z-index: 3;
+        /* position: relative; */
+    }
+
+    .footer .copyRight {
+        font-size: 8px;
+    }
+}

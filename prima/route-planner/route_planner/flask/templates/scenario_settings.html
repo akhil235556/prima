@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row mb-4">
+        <div class="col">
+            <h2>Scenario Settings</h2>
+            <p class="text-muted">Configure your route planning strategy and parameters</p>
+        </div>
+    </div>
+
+    <!-- Planning Strategies -->
+    <div class="row">
+        {% for strategy_id, strategy in strategies.items() %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{ strategy.name }}</h5>
+                    <p class="card-text">{{ strategy.description }}</p>
+                    <button class="btn btn-primary select-strategy" data-strategy="{{ strategy_id }}">
+                        Select Strategy
+                    </button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Configuration Form -->
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Planning Parameters</h5>
+                </div>
+                <div class="card-body">
+                    <form id="planningForm">
+                        <div class="mb-3">
+                            <label for="vehicleCapacity" class="form-label">Vehicle Capacity</label>
+                            <input type="number" class="form-control" id="vehicleCapacity" name="vehicleCapacity" min="1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="maxDistance" class="form-label">Maximum Distance (km)</label>
+                            <input type="number" class="form-control" id="maxDistance" name="maxDistance" min="0">
+                        </div>
+                        <div class="mb-3">
+                            <label for="timeWindow" class="form-label">Time Window (hours)</label>
+                            <input type="number" class="form-control" id="timeWindow" name="timeWindow" min="1" max="24">
+                        </div>
+                        <div class="mb-3">
+                            <label for="costPerKm" class="form-label">Cost per Kilometer</label>
+                            <input type="number" class="form-control" id="costPerKm" name="costPerKm" step="0.01" min="0">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Settings</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Current Strategy</h5>
+                </div>
+                <div class="card-body">
+                    <h4 id="currentStrategy">No strategy selected</h4>
+                    <p id="strategyDescription" class="text-muted">Please select a planning strategy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(document).ready(function() {
+        let currentStrategy = localStorage.getItem('selectedStrategy') || 'fixed';
+        updateStrategyDisplay(currentStrategy);
+
+        $('.select-strategy').click(function() {
+            const strategy = $(this).data('strategy');
+            currentStrategy = strategy;
+            localStorage.setItem('selectedStrategy', strategy);
+            updateStrategyDisplay(strategy);
+        });
+
+        function updateStrategyDisplay(strategy) {
+            const strategies = {{ strategies|tojson }};
+            const selectedStrategy = strategies[strategy];
+            
+            if (selectedStrategy) {
+                $('#currentStrategy').text(selectedStrategy.name);
+                $('#strategyDescription').text(selectedStrategy.description);
+                
+                // Highlight the selected strategy card
+                $('.select-strategy').removeClass('btn-success').addClass('btn-primary');
+                $(`.select-strategy[data-strategy="${strategy}"]`).removeClass('btn-primary').addClass('btn-success');
+            }
+        }
+
+        // Load saved settings
+        const savedSettings = JSON.parse(localStorage.getItem('planningSettings') || '{}');
+        Object.keys(savedSettings).forEach(key => {
+            $(`#${key}`).val(savedSettings[key]);
+        });
+
+        // Save settings
+        $('#planningForm').submit(function(e) {
+            e.preventDefault();
+            const settings = {
+                vehicleCapacity: $('#vehicleCapacity').val(),
+                maxDistance: $('#maxDistance').val(),
+                timeWindow: $('#timeWindow').val(),
+                costPerKm: $('#costPerKm').val()
+            };
+            localStorage.setItem('planningSettings', JSON.stringify(settings));
+            
+            // Show success message
+            const alert = $('<div class="alert alert-success mt-3">Settings saved successfully!</div>');
+            $(this).append(alert);
+            setTimeout(() => alert.fadeOut('slow', function() { $(this).remove(); }), 3000);
+        });
+    });
+</script>
+{% endblock %} 

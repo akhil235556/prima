@@ -1,0 +1,33 @@
+.container-message {
+   margin-bottom: 13px;
+   padding: 8px 20px;
+   background-color: #FFFFFF;
+   border-radius: 8px;
+}
+.container-message h6 {
+   margin-bottom: 5px;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 1.2;
+   letter-spacing: 0.3px;
+   color: #F7931E;
+}
+.container-message .date-time {
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.24px;
+   color: #768A9E;
+}
+.container-message P {
+   margin-top: 5px;
+   margin-bottom: 0;
+   font-size: 13px;
+   line-height: 1.15;
+   letter-spacing: 0.26px;
+   color: #083654;
+ }
+ @media (max-width:767px){
+   .container-message {
+      padding: 8px 15px;
+   }
+ }

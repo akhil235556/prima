@@ -1,0 +1,97 @@
+/* .report-card-wrapp:before{
+    width: 100%;
+    content: "";
+    height: 136px;
+    background-color: #eaeff3;
+    position: absolute;
+    left: 0;
+} */
+.report-card-content {
+  padding: 15px 15px 23px;
+}
+
+.left-col {
+  flex: 1;
+}
+.report-label {
+  text-align: right;
+  line-height: 47px;
+  color: #768a9e;
+}
+.graph-wrapp {
+  padding: 20px 30px 20px 30px;
+  margin: 0 20px 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.graph-wrapp .graph-wrap{
+  margin: 0;
+}
+.graph-heading {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #5e5e5e;
+  font-weight: 500;
+}
+/* .matrix {
+  margin-bottom: 40px;
+  float: right;
+}
+.matrix .autocomplete-wrap {
+  display: flex;
+}
+.matrix .autocomplete-wrap label {
+  flex: 0 1;
+  margin-bottom: 0;
+  margin-right: 16px;
+  align-items: center;
+  line-height: 45px;
+  font-size: 16px;
+}
+.matrix .autocomplete-wrap .select-container {
+  min-width: 160px;
+} 
+
+.matrix .autocomplete-wrap .select-container .select__control {
+  border-radius: 4px;
+  border: solid 1px #eaeff3;
+  min-height: 40px;
+  padding: 0 6px;
+  border-radius: 30px;
+  background: #f9f9f9;
+}
+.matrix .autocomplete-wrap .select-container .select__placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  color: #133751;
+  font-weight: normal;
+}
+.matrix .autocomplete-wrap .select-container .select__dropdown-indicator {
+  color: #acb6c0;
+}
+*/
+@media (max-width: 992px) {
+  .report-card-content {
+    padding: 20px 15px 15px;
+  }
+ 
+}
+@media (max-width: 767.98px) {
+  .report-card-content {
+    padding: 0px 15px 15px;
+  }
+  .graph-wrapp {
+    margin: 0 15px 15px;
+    padding:15px 0;
+  }
+  
+  .dispatch-report-card{
+    overflow: hidden;
+  }
+  .dispatch-management-wrapper .dispatch-report-card:before{
+    top: 0px;
+    left: -13px;
+    background-size: 100% 114%;
+  }
+}

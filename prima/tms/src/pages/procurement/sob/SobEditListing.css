@@ -1,0 +1,22 @@
+.contract-expired{
+    border: 1px solid #F9B9B1;
+    color: #E61A00;
+    border-radius: 11px;
+    padding: 4px 7px;
+    margin-left: 15px;
+    font-size: 10px;
+    background: #FEF7F7;
+}
+.contract-pending{
+    border: 1px solid #F9B9B1;
+    color: #fb7a23;
+    border-radius: 11px;
+    padding: 4px 7px;
+    margin-left: 15px;
+    font-size: 10px;
+    background: #FEF7F7;
+}
+.contract-number a{
+    color:#006cc9;
+    text-decoration: none;
+}

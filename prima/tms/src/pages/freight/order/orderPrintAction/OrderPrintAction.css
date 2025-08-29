@@ -1,0 +1,51 @@
+.print-action-wrap .MuiButton-root{
+    width: 131px;
+    height: 33px;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #006cc9, #145288);
+    padding: 0 0px 0 25px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    justify-content: space-between;
+    text-transform: capitalize;
+    overflow: hidden;
+    box-shadow: none;
+}
+.print-action-wrap .MuiButton-root .icon-wrap{
+    width: 36px;
+    height: 33px;
+    background-color: #054176;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.print-action-wrap .MuiButton-root .icon-wrap .MuiSvgIcon-root{
+    font-size: 22px;
+}
+.customized-action .MuiMenu-paper{
+    margin-top: 5px;
+    border: none;
+}
+.customized-action .MuiMenuItem-root ,
+.customized-action .MuiMenuItem-root:focus{
+    min-height: auto;
+    height: 45px;
+    border: solid 1px #fff;
+    background-image: linear-gradient(to bottom, #f9f9f9, #eaeff3);
+    min-width: 170px;
+}
+.customized-action .MuiListItemIcon-root {
+    min-width: 26px;
+}
+.customized-action .MuiListItemIcon-root .MuiSvgIcon-root{
+    font-size: 16px;
+    color: #083654;
+}
+.customized-action .MuiMenu-list{padding: 0;}
+.customized-action .MuiMenuItem-root:focus .MuiListItemText-primary,
+.customized-action .MuiListItemText-primary{
+    color: #083654;
+    font-size: 13px;
+    font-weight: 500;
+}

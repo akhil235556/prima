@@ -1,0 +1,17 @@
+.gst-line{
+    display: flex;
+}
+.gst-align{
+    display: flex;
+    align-items: flex-end;
+}
+.gst-align label{
+    margin-bottom: .1rem;
+}
+
+.vechile-modal-data .add-create-row .select-container .select__placeholder{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: calc(100% - 8px);
+}

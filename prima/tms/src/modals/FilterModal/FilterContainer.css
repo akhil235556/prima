@@ -1,0 +1,148 @@
+.filter-modal .MuiDialog-paper {
+    width: 380px;
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    top: 0;
+    max-height: initial;
+    height: 100vh;
+}
+
+.filter-modal .MuiDialogTitle-root {
+    padding: 8px 24px;
+    height: 64px;
+    background-image: linear-gradient(to bottom, #f9f9f9, #eaeff3);
+}
+
+.filter-modal .MuiTypography-root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #768a9e;
+}
+
+.filter-modal .MuiDialogActions-root {
+    padding: 10px 20px 20px;
+    justify-content: center;
+}
+
+.filter-modal .MuiDialogContent-root {
+    border: none;
+    padding: 25px 20px;
+}
+
+/* filter form row */
+.filter-form-row .autocomplete-wrap,
+.filter-form-row .date-picker-wrap,
+.filter-form-row .input-wrap,
+.filter-form-row .autosuggest-wrap {
+    position: relative;
+}
+.filter-form-row .autocomplete-wrap label,
+.filter-form-row .date-picker-wrap label,
+.filter-form-row .input-wrap label,
+.filter-form-row .autosuggest-wrap label,
+.filter-form-row .custom-date-picker .MuiInputLabel-root {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.15;
+    color: #083654;
+    margin-bottom: 5px;
+}
+
+.filter-form-row .select-container .select__control,
+.filter-form-row .custom-date-picker .MuiInput-root,
+.filter-form-row .MuiInputBase-root,
+.filter-form-row .input-wrap .MuiInputBase-root {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+    border: solid 2px #ffffff;
+    /* background-color: #ffffff; */
+    width: 100%;
+    color: #083654;
+    font-size: 14px;
+}
+.filter-form-row .MuiInputBase-root {
+    margin-right: 0;
+}
+
+.filter-form-row .select-container .select__dropdown-indicator,
+.filter-form-row .custom-date-picker .MuiIconButton-root {
+    color: #acb6c0;
+}
+
+.filter-modal .autosuggest-wrap .MuiInputBase-input{
+    border: none;
+}
+.filter-modal .autosuggest-wrap  .MuiInputBase-root{
+    border-radius: 4px;
+}
+.filter-form-row .custom-date-picker .MuiInput-underline:after{
+    border-bottom: none;
+}
+@media (max-width: 767px) {
+    .filter-modal .MuiDialog-paper{
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        max-height: inherit;
+        overflow-y: initial;
+        position: relative;
+        height: auto;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    }
+    .filter-modal .MuiDialogTitle-root {
+        padding: 0 15px;
+        height: 48px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07);
+        background-image: linear-gradient(to right, #f7931e, #f73f1e);
+        border-radius: 0;
+    }
+    .filter-modal .MuiTypography-root {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        color: #ffffff;
+    }
+    .filter-modal .MuiDialogContent-root{
+        padding: 30px 15px 0;
+        overflow: visible;
+    }
+    .input-wrap .MuiInputBase-input{
+        font-size: 14px !important;
+    }
+    .filter-modal .input-wrap label{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .filter-modal .MuiSvgIcon-root{
+        color: #ffffff;
+    }
+    .filter-modal .MuiDialogActions-root {
+        padding: 8px 15px 20px;
+    }
+    /* .MuiDialogActions-spacing > :not(:first-child){
+        width: 100%;
+    } */
+    .filter-modal .MuiDialogActions-spacing > :not(:first-child){
+        width: auto;
+    }
+    .filter-modal .MuiDialog-container {
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        display: block;
+        background: #fbfbfb;
+    }
+    .filter-form-row .autosuggest-wrap label .MuiSvgIcon-root{
+     color: #f7931e;
+     font-size: 18px;
+     margin-left: 4px;
+    }
+}

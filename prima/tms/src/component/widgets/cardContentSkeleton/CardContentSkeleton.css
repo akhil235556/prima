@@ -1,0 +1,27 @@
+.card-content-skeleton .MuiSkeleton-root {
+    background-color: #eaeff3;
+    transform: none;
+    width: 100%;
+}
+.card-content-skeleton .skel-label{
+    max-width: 130px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.card-content-skeleton .skeleton-bg{
+    height: 47px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    padding: 10px 13px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.card-content-skeleton .skeleton-bg .MuiSkeleton-root{
+    max-width: 207px;
+    height: 27px;
+    border-radius: 20px;
+}

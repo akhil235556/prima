@@ -1,0 +1,32 @@
+.so-listing-wrapper .bill-tab {
+    box-shadow: 0px 1px 3px #0000000d;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 767px){
+    .so-listing-wrapper .dispatch-card-wrapper .card-list .btn {
+        margin-left: 0;
+    }
+
+    .so-listing-wrapper .dispatch-card-wrapper .card-list .btn img { margin-right: 5px; }
+    .so-listing-wrapper .bill-tab { 
+        padding: 0;
+    }
+
+    .so-listing-wrapper .filter-panel { margin-bottom: 0; }
+
+    .so-listing-wrapper .dispatch-card-wrapper .card-list .slisting-soNum { font-size: .8rem; }
+    .card-tab-wrap .billing-info-header {
+        padding: 0;
+    }
+    .custom-date-picker .MuiInput-root{
+        padding:0 10px;
+    }
+    .table-list-view .MuiTableRow-root .MuiTableCell-root{
+         min-width: auto;
+    }  
+    .checkbox-warp .MuiIconButton-root{
+        padding:0;
+    }                                                
+}

@@ -1,0 +1,204 @@
+.table-list{
+    margin-bottom: 16px;
+}
+.table-list .table-list-view {
+    box-shadow: none;
+    border-radius: 0;
+}
+.table-list-view  .table td, .table th{
+    vertical-align: middle;
+}
+.table-list-view .MuiPaper-rounded{
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+}
+.table-list-view  .MuiTable-root {
+    border-collapse: initial;
+    border-spacing: 0 5px;
+}
+.table-list-view .MuiTableCell-root {
+    border: none;
+}
+.table-list-view .MuiTableRow-root .MuiTableCell-root {
+    padding: 10px;
+    min-width: 90px;
+    max-width: 320px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+.table-list-view .MuiTableRow-root .MuiTableCell-head{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    color: #768a9e;
+    padding: 0 10px 10px;
+}
+.table-list-view .MuiTableCell-body{
+    font-size: 13px;
+    line-height: 1.43;
+    color: #133751;
+    background: #fff;
+    border-bottom: 1px solid #ebeff3;
+    border-top: 1px solid #ebeff3;
+    height: 48px;
+}
+
+.table-list-view .MuiTableCell-body:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-left: 1px solid #ebeff3;
+}
+.table-list-view .MuiTableCell-body:last-child {
+    border-right: 1px solid #ebeff3;
+}
+.table-list-view .btn span + .MuiSvgIcon-root{
+    font-size: 15px;
+}
+.table-list-view .MuiTableCell-body .btn{
+    height: 37px;
+    font-size: 13px;
+}
+
+.table-list-view .table-wrapper{
+    min-height: 600px;
+    max-height: 600px;
+    overflow: auto;
+}
+/* width */
+.table-list-view .table-wrapper::-webkit-scrollbar {
+    width: 7px;
+    height:7px;
+}
+
+/* Track */
+.table-list-view .table-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+.table-list-view .table-wrapper::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: grey;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+.table-list-view .MuiTablePagination-toolbar{
+    border-radius: 4px;
+    border: solid 1px #ebeff3;
+    background-color: #fff;
+    margin-top: 15px;
+    color: #768a9e;
+    font-size: 14px;
+}
+
+/* lane item */
+.table-list-view .lane-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.table-list-view .lane-item svg{
+    margin: 0 5px;
+    font-size: 15px;
+}
+
+/* table-detail-listing */
+.table-detail-listing .table-list-view .table-wrapper{min-height: auto;}
+.table-detail-listing .table-list-view .MuiTableRow-root .MuiTableCell-root{
+    border-radius: 0;
+    border: 0px;
+    border-bottom: 1px solid #ebeff3;
+    height: 40px;
+    padding: 0 20px;
+}
+
+.contract-table-detail .table-list-view .table-wrapper {
+    border: 1px solid #eaeff3;
+    border-bottom: none;
+}
+.contract-table-detail .table-list-view .table-wrapper .MuiTableRow-root .MuiTableCell-root{
+    height: 40px;
+}
+.table-detail-listing .table-list-view .MuiTable-root{
+    border-spacing: 0;
+}
+/* .table-detail-listing .table-list-view .MuiTableRow-root .MuiTableCell-head {
+    color: #083654;
+} */
+.table-detail-listing .table-detail-head{
+    font-size: 15px;
+    line-height: 1.2;
+    color: #f7931e;
+    margin: 0;
+    padding: 8px 20px;
+}
+.contract-table-detail .table-detail-head{
+    padding: 8px 0;
+}
+.table-detail-listing .table-head-2{
+    font-size: 15px;
+    line-height: 1.2;
+    color: #083654;
+    margin: 0;
+    padding: 15px 20px;
+}
+.contract-table-detail {
+    padding: 0 15px 15px;
+}
+
+.contract-ftl-table-detail {
+    padding: 15px;
+}
+
+/* table field */
+.table-field .custom-date-picker {margin-top: 5px;}
+.table-field .custom-date-picker .MuiInput-root,
+.table-field .input-wrap .MuiInputBase-root{
+    height: 38px;
+    border: solid 1px #e0e4e6;
+    width: 100%;
+}
+.table-field .MuiInputBase-root.Mui-disabled{
+    background: #f9f9f9;
+}
+
+/* collapsebale detail listing */
+.table-collapse-detail-listing{
+    background: #fafafa;
+}
+/* .table-collapse-detail-listing .table-list-view .MuiTable-root{
+    border-spacing: 0;
+} */
+.table-collapse-detail-listing  .table-list-view .table-wrapper {
+    min-height: auto;
+}
+.table-collapse-detail-listing .table-list-view .MuiTableRow-root .MuiTableCell-head {
+    padding: 6px 10px;
+}
+
+.table-detail-listing .table-list-view .MuiTableRow-root .MuiTableCell-body{
+    /* height:56px; */
+    max-width: 200px;
+}
+
+.table-list-view .autocomplete-wrap .select-container,
+.table-list-view .input-wrap {
+    width: 180px;
+}
+
+@media (max-width:767px) {
+    .table-field .custom-date-picker .MuiInput-root,
+    .table-field .input-wrap .MuiInputBase-root{
+        padding: 0 10px;
+        height: 35px;
+    }
+}
+.view-text svg {
+    width: 16px;
+    margin-right: 6px;
+}

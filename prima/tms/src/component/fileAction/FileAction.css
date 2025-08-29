@@ -1,0 +1,67 @@
+.product .MuiButton-root{
+    width: 131px;
+    height: 33px;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #006cc9, #145288);
+    padding: 0 0px 0 25px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    justify-content: space-between;
+    text-transform: capitalize;
+    overflow: hidden;
+    box-shadow: none;
+}
+.product .MuiButton-root .icon-wrap{
+    width: 36px;
+    height: 33px;
+    background-color: #054176;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product .MuiButton-root .icon-wrap .MuiSvgIcon-root{
+    font-size: 22px;
+}
+  .customized-product .MuiMenu-paper{
+    margin-top: 5px;
+    border: none;
+}
+  .customized-product .MuiMenuItem-root ,
+ .customized-product .MuiMenuItem-root:focus{
+    min-height: auto;
+    height: 45px;
+    border: solid 1px #fff;
+    background-image: linear-gradient(to bottom, #f9f9f9, #eaeff3);
+    min-width: 170px;
+}
+ .customized-product .MuiListItemIcon-root {
+    min-width: 26px;
+}
+  .customized-product .MuiListItemIcon-root .MuiSvgIcon-root{
+    font-size: 16px;
+    color: #083654;
+}
+ .customized-product .MuiMenu-list{padding: 0;}
+  .customized-product .MuiMenuItem-root:focus .MuiListItemText-primary,
+ .customized-product .MuiListItemText-primary{
+    color: #083654;
+    font-size: 13px;
+    font-weight: 500;
+}
+.file-upload .btn-orange{
+    padding: 10px 4px;
+    background: #eaeff3;
+    height: 30px;
+}
+.file-upload .btn-orange .MuiSvgIcon-root{
+    font-size: 18px !important;
+    color: #083654 !important;
+}
+@media (max-width:767px){
+   /* .customized-product .MuiMenu-paper{
+        right: 15px!important;
+        left: auto !important;
+        top:-11px !important;
+    } */
+}

@@ -1,0 +1,81 @@
+.gate-in-wrap .creat-contract-wrapp .creat-contract-header {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.gate-in-wrap .creat-contract-wrapp .creat-contract-header .MuiCardHeader-title,
+.shipment-checkbox h4 {
+    font-size: 15px;
+    line-height: 18px;
+}
+.shipment-detail-wrap .billing-group{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+.shipment-create{
+    margin-top: 25px;
+    padding: 0 24px;
+}
+
+/* Shipment Modal CSS */
+.shipment-modal .MuiDialogContent-root {
+    padding: 0;
+}
+.shipment-modal-header {
+    margin-bottom: 7px;
+    padding: 15px 24px;
+    max-height: 50px;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeff3;
+}
+.shipment-modal-header>h4{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: 0.32px;
+    color: #083654;
+}
+.shipment-modal-header>h4>span{
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    color: #768a9e;
+}
+.shipment-modal-header .MuiSvgIcon-root{
+    font-size: 24px;
+    color: #083654;
+    font-weight: normal;
+    cursor: pointer;
+}
+.shipment-create .custom-checkbox.MuiCheckbox-colorSecondary.Mui-checked{
+    color: #f7931e;
+}
+.start-trip{
+    margin-right: 10px;
+    font-size: 13px;
+    color: #133751;
+  }
+@media(max-width:767px){
+    .shipment-modal-header{
+        padding: 10px 15px;
+    }
+    .shipment-modal-header>h4{
+        font-size: 15px;
+    }
+    .shipment-create{
+        margin-top: 15px;
+        padding: 0 15px;
+    }
+ 
+    .shipment-create .MuiCheckbox-colorSecondary.Mui-checked .MuiSvgIcon-root{
+        color: #f7931e;
+    }
+    .shipment-create .MuiCheckbox-root .MuiSvgIcon-root{
+        color: rgba(0, 0, 0, 0.54);
+    }
+}
+

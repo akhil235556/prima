@@ -1,0 +1,36 @@
+
+.MuiStepLabel-labelContainer .MuiStepLabel-label.MuiStepLabel-completed{
+    color:#083654;
+    font-weight: normal;
+}
+.MuiStepLabel-labelContainer .MuiStepLabel-label.MuiStepLabel-active{
+    color:#006CC9;
+    font-weight: normal;
+}
+.diversion-order .MuiStepper-root {
+    padding: 45px 0 62px;
+}
+#stepper{
+    position: relative;
+}
+.stepper-line{
+    position: absolute;
+    top: 46px;
+    border-bottom: 2px solid #0063d0;
+    color: #fff;
+    width: 9%;
+}
+.stepper-line-last{
+    position: absolute;
+    top: 66px;
+    border-bottom: 2px solid #eaeaef;
+    color: #fff;
+    width: 9%;
+    right: 0;
+}
+@media (max-width:408px) {
+    #stepper{
+        overflow-x: auto;
+    }
+}
+    

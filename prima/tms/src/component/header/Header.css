@@ -1,0 +1,69 @@
+/* header css */
+.header{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 99;
+}
+.header .MuiAppBar-root{
+    height: 64px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+    background-image: linear-gradient(to right, #f7931e, #f73f1e);
+}
+.location-btn{
+    max-width: 190px;
+    margin-right: 20px;
+    height: 46px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #133751;
+    display: inline-block;
+}
+
+.location-btn>img{
+    margin-right: 8px;
+    padding: 2px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: solid 1px rgba(19, 55, 81, 0.47);
+    background-color: #f9f9f9;
+}
+
+.logo {
+    cursor: pointer;
+}
+.logo img{
+    max-width: 98px;
+    max-height: 50px;
+}
+
+@media screen and (max-width:767px){
+    .header .MuiAppBar-root{
+        height: 48px;
+        justify-content: center;
+    }
+    .location-btn{
+        max-width: 150px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 1.57;
+        letter-spacing: normal;
+    }
+    .location-btn>img{
+        width: 22px;
+        height: 22px;
+    }
+}
+@media screen and (max-width:320px) {
+
+    .location-btn{
+        max-width: 100px;
+    }
+}
+@media screen and (min-width:768px) {
+    .header .MuiToolbar-gutters{padding-left: 10px;}
+}

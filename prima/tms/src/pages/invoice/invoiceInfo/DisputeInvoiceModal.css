@@ -1,0 +1,14 @@
+.dispute--modal.custom-modal .MuiDialogContent-root{
+    padding: 0;
+}
+.dispute--modal .table-detail-listing .table-list-view .MuiTableRow-root .collapse-cell{
+    height: auto;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+.dispute--modal .table-list-view .autocomplete-wrap .select-container,
+.dispute--modal .table-list-view .input-wrap { width: auto; }
+.dispute--modal + div { z-index: 9999; }

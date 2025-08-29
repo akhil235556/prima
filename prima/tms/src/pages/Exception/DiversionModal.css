@@ -1,0 +1,52 @@
+.iconImg {
+    background: #F7931E;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.diversion-modal.custom-modal .MuiDialogContent-root {
+    padding: 24px 54px 0px 54px;
+}
+.diversion-modal p {
+    text-align: center;
+    font-size: 20px;
+    color: #768A9E;
+    font-weight: 300;
+    margin-top: 12px;
+}
+.diversion-modal label {
+    margin-bottom: 0px;
+}
+.inputWrap {
+    margin-bottom: 12px;
+}
+.textarea-input {
+    display: grid;
+}
+.textarea-input textarea {
+    border: 2px solid #E0E4E6;
+    border-radius: 4px;
+    padding: 10px 14px;
+}
+.textarea-input textarea::placeholder {
+    font-size: 13px;
+    color: #ACB6C0;
+}
+.diversion-modal button.btn {
+    width: 82px;
+    height: 47px;
+}
+.common-modal.custom-modal.diversion-modal .MuiDialogActions-root {
+    padding-bottom: 22px;
+}
+
+@media (min-width: 768px){
+    .common-modal.custom-modal.diversion-modal .MuiDialog-paper {
+        min-width: 468px
+    }
+}

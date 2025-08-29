@@ -1,0 +1,59 @@
+/* actin-btn-gray */
+  .actin-btn-gray.print-action-wrap .MuiButton-root{
+    width: 118px;
+    background: #F9F9F9;
+    color: #133751;
+    padding: 8px 15px;
+    border: 1px solid #CFD6DC;
+  }
+  .actin-btn-gray .MuiButton-root:hover{
+    box-shadow: none;
+  }
+  .actin-btn-gray.print-action-wrap .MuiButton-root .icon-wrap{
+    background: #F9F9F9;
+    width: auto;
+    height: auto;
+  }
+  .actin-btn-gray.print-action-wrap .MuiButton-root .icon-wrap .MuiSvgIcon-root {
+    font-size: 19px;
+  }
+
+  .actin-btn-gray.print-action-wrap
+  .MuiButton-contained.Mui-disabled {
+    opacity: 0.6;
+}
+
+  /* customized menu */
+  .customized-action-gray.customized-action .MuiMenu-paper {
+    width: 118px;
+  }
+  .customized-action-gray.customized-action .MuiMenuItem-root,
+  .customized-action-gray.customized-action .MuiMenuItem-root:focus{
+    background: #fff;
+    border: 1px solid #CFD6DC;
+    height: 36px;
+    padding: 8px 12px;
+    min-width: 118px;
+  }
+  .customized-action-gray.customized-action .MuiList-root li + li{
+    border-top: none;
+  }
+
+  .customized-action-gray .approve-text .MuiListItemText-primary,
+  .customized-action-gray .approve-text  .MuiListItemIcon-root .MuiSvgIcon-root{
+      color: #006CC9;
+  }
+  .customized-action-gray .cancel-text .MuiListItemText-primary,
+  .customized-action-gray .cancel-text .MuiListItemIcon-root .MuiSvgIcon-root {
+      color: #ED1B00;
+  }
+  .customized-action-gray .modify-text .MuiListItemText-primary,
+  .customized-action-gray .modify-text .MuiListItemIcon-root .MuiSvgIcon-root {
+      color: #F7931E;
+  }
+
+@media(max-width:767px){
+  .MuiTooltip-popper{
+    z-index: 9 !important;
+  }
+}

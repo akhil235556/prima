@@ -1,0 +1,28 @@
+.all-notifictaion-skeleton .MuiSkeleton-root {
+    background-color: #eaeff3;
+    transform: none;
+}
+.all-notifictaion-skeleton{
+    padding-top: 19px;
+}
+.notify-skeleton-card{
+    min-height: 120px;
+    background-color: #f9f9f9;
+    margin-bottom: 6px;
+}
+.notify-skeleton-content .MuiSkeleton-root{
+    height: 8px;
+    border-radius: 9px;
+}
+.notify-skeleton-content .MuiSkeleton-root:not(:last-child){
+    margin-bottom: 14px;
+}
+
+@media screen and (max-width:767px) {
+    .all-notifictaion-skeleton{padding: 20px;}
+    .notify-skeleton-card .pl-0{
+        padding-left: 0 !important;
+    }
+    .notify-skeleton-content .MuiSkeleton-root:first-child{width: 36% !important;}
+    .notify-skeleton-card{min-height: 100px;}
+}

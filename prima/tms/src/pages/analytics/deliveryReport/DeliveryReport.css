@@ -1,0 +1,15 @@
+
+
+@media (max-width:767px) {
+    .search-filter-mob{
+        margin-top: 15px;
+    }
+}
+@media (min-width:768px) {
+    .delivery-report-wrap .analytics-card .delivery-data{
+        margin-bottom: 12px;
+    }
+    .delivery-report-wrap .analytics-card:nth-child(n+5) .delivery-data{
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,104 @@
+.transfer-list-wrapp .MuiGrid-container{
+    width: 100% !important;
+}
+.transfer-list-wrapp .MuiGrid-item{
+    padding: 0 !important;
+    border-radius: 4px;
+}
+.transfer-list-wrapp  .MuiCard-root {
+    box-shadow: none;
+}
+.transfer-list-wrapp .MuiCardHeader-root{
+    padding: 10px 15px;
+}
+.transfer-list-wrapp .MuiListItem-dense {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.transfer-list-wrapp .custom-checkbox {
+    padding: 0;
+    color: #ACB6C0;
+}
+.transfer-list-wrapp .checkbox-white, .transfer-list-wrapp .MuiCheckbox-colorSecondary.Mui-disabled {
+    color: #ffffff;
+}
+.transfer-list-wrapp .MuiListItemIcon-root{
+    margin-right: 10px;
+    min-width: 24px;
+}
+.transfer-list-wrapp .MuiTypography-root{
+    font-size: 14px;
+    color: #768A9E;
+    line-height: 16px;
+}
+.custom-modal .transfer-list-wrapp .MuiCardHeader-title {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.custom-modal .transfer-list-wrapp .MuiCardHeader-subheader {
+    font-size: 13px;
+    color: #ffffff;
+}
+.transfer-list-wrapp .left-box {
+    border: 1px solid #006CC9;
+}
+
+.transfer-list-wrapp .left-box .MuiCardHeader-root{
+    background-color: #006CC9;
+}
+.transfer-list-wrapp .right-box .MuiList-padding{
+    height: 245px;
+}
+.transfer-list-wrapp .right-box {
+    border: 1px solid #F7931E;
+}
+.transfer-list-wrapp .right-box .MuiCardHeader-root{
+    background-color: #F7931E;
+}
+.transfer-list-wrapp .transfer-list-btn {
+    padding: 0;
+    min-width: 30px;
+    height: 30px;
+    margin: 5px 20px;
+    border-radius: 50%;
+}
+.transfer-list-wrapp .list-btn-blue {
+    border-color: #006CC9 !important;
+    color: #006CC9 !important;
+}
+.transfer-list-wrapp .list-btn-orange {
+    border-color: #f7931e !important;
+    color: #f7931e !important;
+}
+.search-wrapp {
+    padding: 10px 16px 0;
+    position: relative;
+}
+.search-wrapp .input-wrap .MuiInputBase-root {
+    height: 36px;
+    border-radius: 30px;
+    border-width: 1px;
+}
+.search-wrapp .input-wrap .MuiInputBase-input {
+    font-size: 14px;
+    padding-right: 30px;
+}
+.search-wrapp .search-icon {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+}
+.search-icon .MuiSvgIcon-root{
+    font-size: 18px;
+    color: #b5b5b5;
+}
+/*Custome Checbox*/
+
+.custom-checkbox.MuiCheckbox-colorSecondary.Mui-checked{
+    color: #f7931e;
+}
+.checkbox-white.MuiCheckbox-colorSecondary.Mui-checked {
+    color: #ffffff;
+}
+

@@ -1,0 +1,47 @@
+.timline-wrap{
+    padding: 10px 0 0;
+    max-width: 400px;
+}
+.timeline {
+    max-width: 244px;
+    padding-left: 20px;
+    height: 24px;
+    width: 100%;
+    position: relative;
+}
+
+.timline-content span {
+    padding-top: 4px; 
+    font-size: 14px;
+    line-height: 1.14;
+    color: #133751;
+}
+.timeline .waypoint-text {
+    font-size: 11px;
+    line-height: 1.18;
+    text-align: center;
+    color: #006cc9;
+}
+.waypoint-active {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    width: 18px;
+    height: 14px;
+    border: 2px solid #edeff1;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.waypoint-active:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #f7931e;
+    left: 3px;
+    top: 1px;
+    border-radius: 50%;
+}

@@ -1,0 +1,9 @@
+.error-modal--list .MuiDialogContent-root{
+padding: 0 5px;
+}
+.error-modal--list  .MuiCardContent-root{
+padding: 0 16px;
+}
+.error-modal--list .display-all-data .table-list-view .MuiTableRow-root .MuiTableCell-root:last-child{
+padding: 5px 0;
+}

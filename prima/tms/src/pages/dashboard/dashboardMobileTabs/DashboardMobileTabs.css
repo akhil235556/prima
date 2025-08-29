@@ -1,0 +1,24 @@
+.dash-mob-tabs .MuiTab-root {
+    color: #797979;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 1;
+    text-transform: capitalize;
+    padding: 6px 13px;
+}
+.dash-mob-tabs  .MuiTab-root.Mui-selected {
+    color: #f7931e !important;
+}
+.dash-mob-tabs .MuiTabs-indicator {
+    background-color: #f7931e;
+}
+
+.dash-mob-tabs .MuiBox-root {
+    padding: 14px 0;
+}
+.dash-mob-tabs .MuiTabs-root{
+    margin: 0 -15px;
+    /* white-space: nowrap;
+    overflow-y: scroll; */
+}
+.dash-mob-tabs .MuiTabs-flexContainer{overflow-y: scroll;}

@@ -1,0 +1,94 @@
+.load-row{margin-bottom: 20px;}
+.load-data{
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    height: 100%;
+}
+.load-data .load-list:not(:last-child){
+    border-bottom: 1px solid #eaeff3;
+}
+.load-list{
+    padding: 19px 10px;
+    margin: 0;
+}
+.load-list li{
+    font-size: 14px;
+    font-weight: normal;
+    color: #083654;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.load-list li h4{
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    text-transform: lowercase;
+}
+.load-list li span, .load-list li span svg{
+    font-size: 15px;
+    color: #1fc900;
+    line-height: 1.2;
+}
+
+.load-list li .red-arrow svg{
+    /* font-size: 15px; */
+    color: #ff0000;
+    /* line-height: 1.2; */
+}
+
+@media (min-width:768px){
+    .load-graph{
+        border-radius: 8px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background-color: #fff;
+        height: 100%;
+    }
+    .pl-space{
+        padding-left: 0;
+    }
+}
+@media (max-width:767px){
+    .load-data{
+        display: flex;
+        margin-bottom: 10px;
+        box-shadow: none;
+    }
+    .load-list {
+        flex-grow: 1;
+        width: 100%;
+        border: 1px solid #eaeff3;
+    }
+    .load-list:first-child{
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .load-list:nth-child(2n){
+        border-left: none;
+        border-right: none;
+    }
+    .load-list:nth-child(3n){
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .load-list li{
+        order: 2;
+        padding: 0;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .load-list li + li{
+        order: 1;
+        margin-bottom: 18px;
+    }
+    .load-list li h4 {
+        font-size: 14px;
+        margin: 0;
+    }
+    .load-list li span, .load-list li span svg{font-size: 11px;}
+    .load-graph img{width: 100%;}
+}

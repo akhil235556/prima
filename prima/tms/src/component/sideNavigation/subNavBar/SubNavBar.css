@@ -1,0 +1,112 @@
+
+.sidenav-bar-wrapper{
+    height: 100%;
+    background: #eaeff3;
+}
+
+.sidenav-bar-wrapper .MuiDrawer-paperAnchorDockedLeft {
+    border-right: 1px solid #768a9e;
+}
+.sidenav-bar-wrapper .MuiDrawer-paper {
+    background-color: #eaeff3;
+    left: 82px;
+    top: 64px;
+    padding: 10px;
+    overflow: inherit;
+    transition: none;
+}
+.sidenav-bar-wrapper .MuiDrawer-paper.makeStyles-drawerClose-238{
+    padding: 10px 0;
+    width: 18px;
+}
+.tms-tagline .makeStyles-toolbar-143 .MuiIconButton-root{
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    border: solid 1px #1a384e;
+    background-color: #006cc9;
+}
+.tms-tagline  .MuiIconButton-label{
+    color: #ffffff;
+}
+
+.tms-tagline .makeStyles-toolbar-143 {
+    padding: 0;
+    min-height: 26px;
+    width: 26px;
+    position: absolute;
+    right: -13px;
+}
+.sidenav-bar-wrapper .MuiDrawer-paper .MuiListItemIcon-root,
+.MuiListItemText-root ,.sidenav-wrapper .MuiIconButton-root {
+    color: #133751;
+}
+.tms-tagline h2{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    color: #133751;
+    margin-bottom: 4px;
+}
+.tms-tagline span{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.17;
+    color: #768a9e;
+    display: block;
+}
+.tms-heading h3{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    color: #133751;
+    margin: 30px 0 16px;
+}
+.resize-button{
+    padding: 0 !important;
+    width: 26px;
+    height: 26px;
+    background-color: #006cc9 !important;
+    border: solid 1px #1a384e !important;
+    position: absolute !important;
+    right: -13px;
+    top: 64px;
+}
+/*Left Navigation*/
+.sidenav-bar-wrapper .left-navigation{
+    margin-top: 20px;
+    padding: 0 0 53px;
+    overflow-y: auto;
+}
+
+.left-navigation .MuiListItemText-root{
+    margin: 0;
+}
+.left-navigation .MuiTypography-body1 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: #083654;
+}
+.left-navigation .MuiListItem-button {
+    padding: 12px 15px;
+    border: 1px solid transparent;
+}
+.left-navigation .MuiListItem-button:hover, .left-navigation .MuiListItem-button.active {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    border: solid 1px #e2e7eb;
+    background-color: #f9f9f9;
+
+}
+.left-navigation a:hover{
+    text-decoration: none;
+}
+.left-navigation .MuiListItem-button:hover .MuiTypography-body1,
+.left-navigation .MuiListItem-button.active .MuiTypography-body1{
+    color: #006cc9;
+}
+
+.resize-button .MuiSvgIcon-root{
+    fill:white
+}

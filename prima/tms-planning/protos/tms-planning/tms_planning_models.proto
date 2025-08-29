@@ -1,0 +1,285 @@
+syntax = "proto3";
+package com.gobolt.tms.planning;
+
+import "google/protobuf/struct.proto";
+
+message getOutputFileRequest {
+  string tenant = 1;
+  string partition = 2;
+  string node = 3;
+  string planning_request_id = 4;
+}
+
+message getOutputFileResponse {
+  int32 code = 1;
+  string message = 2;
+  getOutputFileDetails details = 3;
+}
+message getOutputFileDetails {
+  getOutputFileResults results = 1;
+}
+
+message getOutputFileResults {
+  string output = 1;
+}
+
+message getSampleFileRequest {
+  string engine_name = 1;
+  string sub_engine_name = 2;
+}
+
+message getSampleFileResponse {
+  int32 code = 1;
+  string message = 2;
+  getSampleFileDetails details = 3;
+}
+
+message getSampleFileDetails {
+  string link = 2;
+}
+
+message MetaData {
+  string engine_name = 1;
+  string sub_engine_name = 2;
+}
+
+message FileStream {
+  oneof request{
+    bytes data = 1;
+    MetaData engine = 2;
+  }
+}
+
+message FileUploadResponse {
+  int32 code = 1;
+  string message = 2;
+  FileUploadDetails details = 3;
+}
+message FileUploadDetails {
+  string request_id = 1;
+  repeated FileUploadDetailsErrors errors = 2;
+}
+
+message FileUploadDetailsErrors {
+  string message = 1;
+  string row = 2;
+  int32 row_number = 3;
+  string sheet = 4;
+  string code = 5;
+  string description = 6;
+}
+
+message getIndentOutputFileResponse {
+  int32 code = 1;
+  string message = 2;
+  getIndentOutputFileDetails details = 3;
+}
+
+message getIndentOutputFileDetails {
+  string link = 1;
+}
+
+message getPlanningListingRequest {
+  string tenant = 1;
+  string partition = 2;
+  string node = 3;
+  int32 page = 4;
+  int32 page_size = 5;
+  string request_id = 6;
+  string status_name = 7;
+}
+
+message getPlanningListingResponse {
+  int32 code = 1;
+  string message = 2;
+  getPlanningListingDetails details = 3;
+}
+
+message paginationObject {
+  int32 count = 1;
+  int32 next = 2;
+  int32 offset = 3;
+  int32 page = 4;
+  int32 previous = 5;
+  int32 size = 6;
+}
+
+message getPlanningListingDetails {
+  paginationObject pagination = 1;
+  repeated getPlanningListingResults results = 2;
+}
+
+message getPlanningListingResults {
+  string request_id = 1;
+  string tenant = 2;
+  string partition = 3;
+  string node = 4;
+  string planning_name = 5;
+  int32 status_code = 6;
+  string status_name = 7;
+  string created_at = 8;
+  string updated_at = 9;
+  string ended_at = 10;
+  string planning_start_time = 11;
+  string planning_end_time = 12;
+  double time_taken_hours = 13;
+  int32 total_tasks = 14;
+  int32 total_vehicles = 15;
+  double total_cost = 16;
+  double total_kms = 17;
+  int32 stops = 18;
+  string remarks = 19;
+}
+
+message getTaskListingRequest {
+  string tenant = 1;
+  string partition = 2;
+  string node = 3;
+  string planning_request_id = 4;
+  string planning_route_id = 5;
+}
+
+message getTaskListingResponse{
+  int32 code = 1;
+  string message = 2;
+  getTaskListingDetails details = 3;
+}
+message getTaskListingDetails {
+  repeated getTaskListingResults results = 1;
+}
+
+message getTaskListingResults {
+  string request_id = 1;
+  string planning_request_id = 2;
+  string planning_route_id = 3;
+  string order_id = 4;
+  string consignee_location  = 5;
+  string consignee = 6;
+  double weight_kg = 7;
+  double volume_cbm = 8;
+  string dispatched_by = 9;
+  string priority = 10;
+}
+
+message getErrorListingRequest {
+  string tenant = 1;
+  string partition = 2;
+  string node = 3;
+  string planning_request_id = 4;
+}
+
+message getErrorListingResponse{
+  int32 code = 1;
+  string message = 2;
+  getErrorListingDetails details = 3;
+}
+
+message getErrorListingDetails {
+  repeated getErrorListingResults results = 1;
+}
+
+message getErrorListingErrorDetails {}
+
+message getErrorListingResults {
+  int32 request_id = 1;
+  string planning_request_id = 2;
+  string planning_task_id = 3;
+  string error_name = 4;
+  int32 error_row_no  = 5;
+  string error_sheet = 6;
+  string error_message = 7;
+  getErrorListingErrorDetails error_details = 8;
+}
+
+
+message getPlanningResultRequest {
+  string tenant = 1;
+  string partition = 2;
+  string node = 3;
+  string planning_request_id = 4;
+}
+
+message getPlanningResultResponse {
+  int32 code = 1;
+  string message = 2;
+  getPlanningResultDetails details = 3;
+}
+
+message getPlanningResultDetails {
+  repeated getPlanningResult results = 1;
+}
+
+message getPlanningResult {
+  int32 request_id = 1;
+  string planning_request_id = 2;
+  int32 total_vehicles = 3;
+  int32 total_routes = 4;
+  int32 total_orders = 5;
+  string total_duration = 6;
+  double total_kms = 7;
+  double total_cost = 8;
+  string depot = 9;
+}
+
+message getPlanningRoutesRequest {
+  string tenant = 1;
+  string partition = 2;
+  string node = 3;
+  string planning_request_id = 4;
+  int32 page = 5;
+  int32 page_size = 6;
+}
+
+message getPlanningRoutesResponse {
+  int32 code = 1;
+  string message = 2;
+  getPlanningRoutesDetails details = 3;
+}
+
+message getPlanningRoutesDetails {
+  paginationObject pagination = 1;
+  repeated getPlanningRoutesResults results = 2;
+}
+
+message getPlanningRoutesResults {
+  uint32 request_id = 1;
+  string planning_request_id = 2;
+  string route_id = 3;
+  string from_city = 4;
+  string to_city = 5;
+  double total_cost = 6;
+  double total_kms = 7;
+  double total_time = 8;
+  double total_volume_carrying = 9;
+  double total_weight_carrying = 10;
+  string vehicle_type = 11;
+  double volume_utilisation = 12;
+  double weight_utilisation = 13;
+  // details contains large dynamic JSON with unkown types
+  // Struct is suitable for this case
+  google.protobuf.Struct details = 14;
+}
+
+message getPlanningConfigRequest {
+  string tenant = 1;
+  string partition = 2;
+  string node = 3;
+}
+
+message getPlanningConfigResponse {
+   int32 code = 1;
+   string message = 2;
+   repeated google.protobuf.Struct details = 3;
+}
+
+message updateSolverConfigRequest{
+  string api_key = 1;
+  string solver_name = 2;
+  bool is_active = 3;
+}
+
+message updateSolverConfigResponse {
+   int32 code = 1;
+   string message = 2;
+   repeated google.protobuf.Struct details = 3;
+}

@@ -1,0 +1,42 @@
+.receipt-wrapp{
+    padding: 20px 20px 12px;
+    background-color: #ffffff;
+    position: relative;
+}
+.receipt-content{
+    padding: 17px 25px;
+    border-radius: 14px;
+    border: 1px solid #ebeff3;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* .receipt-wrapp:before{
+    border-radius: 14px 14px 0 0;
+    width: 100%;
+    content: "";
+    height: 185px;
+    background: #ebeff3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} */
+
+@media(max-width:767.98px){
+    .filter-panel .print-btn, .filter-panel .back-btn{
+        height: 34px !important;
+        padding: 5px 12px;
+    }
+    .print-btn .MuiSvgIcon-root{
+        margin-right: 0;
+    }
+    .receipt-wrapp{
+        margin-top: -15px;
+        padding: 15px 15px 12px;
+    }
+    .receipt-content {
+        padding: 0;
+        border: none;
+    }
+}

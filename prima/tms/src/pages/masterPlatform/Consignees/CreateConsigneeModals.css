@@ -1,0 +1,73 @@
+ .consignee-add .MuiFormControl-root {
+    height: 40px;
+}
+
+.consignee-add label { display: none !important; }
+
+.chips-consignee {
+    border-top: 1px solid #CFD6DC;
+    padding-top: 5px;
+}
+
+.chips-consignee .chip-btn.MuiChip-root {
+    background-color: #F9F9F9;
+    border: 1px solid #E9EFF4;
+    border-radius: 18px;
+    margin-bottom: 0;
+    padding: 3px;
+    min-height: auto;
+}
+
+.chips-consignee .chip-btn .MuiChip-label {
+    color: #454545;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.consignee-data label {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.consignee-data .input-wrap label .MuiSvgIcon-root { margin-left: 0; }
+
+.consignee-data .minus-btn, .consignee-data .add-btn {
+    border-radius: 4px;
+    width:20px;
+    height:15px;
+}
+.consignee-button {
+    pointer-events:  none;
+}
+
+.addLess-btn .add-btn, .addLess-btn .minus-btn {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.addLess-btn .add-btn .MuiSvgIcon-root, .addLess-btn .minus-btn .MuiSvgIcon-root, .custom-form-row .consignee-data .input-wrap label .addLess-btn .MuiSvgIcon-root {
+    font-size: 15px;
+}
+.addLess-btn {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.tagged-location h3 {
+    font-size: 16px;
+    color: #768A9E;
+    margin: 0;
+}
+.tagged-location .chip-btn{
+    background-color: #F9F9F9;
+    border-color: #F9F9F9;
+}
+.tagged-location-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E0E4E6;
+    padding: 10px 0;
+}

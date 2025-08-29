@@ -1,0 +1,10 @@
+.input-space .input-wrap .MuiInputBase-root{
+    margin-right: 0;
+}
+.auto-suggest .autosuggest-wrap .MuiInputBase-input{
+    border-color: #ebeff3;
+} 
+
+@media (max-width:767px) {
+    .inbound-listing-wrapper .card-list .btn{margin-left: 0;}
+}

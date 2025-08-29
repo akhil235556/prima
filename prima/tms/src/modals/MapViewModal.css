@@ -1,0 +1,25 @@
+/* mobile map */
+.tab-map-view .popup-header{
+    padding: 0 15px;
+    height: 48px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.07);
+    background-image: linear-gradient(90deg,#f7931e,#f73f1e);
+    border-radius: 0;
+  }
+  .tab-map-view .popup-header .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+  }
+  .tab-map-view .popup-header .title .btn{
+    padding: 12px;
+    color: #fff;
+  }
+  .tab-map-view .popup-header .title .btn svg{
+    margin: 0;
+    font-size: 24px;
+  }

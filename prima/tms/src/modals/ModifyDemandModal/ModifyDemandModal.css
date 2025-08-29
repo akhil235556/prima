@@ -1,0 +1,67 @@
+.dispatchInput{
+    margin:10px 17px 0;
+}
+.createDialog .input-wrap .MuiInputBase-root{
+    height: 40px;
+}
+
+.dispatchInput .input-wrap .MuiInputBase-root{
+    height: 47px;
+}
+
+.input-wrap .MuiInputBase-root{
+    margin-right: 0;
+}
+.createDialog .MuiDialogContent-root{
+    padding:0;
+}
+.createDialog .remark-row label{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.15;
+    color: #083654;
+    margin-bottom: 0px;
+}
+.createDialog .billing-info-remark textarea{
+    height: 47px;
+    border-radius: 4px;
+    border: solid 2px #e5ebf0;
+    background-color: #ffffff;
+    margin: 0;
+}
+.total-demand-qty{
+    padding: 13px 30px;
+    border-bottom: 1px solid #EAEFF3;
+}
+.total-demand-qty p{
+    margin-bottom: 0;
+    color:#768A9E;
+    letter-spacing: 0.28px;
+    margin-left: 6px;
+}
+.total-demand-qty p span{
+    color: #083654;
+    letter-spacing: 0.32px;
+}
+.createDialog .MuiDialogActions-root .btn img{
+    width: 18px;
+}
+.MuiDialogContent-root .table-detail-listing h5{
+    font-size: 16px;
+    margin: 15px 20px;
+}
+.checkbox-warp .MuiIconButton-root{
+    padding-left:0;
+}
+.MuiInputBase-root.Mui-disabled{
+    background-color: #f9f9f9;
+}
+.dispatchInput .MuiInputBase-input.Mui-disabled {
+    color: #133751;
+}
+.inp-tableList .table-list-view .MuiTableRow-root .MuiTableCell-body{
+    padding-bottom: 16px;
+}
+
+
+

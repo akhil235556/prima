@@ -1,0 +1,13 @@
+.create-user-checkbox{
+    margin-top: 8px;
+}
+.create-user-checkbox .custom-checkbox.MuiCheckbox-root {
+    color: rgba(0, 0, 0, 0.54);
+}
+.create-user-checkbox .custom-checkbox.MuiCheckbox-colorSecondary.Mui-checked {
+    color: #f7931e;
+}
+.create-user-checkbox>span {
+    font-size: 13px;
+    color: #083654;
+}

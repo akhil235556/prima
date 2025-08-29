@@ -1,0 +1,284 @@
+/* analytics common css */
+
+.analytics-report .dispatch-card-wrapper{padding: 15px 15px 0;}
+/* .analytics-report .table-list-view .MuiTableCell-body{height: auto;} */
+.analytics-report .table-list-view .table-wrapper {
+    max-height: 370px;
+    min-height: 370px;
+}
+
+.analytics-report-wrapp .table-list-view .table-wrapper {
+    min-height: 600px;
+    max-height: 600px;
+}
+
+.analytics-report .table-list-view .MuiTablePagination-toolbar {
+    min-height: 42px;
+    height: 42px;
+}
+.analytics-report .green-text{ color: #1FC900 !important;}
+.analytics-report .table-list-view .MuiTable-root {
+    border-spacing: 0 4px;
+}
+
+/* analytics row */
+.analytics-row{margin-bottom: 20px;}
+.analytics-card .analytics-data {
+    min-height: 230px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.analytics-data h4{
+    margin: 0;
+    font-size: 28px;
+    color: #006cc9;
+    font-weight: 500;
+    line-height: 1.17;
+    border-bottom: 1px solid #eaeff3;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.analytics-data p{
+    margin: 0;
+    font-size: 17px;
+    color: #083654;
+}
+.analytics-graph{
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.analytics-graph .graph-wrap{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .intransit-efficiency .analytics-graph img,
+.ontime-report .analytics-graph img{
+    max-width: initial;
+} */
+
+.analytics-row.analytics-graph{
+    padding: 10px 0;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.monthly-freight-report.analytics-report .table-list-view .table-wrapper{
+    max-height: 600px;
+    min-height: 600px;
+}
+
+.analytics-card .delivery-data {
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 32px 0 28px;
+}
+.delivery-data h4{
+    margin: 0;
+    font-size: 20px;
+    color: #006cc9;
+    font-weight: 500;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 13px;
+}
+ .mT-12{
+    margin-bottom: 12px;
+}
+.delivery-data p{
+    margin: 0;
+    font-size: 15px;
+    line-height: 18px;
+    color: #083654;
+}
+
+/* analytics circle skeleton */
+.skeleton-graph-circle{
+    width: 186px;
+    height: 186px;
+    border: #fff;
+    background-image: linear-gradient(to right, #f9f9f9 8%, #f1f3f6 45%, #f1f4f6 46%, #f2f4f6 46%, #eaeff3 84%);
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.skeleton-graph-border{
+    width: 94.1px;
+    height: 130.4px;
+    border: 3px solid #fff;
+    background-image: linear-gradient(to right, #f9f9f9 8%, #f1f3f6 45%, #f1f4f6 46%, #f2f4f6 46%, #eaeff3 84%);
+    position: absolute;
+    bottom: -19px;
+    transform: skewY(25deg);
+    left: 0;
+    border-left: 0;
+}
+
+/* .custom-select-wrap */
+.custom-select-wrap .autocomplete-wrap{
+    display: flex;
+    align-items: center;
+}
+.custom-select-wrap .autocomplete-wrap label{
+    font-size: 12px;
+    color: #133751;
+    line-height: 1.17;
+    margin: 0 8px 0 0;
+}
+.custom-select-wrap .select-container .select__control{
+    width: 145px;
+    min-height: 30px;
+    border: solid 1px #e4e4e4;
+}
+.custom-select-wrap .select-container .select__control:hover{
+    border: solid 1px #e4e4e4;
+}
+.custom-select-wrap .select__indicator-separator{display: none;}
+.custom-select-wrap .select-container .select__dropdown-indicator svg{
+    color: rgb(19 55 81 / 0.5);
+    width: 16px;
+}
+
+.ontime-report .chart-wrap {
+    margin-top: 20px;
+}
+.ontime-report .graph-wrap label{
+    margin: 9px 0 0;
+}
+.ontime-report .custom-select-wrap .autocomplete-wrap label{
+    margin: 0 8px 0 0;
+}
+.MuiSvgIcon-root.label-tooltip{
+    font-size: 18px;
+    margin-left: 4px;
+    margin-top: -1px;   
+}
+
+@media (min-width:768px) {
+    .custom-select-wrap{
+        position: absolute;
+        right: 18px;
+        top: 8px;
+        z-index: 9;
+    }
+}
+@media (max-width:992px) {
+    .mt-20{
+        margin-top: 20px;
+    }
+    .custome-row{
+        width: 93%;
+        margin: 0 auto;
+    }
+    .analytics-report .chartjs-render-monitor{
+        width: 100% !important;
+    }
+}
+@media (min-width:768px) and (max-width:992px) {
+    .analytics-graph{margin-top: 20px;}
+}
+@media (max-width:767px) {
+    .analytics-row {
+        margin: 0 0 14px;
+        border-radius: 8px;
+        background: #fff;
+        overflow: hidden;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+    }
+    .analytics-report .dispatch-card-wrapper {
+        padding: 0px 15px 0;
+    }
+    .analytics-card, .analytics-graph-card{padding: 0;}
+    .analytics-card .analytics-data{
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .analytics-card .analytics-data{
+        min-height: 69px;
+        border-bottom: 1px solid #eaeff3;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .analytics-data h4{
+        border: none;
+        padding: 0;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .analytics-data p{font-size: 12px;}
+    .analytics-graph{
+        padding: 10px 0 10px;
+        box-shadow: none;
+    }
+    .analytics-card:first-child .analytics-data{
+        border-right: 1px solid #eaeff3;
+    }
+   .analytics-graph img{
+        width: 90%;
+    }
+    /* .detention-report .analytics-graph{
+        background: transparent;
+        padding: 0;
+    } */
+    .analytics-report .chartjs-render-monitor{
+        width: 100% !important;
+    }
+    .detention-report .filter-panel{margin-bottom: 0;}
+    .detention-report .sob-tabs-wrap .MuiTabs-root,
+    .detention-report .sob-tabs-wrap .MuiTab-root{
+        min-height: 40px;
+    }
+    .detention-report.analytics-report .dispatch-card-wrapper {
+        padding: 15px 0;
+    }
+    /* delivery report */
+    .analytics-card .delivery-data{
+        box-shadow: none;
+        border-radius: 0;
+        padding: 3px 0;
+        border-bottom: solid 1px #eaeff3;
+    }
+    .analytics-card:nth-child(odd) .delivery-data{
+        border-right: solid 1px #eaeff3;
+    }
+    .delivery-data h4{
+        margin-bottom: 3px;
+        font-size: 14px;
+    }
+    .delivery-data p{font-size: 12px;}
+    .ontime-report .analytics-row.analytics-graph{
+        flex-direction: column;
+    }
+    .custom-select-wrap{
+        width: 100%;
+        padding: 0 15px 8px;
+    }
+    .custom-select-wrap .autocomplete-wrap {
+        justify-content: flex-end;
+    }
+    .ontime-report .chart-wrap{margin-top: 12px;}
+}
+

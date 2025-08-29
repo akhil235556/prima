@@ -1,0 +1,23 @@
+.skeleton-progress{padding: 20px 15px 0;}
+.skeleton-progress .col-12::before{
+    content: "";
+    position: absolute;
+    left: 20px;
+    top:0;
+    width: 2px;
+    height: 80px;
+    background: #ebeff3;
+    z-index: 0;
+}
+.skeleton-progress .col-12:last-child::before{
+    height: 0px;
+}
+
+.way-point-stepper .lane-stepper-wrap .MuiStepLabel-labelContainer {
+    margin-top: -8px;
+}
+@media (max-width:767px){
+    .way-point-stepper .lane-stepper-wrap .MuiStepLabel-labelContainer {
+        margin-top: -3px;
+    }
+}

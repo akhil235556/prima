@@ -1,0 +1,16 @@
+.fright-type-talbe .table-list-view .MuiTableCell-body:first-child{
+    width: 85%;
+}
+.fright-type-talbe .MuiTableHead-root{
+    display: none;
+}
+@media (max-width:992px){
+    .fright-type-talbe .table-list-view .MuiTableCell-body:first-child {
+        width: 70%;
+    }
+}
+@media (max-width:720px){
+    .fright-type-talbe .table-list-view .MuiTableCell-body:first-child {
+        width: 50%;
+    }
+}

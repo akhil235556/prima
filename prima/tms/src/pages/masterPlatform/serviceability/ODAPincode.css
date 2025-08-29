@@ -1,0 +1,83 @@
+.odaPincode{
+    overflow: scroll;
+    max-height: 412px;
+}
+.odaPincode button{
+    border-radius: 4px;
+    padding: 5px 5px 5px 10px;
+    margin: 0 12px 10px 0;
+    width: 100px;
+    height: 40px;
+    color: #083654;
+    background: #fff;
+    text-align: left;
+    position: relative;
+    margin-top: 6px;
+}
+.odaPincode button span:last-child{
+    position: absolute;
+    right: -5px;
+    top: -8px;
+    z-index: 1;
+}
+button.select-pincode{
+    border: 1px solid #00B300;
+}
+button.deselect-pincode{
+    border: 1px solid #F73B3BDD;
+}
+.download-csvLink{
+    margin-top: 17px;
+    position: relative;
+    border-top: 2px solid #e0e4e6;
+}
+.download-csvLink a{
+    color: #F7931E;
+    position: absolute;
+    top: 20px;
+    text-decoration: none;
+}
+.custom-modal.odaPincode-modal .MuiDialogActions-root {
+    padding: 16px 25px;
+}
+.odaPincodeLabel a{
+    position: absolute;
+    font-size: 13px;
+    right: 18px;
+    top: 0;
+    line-height: 16px;
+    color: #006CC9;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .custom-modal.odaPincode-modal .MuiDialogActions-root {
+        margin-top: 40px;
+    }
+    .odaPincode-modal .MuiDialogTitle-root {
+        height: 100px;
+        position: relative;
+    }
+    .odaPincode-modal .MuiDialogTitle-root .MuiIconButton-root{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 12px 10px 0 0;
+    }
+    .title-with-search {
+        display: block;
+        width: 100%;
+    }
+    .search-pincode{
+        margin: 10px 0 0 0;
+    }
+    .custom-modal.odaPincode-modal .search-pincode span svg{
+        color:#35CE19;
+    }
+    .search-pincode .input-wrap {
+        width: 100%;
+    }
+    .title-with-search span{
+        font-size: 16px;
+    }
+}

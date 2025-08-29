@@ -1,0 +1,14 @@
+export const demandOrderListUrl = "/_svc/demand-planning/v1/demand-order";
+export const modifiedDemandOrderListUrl = "/_svc/demand-planning/v1/demand-order/modify-get";
+export const demandOrderCreateUrl = "/_svc/demand-planning/v1/demand-order";
+export const demandBulkOrderCreateUrl = "/_svc/demand-planning//v1/bulk/demand-order";
+export const deleteDemandOrderUrl = "/_svc/demand-planning/v1/demand-order";
+export const deleteBulkDemandOrderUrl = "/_svc/demand-planning/v1/bulk/demand-order-delete";
+export const approveDemandOrderUrl = "/_svc/demand-planning/v1/demand-order/approve";
+export const approveBulkDemandOrderUrl = "/_svc/demand-planning/v1/bulk/demand-order/approve";
+export const assignDemandOrderUrl = "/_svc/demand-planning/v1/demand-order/assign";
+export const assignBulkDemandOrderUrl = "_svc/demand-planning/v1/bulk/demand-order/assign";
+export const modifyAcceptOrderUrl = "/_svc/demand-planning/v1/demand-order/modify-accept";
+export const modifyRejectOrderUrl = "/_svc/demand-planning/v1/demand-order/modify-reject";
+export const doMaterialListUrl = "/_svc/demand-planning/v1/demand-order/do-materials";
+export const getMaterialsUrl = "/_svc/stock-transfer-order/v1/source-number/articles";

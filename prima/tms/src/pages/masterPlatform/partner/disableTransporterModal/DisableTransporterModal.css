@@ -1,0 +1,66 @@
+.disable-transport-modal.custom-modal .MuiDialogContent-root{
+    padding-bottom: 10px;
+}
+.disable-transport-modal .media:not(:last-child) .media-body{
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+}
+.disable-transport-modal .media-body h5{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    color: #083654;
+    margin-bottom: 5px;
+}
+
+.disable-transport-modal .media-body p{
+    font-size: 12px;
+    line-height: 1.17;
+    color: #768a9e;
+    margin-bottom: 9px;
+}
+.disable-transport-modal .media-body .pending-col svg{
+    font-size: 18px;
+    margin-right: 5px;
+}
+.disable-transport-modal .media-body .pending-col span{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.warning-container h3{
+    color: #ffb100;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    margin: 7px 0 22px;
+}
+.warning-container h4{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.17;
+    color: #133751;
+    max-width: 278px;
+    margin: 0 auto 15px;
+}
+.warning-container h5{
+    color: #768a9e;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.17;
+    margin-bottom: 10px;
+}
+.width-40{width: 95px;height: 45px;}
+.warning-modal .MuiDialogActions-root{ justify-content: center;}
+
+@media (min-width:768px){
+    .warning-modal.custom-modal .MuiDialog-paper{min-width: 560px;}
+}
+
+@media (min-width:768px) {
+    .disable-transport-modal.custom-modal .MuiDialog-paper{
+        min-width: 500px;
+    }
+}

@@ -1,0 +1,140 @@
+import { Publish, Tune } from '@material-ui/icons';
+import React, { useEffect, useReducer } from 'react';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import { RegisterJobs, rowsPerPageOptions } from '../../../base/constant/ArrayList';
+import { useSearchParams } from '../../../base/hooks/useSearchParams';
+import { isObjectEmpty } from '../../../base/utility/StringUtils';
+import { isMobile } from '../../../base/utility/ViewUtils';
+import Chips from '../../../component/chips/Chips';
+import FileAction from '../../../component/fileAction/FileAction';
+import Filter from '../../../component/filter/Filter';
+import PageContainer from '../../../component/pageContainer/PageContainer';
+import CardList from '../../../component/widgets/cardlist/CardList';
+import TableList from '../../../component/widgets/tableView/TableList';
+import BulkUploadDialog from '../../../modals/BulkUploadDialog/BulkUploadDialog';
+import { forecastFilters } from '../../../moduleUtility/FilterUtils';
+import { refreshList, setCurrentPage, setRowPerPage, showLoading, toggleModal } from '../../../redux/actions/ForecastAction';
+import { toggleFilter } from '../../../redux/actions/UserActions';
+import ForecastReducer, { Forecast_STATE } from '../../../redux/reducers/ForecastReducer';
+import { forecastStockList } from '../../../serviceActions/StockServiceActions';
+import { forecastTableColumns } from '../../../templates/InventoryTemplates';
+import '../Agn.css';
+import ForecastFilters from './ForecastFilters';
+
+function ForecastListing() {
+    const appDispatch = useDispatch();
+    const history = useHistory();
+    const [state = Forecast_STATE, dispatch] = useReducer(ForecastReducer, Forecast_STATE);
+    const [filterState, addFiltersQueryParams, removeFiltersQueryParams] = useSearchParams(forecastFilters);
+
+    useEffect(() => {
+        const getList = async () => {
+            dispatch(showLoading());
+            let queryParams: any = {
+                page: state.currentPage,
+                size: state.pageSize
+            }
+            if (!isObjectEmpty(filterState.params)) {
+                queryParams = Object.assign(queryParams, filterState.params)
+            }
+            appDispatch(forecastStockList(dispatch, queryParams))
+        }
+        getList();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [state.currentPage, state.refreshList, state.pageSize, history.location.search]);
+
+    return (
+        <div className="inventory-table-list">
+            <ForecastFilters
+                open={state.openFilter}
+                filerChips={filterState.chips}
+                filerParams={filterState.params}
+                onApplyFilter={(filterChips: any, filterParams: any) => {
+                    // dispatch(setFilter(filterChips, filterParams));
+                    dispatch(refreshList());
+                    addFiltersQueryParams(filterChips, filterParams)
+                    dispatch(toggleFilter());
+                }}
+                onClose={() => {
+                    dispatch(toggleFilter());
+                }}
+            />
+
+            <BulkUploadDialog
+                title="Inventory Forecast Upload CSV"
+                open={state.openModal}
+                jobName={RegisterJobs.STOCK_FORECAST}
+                onClose={() => {
+                    dispatch(toggleModal());
+                }}
+            />
+            <div className="filter-wrap">
+                <Filter
+                    pageTitle={"Inventory Forecast"}
+                    buttonStyle="btn-orange"
+                    buttonTitle={isMobile ? " " : "Filter"}
+                    leftIcon={<Tune />}
+                    onClick={() => {
+                        dispatch(toggleFilter())
+                    }}
+                >
+                    <FileAction
+                        options={[
+                            {
+                                menuTitle: "Upload CSV File",
+                                Icon: Publish,
+                                onClick: () => dispatch(toggleModal())
+                            },
+                        ]}
+                    />
+                </Filter>
+            </div>
+
+            <PageContainer
+                loading={state.loading}
+                listData={state.listData}
+            >
+                {!isObjectEmpty(filterState.chips) && Object.keys(filterState.chips).map((element) => (
+                    <Chips
+                        label={filterState.chips[element]}
+                        onDelete={() => {
+                            // dispatch(removeFilter(element));
+                            dispatch(refreshList());
+                            removeFiltersQueryParams([element])
+                        }}
+                    />
+
+                ))}
+                {
+                    isMobile ?
+
+                        <CardList
+                            listData={state.listData}
+                            tableColumns={forecastTableColumns()}
+                            isNextPage={state.pagination && state.pagination.next}
+                            onReachEnd={() => {
+                                dispatch(setCurrentPage(state.pagination.next))
+                            }}
+                        />
+                        :
+                        <TableList
+                            tableColumns={forecastTableColumns()}
+                            currentPage={state.currentPage}
+                            rowsPerPage={state.pageSize}
+                            rowsPerPageOptions={rowsPerPageOptions}
+                            totalCount={state.pagination && state.pagination.count}
+                            listData={state.listData}
+                            onChangePage={(event: any, page: number) => {
+                                dispatch(setCurrentPage(page));
+                            }}
+                            onChangeRowsPerPage={(event: any) => {
+                                dispatch(setRowPerPage(event.target.value));
+                            }}
+                        />
+                }
+            </PageContainer>
+        </div>
+    );
+}
+export default ForecastListing;

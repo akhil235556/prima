@@ -1,0 +1,48 @@
+/* .plan-listing-wrapper .dispatch-card-wrapper{
+    padding: 20px;
+}
+.plan-list-header .btn,
+.listing-body .btn {
+    font-size: 14px;
+    height: auto;
+} */
+
+/* plan header */
+/* .plan-list-header {
+    margin-bottom: 30px;
+}
+
+.plan-list-header .MuiCheckbox-root {
+    margin-right: 30px;
+    margin-left: 16px;
+}
+
+.plan-list-header h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #797979;
+    font-weight: normal;
+}
+
+.plan-list-header h3 span {
+    font-weight: bold;
+    color: #083654;
+} */
+.planning_history--wrapper {
+  display: flex;
+  width: 100%;
+}
+.planning_history--left-panel {
+  width: 62%;
+}
+.planning_history--right-panel {
+  width: 37%;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px #0000001a;
+  border-radius: 5px;
+  margin-left: 1%;
+}
+.plan-listing-wrapper .table-list-view .table-wrapper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

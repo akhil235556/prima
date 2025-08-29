@@ -1,0 +1,38 @@
+.dispatch-shipment {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eaeff3;
+}
+.dispatch-shipment:last-child{
+    border-bottom: none;
+}
+.dispatch-shipment>h4 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #f7931e;
+}
+.dispatch-shipment>h4>span {
+    font-weight: normal;
+    color: #768a9e;
+}
+
+.dispatch-shipment-detail{
+    border: 1px solid #eaeff3;
+
+}
+@media(max-width:767px){
+    .dispatch-shipment{
+        padding: 10px 15px;
+    }
+    .dispatch-shipment>h4{
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+.vehicle_list .vehicle-info div{
+    white-space: nowrap;
+     overflow: hidden; 
+     text-overflow: ellipsis;
+      display: inline-block; 
+      max-width: 160px;
+}

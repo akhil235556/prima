@@ -1,0 +1,62 @@
+.track-skeleton-wrap .MuiSkeleton-root,
+.skeleton-trip-detail .MuiSkeleton-root,
+.skeleton-stop-wrap .MuiSkeleton-root{
+    background-color: #eaeff3;
+    transform: none;
+    height: 8px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+.track-skeleton-wrap{padding: 15px 35px;}
+.track-skeleton-wrap .track-card{
+    height: 150px;
+    border-radius: 14px;
+    background-color: #f9f9f9;
+    padding: 10px 0 0;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.detail-skeleton-wrap{
+    border-radius: 14px;
+    border: solid 2px #ebeff3;
+    background-color: #f9f9f9;
+    padding: 10px !important;
+    height: calc(100vh - 145px);
+}
+.detail-skeleton-wrap hr{
+    border-top: 1px solid #ebeff3;
+}
+.track-skeleton-wrap .detail-skeleton-wrap .MuiSkeleton-root{
+    border-radius: 4px;
+}
+.detail-skeleton-wrap .trip-head .MuiSkeleton-root{margin: 0;}
+
+.skeleton-map{
+    height: calc(100vh - 170px);
+    object-fit: contain;
+    border-radius: 14px;
+    border: solid 3px #fff;
+    background-image: linear-gradient(to right, #f9f9f9 1%, #eaeff3 99%);
+}
+.skeleton-progress{padding: 20px 15px 0;}
+.skeleton-progress .col-12::before{
+    content: "";
+    position: absolute;
+    left: 20px;
+    top:0;
+    width: 2px;
+    height: 80px;
+    background: #ebeff3;
+}
+.skeleton-progress .col-12:last-child::before{
+    height: 0px;
+}
+
+.skeleton-stoppage {
+    border: 2px solid #eaeff3;
+    border-radius: 8px;
+    padding: 10px 10px 0;
+    margin-bottom: 10px;
+}
+.skeleton-stoppage .MuiSkeleton-root{margin-bottom: 10px;}

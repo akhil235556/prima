@@ -1,0 +1,15 @@
+/* .MuiTooltip-popper .MuiTooltip-tooltip{
+    border: solid 1px #ebeff3;
+    background-color: #ffffff;
+    min-width: 140px;
+    color: #133751;
+    padding: 10px 14px;
+    line-height: 1.15;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+} */
+.MuiTooltip-popper .MuiTooltip-arrow {
+    color: #f7931e;
+    font-size: 7px;
+}

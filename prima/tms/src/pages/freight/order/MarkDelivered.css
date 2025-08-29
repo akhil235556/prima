@@ -1,0 +1,40 @@
+.initiate-planning-modal .MuiDialog-paper {
+    min-width: 400px;
+}
+.initiate-planning-modal .autosuggest-wrap{
+    position: relative;
+}
+
+.initiate-planning-modal .MuiDialogActions-root{
+    justify-content: center !important;
+    padding: 10px 0px 20px;
+}
+.pl_0{
+    padding: 0;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+.pl_0 label {
+    font-size: 13px;
+    line-height: 1.15;
+    color: #083654;
+    margin-bottom: 0px;
+    position: relative;
+    bottom: -3px;
+}
+.custom_input{
+    position: relative;
+    top: -16px;
+}
+.custom_input .input-wrap .MuiInputBase-root{
+    margin-right: 0 ;
+}
+
+@media (max-width: 767px) {
+    .initiate-planning-modal .MuiDialog-paper{
+        min-width: 100%;
+    }
+    .custom_input{
+        top:0;
+    }
+}

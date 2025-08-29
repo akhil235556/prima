@@ -1,0 +1,18 @@
+.create-contract-freight--wrapper
+  .create-contract-freight--content
+  .custom-form-row
+  .billing-group {
+  padding: 12px 20px 20px;
+}
+
+.noDataDisplay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.noDataDisplay p{
+  color: #768A9E;
+  font-size: 18px;
+}

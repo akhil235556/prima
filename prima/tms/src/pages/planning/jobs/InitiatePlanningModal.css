@@ -1,0 +1,16 @@
+.initiate-planning-modal .MuiDialog-paper {
+    min-width: 400px;
+}
+.initiate-planning-modal .autosuggest-wrap{
+    position: relative;
+}
+
+.initiate-planning-modal .MuiDialogActions-root{
+    justify-content: center !important;
+    padding: 10px 0px 20px;
+}
+@media (max-width: 767px) {
+    .initiate-planning-modal .MuiDialog-paper{
+        min-width: 100%;
+    }
+}

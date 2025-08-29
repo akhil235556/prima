@@ -1,0 +1,6 @@
+.demand-order-wrapper .table-list-view .MuiTableRow-root .MuiTableCell-head {
+    min-width: 50px;
+}
+.demand-order-wrapper .table-list-view .MuiTableCell-body:first-child {
+    min-width: 50px;
+}

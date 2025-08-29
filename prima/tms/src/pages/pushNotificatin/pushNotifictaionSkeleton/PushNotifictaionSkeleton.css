@@ -1,0 +1,14 @@
+.push-notifictaion-skeleton .MuiSkeleton-root {
+    background-color: #eaeff3;
+    transform: none;
+    border-radius: 9px;
+}
+.push-notifictaion-skeleton .notify-skeleton-content:not(:last-child){
+    margin-bottom: 1rem!important;
+}
+
+@media screen and (max-width:767px){
+    .push-notifictaion-skeleton .skel-left .MuiSkeleton-root:first-child{
+        width: auto !important;
+    }
+}

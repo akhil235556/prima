@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-Create-demand-white">
+      <rect width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="Create-demand-white" clip-path="url(#clip-Create-demand-white)">
+    <text id="_" data-name="" transform="translate(5 42)" fill="#fff" font-size="48" font-family="Material-Design-Iconic-Font"><tspan x="0" y="0"></tspan></text>
+  </g>
+</svg>

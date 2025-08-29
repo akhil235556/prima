@@ -1,0 +1,67 @@
+.diversion-order{
+    margin: 12px 15px;
+    position: relative;
+    box-shadow: 0px 1px 4px #00000029;
+    background: #fff;
+    border-radius: 8px;
+}
+.diversion-order .billing-group{
+    border-bottom: 1px solid #eaeff3;
+    padding:10px 20px;
+    margin-bottom: 0;
+}
+.diversion-order .creat-contract-content {
+    padding: 0;
+}
+.diversion-order .creat-contract-header{
+    padding: 10px 20px !important;
+}
+.diversion-order .info-heading{
+    text-transform: capitalize;
+}
+.diversion-order .creat-contract-wrapp .creat-contract-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.diversion-order .table-list-view .MuiTable-root{
+    border-spacing:0;
+}
+.diversion-order .MuiTableCell-head{
+    padding: 10px;
+}
+.diversion-order .table-list-view .table-wrapper {
+    min-height: auto;
+    overflow: auto;
+}
+.diversion-order .MuiTableCell-stickyHeader{
+    background-color: #f9f9f9;
+}
+.diversion-order .table-list-view .MuiTableRow-root .MuiTableCell-head{
+    padding: 10px;
+}
+.collapseBtn{
+    position: absolute;
+    top: 9px;
+    right: 26px;
+}
+.collapseBtn button{
+    border: 1px solid #CFD6DC;
+    background: #fff;
+    color: #768A9E;
+    border-radius: 4px;
+    padding: 0 5px;
+}
+.diversion-order .text-right{
+    padding:10px 10px 148px;
+}
+.diversion-order .creat-wrapp .MuiCardContent-root{
+    padding-top: 0;
+}
+@media (max-width:370px){
+    .create-do-btn button{
+        margin-bottom:10px;
+    }
+    .collapseBtn{
+        right:5px;
+    }
+}

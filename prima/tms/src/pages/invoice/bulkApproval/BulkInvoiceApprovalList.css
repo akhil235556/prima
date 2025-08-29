@@ -1,0 +1,6 @@
+.pending-contract-wrap .table-list-view .MuiTableRow-root .MuiTableCell-head{
+    padding-bottom: 0px;
+}
+.pending-contract-wrap .table-list-view .table-wrapper{
+    min-height: initial;
+}

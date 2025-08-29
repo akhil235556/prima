@@ -1,0 +1,40 @@
+.export-module-wrap .billing-info-wrapp{
+    margin-bottom: 30px;
+}
+.export-module-wrap .MuiFormControlLabel-root{margin: 0;}
+
+.export-module-wrap .billing-info-header .custom-list-wrap .MuiTypography-root{
+    font-weight: 500;
+}
+/* custom check list */
+.export-module-wrap .billing-info-content .custom-list-wrap{
+    padding: 4px 20px;
+    border-bottom: solid 1px #eaeff3;
+}
+.custom-list-wrap .MuiCheckbox-root{
+    margin-right: 20px;
+}
+.custom-list-wrap .MuiTypography-root{
+    font-size: 14px;
+    color: #133751;
+    line-height: 1.14;
+}
+.export-data-skeleton{
+    background: #fff;
+    padding: 10px;
+}
+.export-module-wrap .billing-info-content{
+    padding: 0 15px;
+}
+@media (min-width:768px) {
+    .export-module-wrap .dispatch-card-wrapper{
+        padding: 40px 20px;
+    }
+}
+@media (max-width:767px) {
+    .export-module-wrap .billing-info-content .custom-list-wrap {
+        padding: 12px 15px;
+        border-bottom: none;
+    }
+    .w-m-100{width: 100% !important;}
+}

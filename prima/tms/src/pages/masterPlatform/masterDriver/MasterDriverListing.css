@@ -1,0 +1,56 @@
+.add-create-row .col-6{
+    padding-right:0;
+}
+.add-create-row .custom-date-picker .MuiInput-root{
+    padding: 0 10px;
+    height:40px;
+}
+.add-create-row .select-container .select__placeholder{
+    font-size: 13px;
+}
+.add-create-row .input-wrap .MuiInputBase-input, .add-create-row .custom-date-picker .MuiInputBase-input{
+    font-size: 13px;
+}
+.add-create-row .input-wrap .MuiInputBase-root{
+    height:40px;
+}
+.add-create-row .select-container .select__control{
+    min-height:40px;
+}
+.driver-switch .switchs{
+    margin-left: 10px;
+}
+.driver-switch {
+    padding-left: 0;
+}
+.driver-switch .MuiSwitch-root {
+    margin: 0;
+    padding: 0;
+    width: 48px;
+    height: 26px;
+    border-radius: 30px;
+}
+.driver-switch .MuiSwitch-root .MuiSwitch-switchBase {
+    padding: 2px;
+}
+.driver-switch .MuiSwitch-root .MuiSwitch-switchBase.Mui-checked {
+    transform: translateX(23px);
+    color: #fff;
+}
+.driver-switch .MuiSwitch-root .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+    background: #4bd864;
+    opacity: 1;
+}
+.driver-switch .MuiSwitch-root .MuiSwitch-track {
+    background: #768a9e;
+    opacity: 0.6;
+}
+.driver-switch .MuiSwitch-root .MuiSwitch-thumb {
+    width: 22px;
+    height: 22px;
+}
+@media (max-width: 767px){
+    .add-create-row .col-6{
+        padding-right:15px;
+    }
+}

@@ -1,0 +1,24 @@
+.select-location-modal.custom-modal .MuiDialogContent-root{
+    padding: 0;
+}
+.select-location-modal .check-list-wrapp .MuiList-root{
+    width: 100%;
+    height: auto;
+    max-height: 330px;
+    min-height: 100px;
+}
+.select-location-modal .check-list-wrapp{
+    border: none;
+}
+.select-location-modal .check-list-wrapp .MuiTypography-root{
+    justify-content: flex-start;
+}
+.select-location-modal .check-list-wrapp .MuiTypography-root .home-loc-icon{
+    margin-right: 20px;
+}
+
+@media (min-width:768px) {
+    .select-location-modal.custom-modal .MuiDialog-paper{
+        min-width: 486px;
+    }
+}

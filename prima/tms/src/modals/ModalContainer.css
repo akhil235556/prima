@@ -1,0 +1,364 @@
+.custom-modal .MuiDialog-scrollPaper {
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    display: block;
+}
+.custom-modal .MuiDialog-paper {
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    max-height: inherit;
+    overflow-y: initial;
+    min-width: 800px;
+}
+.custom-modal .MuiDialogContent-root {
+    border: none;
+    padding: 20px 25px 0;
+    overflow: visible;
+}
+.custom-modal .MuiDialogTitle-root {
+    padding: 8px 24px;
+    height: 60px;
+    background-image: linear-gradient(to bottom, #f9f9f9, #eaeff3);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-modal .MuiTypography-root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #083654;
+    width: 100%;
+}
+.custom-modal .MuiDialogActions-root {
+    padding: 10px 25px 30px;
+}
+
+/* form row */
+.custom-form-row .form-group {
+    margin-bottom: 20px;
+}
+.custom-form-row .autocomplete-wrap,
+.custom-form-row .input-wrap, .custom-form-row .location-search-wrap, .input-wrap,
+.custom-form-row .autosuggest-wrap, .autosuggest-wrap, .location-search-wrap{
+    position: relative;
+}
+.custom-form-row .autocomplete-wrap label,
+.custom-form-row .custom-date-picker .MuiInputLabel-root,
+.custom-form-row .input-wrap label, .custom-form-row .location-search-wrap label, .input-wrap label,
+.autosuggest-wrap label {
+    font-size: 13px;
+    line-height: 1.15;
+    /* color: #768a9e; */
+    margin-bottom: 5px;
+    color: #083654;
+}
+.custom-form-row .autocomplete-wrap label .MuiSvgIcon-root,
+.custom-form-row .custom-date-picker .MuiInputLabel-root .MuiSvgIcon-root,
+.custom-form-row .input-wrap label .MuiSvgIcon-root,
+.autosuggest-wrap label .MuiSvgIcon-root{
+    color: #f7931e;
+    font-size: 18px;
+    margin-left: 4px;
+}
+
+.custom-form-row .select-container .select__control,
+.custom-form-row .custom-date-picker .MuiInput-root,
+.custom-form-row .input-wrap .MuiInputBase-root,
+.autosuggest-wrap .MuiInputBase-input{
+    /* background-color: #ffffff; */
+    border-radius: 4px;
+    border: solid 2px #e0e4e6;
+    margin: 0;
+    color: #083654;
+    font-size: 14px;
+}
+
+.text-overflow .autosuggest-wrap .MuiInputBase-input{
+    text-overflow: ellipsis;
+}
+.custom-form-row .select-container .select__dropdown-indicator,
+.custom-form-row .custom-date-picker .MuiIconButton-root {
+    color: #acb6c0;
+}
+.custom-form-row .MuiInputBase-root.Mui-disabled, .custom-form-row .MuiInputBase-input.Mui-disabled{
+    background-color: #f9f9f9;
+    border-color: transparent;
+}
+.form-control:disabled{
+ background-color: #f9f9f9;
+ border: none !important
+}
+.custom-form-row .MuiInputBase-root.Mui-disabled .MuiInputBase-input{
+    color: #083654;
+    opacity: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.custom-form-row  .custom-date-picker .MuiInput-underline:after{
+    border-bottom: none;
+}
+
+
+/* Way Point Modal */
+.way-point-modal.custom-modal .MuiDialog-paper{
+    min-width: 400px;
+}
+.way-point-modal.custom-modal .MuiDialogActions-root{
+    display: none;
+}
+
+.MuiDialogActions-root.csv.MuiDialogActions-spacing{
+    justify-content: space-between;
+}
+
+/* upload epod modal */
+/* .pod-upload-modal.custom-modal .MuiDialog-paper {
+    min-width: 760px;
+} */
+.pod-upload-modal.custom-modal .MuiDialogContent-root{
+    padding: 10px;
+}
+.edit-upload-modal.custom-modal .MuiDialogContent-root{
+    padding: 0;
+}
+.bill-file{
+    padding: 15px;
+}
+.pod-upload-modal.custom-modal .MuiDialogActions-root{
+    padding: 0;
+}
+.ok-btn{
+    min-width: 90px;
+}
+.pod-up-load-modal.custom-modal .MuiDialogContent-root{
+    padding: 15px 15px 0;
+}
+.pod-up-load-modal.custom-modal .MuiDialog-paper{
+    min-width: 450px;
+    max-width: 450px;
+}
+.pod-up-load-modal.custom-modal .MuiDialogActions-root{
+    justify-content: center;
+    padding-top: 0;
+}
+.bill-up-load-modal.custom-modal .MuiDialogContent-root{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bill-up-load-modal.custom-modal .MuiDialogActions-root{
+    padding-bottom: 16px;
+    justify-content: flex-end;
+}
+.bill-up-load-modal .input-wrap .MuiInputBase-root{
+    margin-right: 0;
+}
+/* common modal css */
+.common-modal .modal-common-wrap h4{
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #768a9e;
+    font-weight: normal;
+    margin: 15px 0 8px;
+}
+.common-modal .modal-common-wrap h3{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #083654;
+    margin-bottom: 12px;
+}
+.common-modal .modal-common-wrap-2 h3{
+    color: #133751;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    margin: 5px 0 20px;
+}
+.common-modal .modal-common-wrap-2 p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.17;
+    color: #133751;
+    margin-bottom:16px;
+}
+.common-modal.custom-modal .MuiDialogActions-root{
+    justify-content: center;
+}
+.common-modal.custom-modal .desc-wrap{
+    max-width: 180px;
+    margin: 0 auto 16px;
+}
+.common-modal.custom-modal .cancel-icon{
+    color: red;
+    font-size: 50px;
+}
+
+.warning-lane-modal .warning-lane-modal-button button {
+ width: 200px;
+}
+
+.warning-lane-modal .form-group {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:992px) {
+    .order-shipment-modal .MuiDialog-paper {
+        min-width: 900px;
+    }
+}
+
+@media(min-width:768px){
+    .common-modal.custom-modal .MuiDialog-paper{
+        min-width: 560px;
+    }
+}
+
+
+@media(max-width:992px){
+    .custom-modal .MuiDialog-paper{
+        min-width: 92%;
+    }
+}
+@media (max-width: 767px) {
+    .pod-upload-modal.custom-modal .MuiDialogContent-root img{width: 100%;}
+    .custom-modal .MuiDialog-paper{
+        margin: 0;
+        min-width: 100%;
+        border-radius: 0;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+    /* Way Point Modal */
+    .way-point-modal.custom-modal .MuiDialog-paper{
+        min-width: 100%;
+        box-shadow: none;
+    }
+    .custom-modal .MuiDialogContent-root {
+        border: none;
+        padding: 20px 15px 0;
+        overflow: visible;
+    }
+    .way-point-modal.custom-modal .MuiDialogContent-root{
+        padding-top: 10px;
+    }
+    .way-point-stepper .lane-stepper-wrap .MuiStepper-vertical{
+	    padding-top:0;
+    }
+    .custom-modal .MuiDialogTitle-root {
+        padding: 0 15px;
+        height: 48px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07);
+        background-image: linear-gradient(to right, #f7931e, #f73f1e);
+        border-radius: 0;
+    }
+    .custom-modal .MuiTypography-root {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        color: #ffffff;
+    }
+    .input-wrap .MuiInputBase-input{
+        font-size: 14px !important;
+    }
+    .custom-form-row .input-wrap label{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .custom-modal .MuiDialogTitle-root .MuiSvgIcon-root {
+         color: #ffffff;
+    }
+    .custom-modal .MuiDialogActions-root{
+        padding: 8px 15px 20px;
+        text-align: right;
+    }
+
+    /* .MuiDialogActions-spacing > :not(:first-child){
+        width: 100%;
+    } */
+    .custom-modal .MuiDialog-scrollPaper{
+        box-shadow: none;
+    }
+    .custom-modal .MuiDialog-scrollPaper{
+        background: #fbfbff;
+    }
+    .custom-modal .MuiDialogActions-spacing > :not(:first-child){
+        width: auto;
+    }
+    .pod-up-load-modal.custom-modal .MuiDialog-paper{
+        min-width: 100%;
+    }
+     .custom-form-row .input-wrap .MuiInputBase-root .MuiSvgIcon-root{
+         color: rgba(0, 0, 0, 0.54);
+     }
+}
+
+
+.input-pr-0 {
+    padding-right: 0;
+}
+.createMaterial .label-none {
+    margin-top: 14px;
+}
+.createMaterial .PrivateSwitchBase-root-2596 {
+    top: 1px;
+    position: relative;
+    margin-left: -10px;
+}
+.createMaterial span.checkLabel {
+    top: 2px;
+    position: relative;
+}
+.createMaterial .reduce-margin {
+    margin-bottom: 11px;
+}
+.title-with-search{
+    display: flex;
+    align-items: center;
+}
+.search-pincode{
+    display: flex;
+    margin-left: 20px;
+    position: relative;
+}
+.search-pincode input.form-control{
+    height: 40px;
+}
+.search-pincode .input-wrap {
+    width: 215px;
+}
+.search-pincode .input-wrap .MuiFormControl-root{
+    height: 40px;
+}
+.search-pincode span svg{
+    position: absolute;
+    right: 97px;
+    top: 13px;
+    color: #35CE19;
+}
+
+@media (max-width: 767px) {
+    .input-pr-0 {
+        padding-right: 15px;
+    }
+}
+
+/* create material modal width */
+
+@media (min-width: 992px) {
+    .custom-modal.createMaterialModal .MuiDialog-paper{
+        min-width: 900px;
+    }
+}
+

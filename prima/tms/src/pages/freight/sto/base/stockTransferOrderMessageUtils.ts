@@ -1,0 +1,15 @@
+export const stoListingTitle = "STO Listing";
+export const stoDetailsTitle = "STO Details";
+export const uploadCsvTitle = "Upload CSV File";
+export const downloadCsvTitle = "Download CSV File";
+export const zoneTitle = "Zone";
+export const zonePlaceholder = "Zone";
+export const districtTitle = "District";
+export const districtPlaceholder = "District";
+export const blockTitle = "Block";
+export const blockPlaceholder = "Block";
+export const zoneError = "Enter Zone";
+export const minDistanceLabel = "Minimum Distance";
+export const minDistancePlaceholder = "Minimum Distance";
+export const maxDistanceLabel = "Maximum Distance";
+export const maxDistancePlaceholder = "Maximum Distance";

@@ -1,0 +1,128 @@
+.planning_history--panel {
+  padding: 15px;
+}
+.planning_history--right-panel--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.panel--left-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width:155px;
+}
+.panel--left-heading p,
+.panel--right-heading p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.planning_history--right-panel--body {
+  padding: 20px 0;
+  height: 530px;
+}
+.planning_history--right-panel--body .billing-group .info-heading {
+  color: #193651;
+  font-size: 16px;
+}
+.planning_history--right-panel--body .billing-group .vehicle-info {
+  color: #323232;
+  font-size: 14px;
+}
+.planning_history--right-panel--body .billing-group {
+  margin-bottom: 32px;
+}
+.planning_history--right-panel--body .cloud-download--container {
+  margin-bottom: 10px;
+}
+.planning_history--right-panel--body .cloud-download--container span {
+  padding: 0 10px;
+}
+.panel--right-heading {
+  background: #f2861a0b;
+  border: 1px solid #f2861a4d;
+  border-radius: 3px;
+  width: 45%;
+  height: 40px;
+  color: #4b2a08;
+}
+.panel--left-heading .planning-task-id {
+  font-size: 13px;
+  color: #323232;
+}
+.panel--right-heading span {
+  margin-left: 5px;
+  font-weight: 700;
+}
+.output--container {
+  margin-top: 15px;
+  color: #006cc9;
+  font-weight: 400;
+}
+.planning_history--right-panel--footer {
+  margin-top: 10px;
+  position: relative;
+  /* position: fixed;
+    bottom: 30px;
+    right: 33px; */
+}
+.planning-history-btns .btn-detail {
+  height: 40px;
+  background-color: red;
+}
+
+.planning_panel-error{
+  background: #FFF6EA;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 10px;
+}
+
+.planning_history-error p{
+  background: #fff;
+  border-radius: 7px;
+  height: 121px;
+  text-align: center;
+  color: #76899E;
+  font-size: 28px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.planning_dashboard-error p{
+  background: #fff;
+  border-radius: 7px;
+  min-height: 121px;
+  text-align: center;
+  color: #f72f1e !important;
+  font-size: 25px;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  justify-content: center;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.planning_history-fail { background-color: #FCEFED;}
+
+@media (max-width:767px) {
+  .planning_history-error p, .planning_dashboard-error p{
+    position: initial;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}

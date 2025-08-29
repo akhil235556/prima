@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_5720" data-name="Group 5720" transform="translate(2444 -13412)">
+    <rect id="Rectangle_1556" data-name="Rectangle 1556" width="24" height="24" transform="translate(-2444 13412)" fill="none"/>
+    <g id="Group_5719" data-name="Group 5719" transform="translate(2 2)">
+      <g id="Group_5716" data-name="Group 5716" transform="translate(-2438.532 13420.946)">
+        <path id="Union_6" data-name="Union 6" d="M1.048,5.455A1.054,1.054,0,1,1,2.1,6.509v.013A1.067,1.067,0,0,1,1.048,5.455Zm2.618-.263a1.58,1.58,0,0,0-3.139,0H0V0H2.107l.269.377H.9A.264.264,0,0,0,.637.64V2.589A.263.263,0,0,0,.9,2.853H4.114l.079.113V5.192Zm-2.5-2.86V.909h1.58l1,1.422Z" transform="translate(9.7 2.455)" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+        <g id="Group_3350" data-name="Group 3350" transform="translate(0 0)">
+          <path id="Path_6272" data-name="Path 6272" d="M612,458.139a.263.263,0,0,0-.263-.263h-3.054a6.545,6.545,0,0,1-1.025.527h4.079A.264.264,0,0,0,612,458.139Z" transform="translate(-604.057 -452.489)" fill="#768a9e"/>
+          <path id="Path_6273" data-name="Path 6273" d="M578.509,397.9l-.206-.292-.564-.79-1.441-2.062a.264.264,0,0,0-.216-.113h-2.231v-1.478a.263.263,0,0,0-.263-.263h-1.713q-.012.266-.046.527h1.495v.672h-1.617q-.063.268-.148.527h1.764v5.734h-4.064a1.58,1.58,0,0,0-3.14,0h-1.4v-1.231q-.269-.024-.532-.07v1.564a.263.263,0,0,0,.263.263h1.667a1.58,1.58,0,0,0,3.14,0h5.11a1.58,1.58,0,0,0,3.14,0h.79a.264.264,0,0,0,.261-.271v-2.566A.263.263,0,0,0,578.509,397.9Zm-10.818,3.777v.013a1.067,1.067,0,0,1-1.054-1.067,1.054,1.054,0,1,1,1.054,1.054Zm8.892-5.6,1,1.422H575v-1.422Zm-.643,5.6v.013a1.067,1.067,0,0,1-1.054-1.067,1.054,1.054,0,1,1,1.054,1.054Zm2.091-1.317h-.527a1.58,1.58,0,0,0-3.14,0h-.527v-5.192h2.107l.269.377H574.74a.263.263,0,0,0-.263.263v1.949a.263.263,0,0,0,.263.263h3.213l.079.113Z" transform="translate(-564.186 -392.899)" fill="#768a9e"/>
+        </g>
+      </g>
+      <circle id="Ellipse_5699" data-name="Ellipse 5699" cx="6.5" cy="6.5" r="6.5" transform="translate(-2444 13414)" fill="#768a9e"/>
+      <g id="Group_5717" data-name="Group 5717" transform="translate(0 -3)">
+        <g id="Rectangle_1557" data-name="Rectangle 1557" transform="translate(-2441 13420)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5">
+          <rect width="7" height="7" stroke="none"/>
+          <rect x="0.25" y="0.25" width="6.5" height="6.5" fill="none"/>
+        </g>
+        <line id="Line_115" data-name="Line 115" x2="6.446" y2="6.446" transform="translate(-2440.713 13420.267)" fill="none" stroke="#fff" stroke-width="0.5"/>
+        <line id="Line_116" data-name="Line 116" y1="6.446" x2="6.446" transform="translate(-2440.713 13420.267)" fill="none" stroke="#fff" stroke-width="0.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

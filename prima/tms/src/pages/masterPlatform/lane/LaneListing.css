@@ -1,0 +1,93 @@
+.timline-wrap{
+    padding: 10px 0 0;
+    max-width: 400px;
+}
+.timeline {
+    max-width: 244px;
+    padding-left: 20px;
+    height: 24px;
+    width: 100%;
+    position: relative;
+}
+
+.timline-content span {
+    padding-top: 4px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #133751;
+}
+.timeline .waypoint-text {
+    font-size: 11px;
+    line-height: 1.18;
+    text-align: center;
+    color: #006cc9;
+}
+.waypoint-active {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    width: 18px;
+    height: 14px;
+    border: 2px solid #edeff1;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.waypoint-active:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #f7931e;
+    left: 3px;
+    top: 1px;
+    border-radius: 50%;
+}
+
+.add-button-wrapp{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+.lane-code, .lane-code:hover{
+    color: #133751;
+    text-decoration: none;
+}
+.custom-stepper .stepper-wrap .MuiStepLabel-labelContainer{
+    margin-top: 0;
+}
+.custom-stepper .stepper-wrap .MuiStepLabel-iconContainer {
+    padding-right: 30px;
+}
+.custom-stepper .stepper-wrap .MuiStepLabel-label{
+    color: #7f7f77;
+}
+.custom-stepper .stepper-wrap .MuiStepLabel-label.MuiStepLabel-active {
+    color: #133751;
+    font-weight: normal;
+
+}
+.divider-line {
+    background-color: #eaeff3;
+    height: 1px;
+    margin-bottom: 16px;
+}
+
+/* lane origin destination wrap */
+.lane-ori-dest-wrap .lane-title{
+    font-size: 12px;
+    margin: 0;
+    font-weight: 400;
+    color: #083654;
+}
+
+@media (max-width: 767px) {
+    .add-button-wrapp{
+        margin-top: 0;
+    }
+    .lane-ori-dest-wrap .tool-tip-icon img{
+       width: 19px;
+    }
+}
